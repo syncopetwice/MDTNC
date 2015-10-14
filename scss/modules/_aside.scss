@@ -1,0 +1,68 @@
+.app__sidebar {
+	@include mq($until: ipad-l) {
+		flex: 0 0 140px;
+	}
+	@include mq($until: ipad-p) {
+		flex: 1;
+	}
+	flex: 0 0 230px;
+	background:$light-gray;
+	.sidebar__nav {
+		.nav__list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			@include mq($until: ipad-p) {
+				display: flex;
+				justify-content: space-between;
+			}
+			@include clearfix;
+			.list__item {
+				display: block;
+				@include mq($until: ipad-p) {
+					// float: left;
+					margin-right: 10px;
+				}
+				&:first-child {
+					margin-top: 18px;
+					@include mq($until: ipad-p) {
+						margin: 0;
+					}
+				}
+				&.list__item--active {
+					.item__link {
+						color: $light-yellow;
+						background: $dark-gray;
+					}
+				}
+				.item__link {
+					font-size: 14px;
+					color: #fff;
+					display: block;
+					text-transform: uppercase;
+					padding: 10px 16px;
+					margin-bottom: 18px;
+					@include mq($until: ipad-l) {
+						font-size: 12px;
+						margin-bottom: 5px;
+					}
+					@include mq($until: ipad-p) {
+						margin-bottom: 0;
+					}
+					i {
+						@include mq($until: ipad-l) {
+							width: 12px;
+							height: 10px;
+							font-size: 12px;
+						}
+						width: 22px;
+						height: 20px;
+						overflow: hidden;
+						font-size: 20px;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}

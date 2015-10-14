@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import '../vendor/normalize.scss/normalize';
+@import '../vendor/sass-mq/mq';
+@import 'ie/_';
+@import 'mixins/_';
+@import '../vendor/fontawesome/scss/font-awesome';
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+// Vars
+$dark-blue: #084c85;
+$medium-blue: #0e4c82;
+$light-blue: #0082cd;
+$light-yellow: #fecd2e;
+$light-gray: #888b8d;
+$dark-gray: #6f7274;
+// Fonts
+$e-regular: "EffraRegular", Arial, sans-serif;
+$e-medium: "EffraMedium", Arial, sans-serif;
+$e-bold: "EffraBold", Arial, sans-serif;
+$e-heavy: "EffraHeavy", Arial, sans-serif;
+$h-bold: "HelveticaNeueLTStd", Helvetica, Arial, sans-serif;
+.app {
+	font-family: $e-regular;
+	min-width: 768px;
+	@include mq($until: ipad-l) {
+		position: relative;
+		padding-top: 40px;
+	}
+}
+@import 'modules/header';
+@import 'modules/main/_';
+@import 'modules/aside';
+@import 'modules/footer';

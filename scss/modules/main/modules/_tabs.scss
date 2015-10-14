@@ -1,0 +1,38 @@
+.tabs {
+	list-style-type: none;
+	margin: 0;
+	background: $light-blue;
+	padding: 0px 8px;
+	border-radius: 4px;
+	display: inline-block;
+	@include mq($until: ipad-p) {
+		display: flex;
+		justify-content: center;
+	}
+	.tab {
+		display: inline-block;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 12px;
+			right: 0;
+			display: block;
+			width: 1px;
+			height: 16px;
+			background: #fff;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+		.link {
+			padding: 8px 16px;
+			display: block;
+			color: #fff;
+			font-size: 16px;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+	}
+}

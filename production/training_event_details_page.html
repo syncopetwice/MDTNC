@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<title>Training Event Details</title>
+	<link rel="stylesheet" href="assets/stylesheets/app.stylesheets.css" />
+	<!--[if lt IE 9]>
+		<script src="vendor/html5shiv/dist/html5shiv.js"></script>
+		<script src="vendor/respond/dest/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="app">
+		<header class="app__header">
+			<div class="header__logotype">
+				<a href="#"></a>
+			</div>
+			<div class="header__slogan">
+				<span>
+					Training Portal
+				</span> for certified product trainers
+			</div>
+			<div class="header__controls">
+				<a href="#" class="control__item">
+					<i class="fa fa-home"></i>
+				</a>
+				<a href="#" class="control__item">
+					<i class="fa fa-phone"></i>
+				</a>
+				<a href="#" class="control__item">
+					<i class="fa fa-sign-out"></i>
+				</a>
+			</div>
+		</header>
+		<main class="app__main">
+			<aside class="app__sidebar">
+				<nav class="sidebar__nav">
+					<ul class="nav__list">
+						<li class="list__item">
+							<a href="#" class="item__link">
+								<i class="fa fa-user"></i> My Profile
+							</a>
+						</li>
+						<li class="list__item list__item--active">
+							<a href="#" class="item__link">
+								<i class="fa fa-bar-chart"></i>
+								Trainings</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">
+							<i class="fa fa-folder-open-o"></i>
+							Resources</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">
+								<i class="fa fa-envelope"></i> Contact Us
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main__content">
+				<!-- Training Event Details -->
+				<section class="training-event-details">
+					<div class="heading">
+						training event details
+					</div>
+					<div class="content__row">
+						<ul class="tabs">
+							<li class="tab">
+								<a href="#" class="link">Patients</a>
+							</li>
+							<li class="tab">
+								<a href="#" class="link">Notes</a>
+							</li>
+							<li class="tab">
+								<a href="#" class="link">Checklist</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Training Details -->
+					<div class="content__row">
+						<div class="panel">
+							<div class="panel__header">
+								<div class="header__title">
+									Training Details
+								</div>
+								<div class="header__controls">
+									<a href="#">
+										<span>Edit</span><i class="fa fa-pencil-square-o"></i>
+									</a>
+								</div>
+							</div>
+							<div class="panel__body panel__body--details">
+								<table class="panel__table panel__table--details">
+									<tbody>
+										<tr>
+											<td>
+											CPT:
+											<a href="#">Adam Short</a>
+											</td>
+											<td>
+												Trainer Account: *** Visible only for a Center ***
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Training Type: Pump Start
+											</td>
+											<td>
+												Training Status: Accepted
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Assigned by: Sarah Keen
+											</td>
+											<td>
+												Assigned by Email: 
+												<a href="#">sarahk@medtronic.com</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Training Type: Group
+											</td>
+											<td>
+												Assigned Date: 06/21/2015
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Compose Training ID: Visible to Admins only
+											</td>
+											<td>
+												Traning Rate: $10
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Scheduled Training Date: 10/29/2015
+											</td>
+											<td>
+												Completion Date:
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- End :: Training Details -->
+					<!-- Patients -->
+					<div class="content__row">
+						<div class="panel">
+							<div class="panel__header">
+								<div class="header__title">
+									Patients
+								</div>
+								<div class="header__controls">
+									<a href="#">
+										<span>Remove/Reassign</span><i class="fa fa-retweet"></i>
+									</a>
+								</div>
+							</div>
+							<div class="panel__body">
+								<table class="panel__table">
+									<thead>
+										<tr>
+											<th><input type="checkbox" /></th>
+											<th>Action</th>
+											<th>Patient Name</th>
+											<th>Zip</th>
+											<th>City</th>
+											<th>Date of Birth</th>
+											<th>Prescriber</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="checkbox" /></td>
+											<td>Regroup</td>
+											<td>John Doe</td>
+											<td>96547</td>
+											<td>Northbridge</td>
+											<td>6/19/1976</td>
+											<td>David Bole</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox" /></td>
+											<td>Regroup</td>
+											<td>John Doe</td>
+											<td>96547</td>
+											<td>Northbridge</td>
+											<td>6/19/1976</td>
+											<td>David Bole</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- End :: Patients -->
+					<!-- Training Note -->
+					<div class="content__row">
+						<div class="panel">
+							<div class="panel__header">
+								<div class="header__title">
+									Training Note
+								</div>
+								<div class="header__controls">
+									<a href="#"><span>New Note</span><i class="fa fa-pencil-square-o"></i></a>
+								</div>
+							</div>
+							<div class="panel__body">
+								<table class="panel__table">
+									<thead>
+										<tr>
+											<th>Created Date</th>
+											<th>Note</th>
+											<th>Created By</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												6/19/1976
+											</td>
+											<td>
+												<a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur odio sem</a>
+											</td>
+											<td>
+												David Bole
+											</td>
+										</tr>
+										<tr>
+											<td>
+												6/19/1976
+											</td>
+											<td>
+												<a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur odio sem</a>
+											</td>
+											<td>
+												David Bole
+											</td>
+										</tr>
+										<tr>
+											<td>
+												6/19/1976
+											</td>
+											<td>
+												<a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur odio sem</a>
+											</td>
+											<td>
+												David Bole
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- End :: Training Note -->
+					<!-- Checklists -->
+					<div class="content__row">
+						<div class="panel">
+							<div class="panel__header">
+								<div class="header__title">
+									Checklists
+								</div>
+								<div class="header__controls">
+									<a href="#"><span>Print Checklist</span><i class="fa fa-print"></i></a>
+								</div>
+							</div>
+							<div class="panel__body">
+								<table class="panel__table">
+									<thead>
+										<tr>
+											<th>Title</th>
+											<th>Patient</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores.</a>
+											</td>
+											<td>Marco Button</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, possimus.</a>
+											</td>
+											<td>Marco Button</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, possimus?</a>
+											</td>
+											<td>Marco Button</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- End :: Checklists -->
+				</section>
+				<!-- End :: Training Event Details -->
+			</section>
+		</main>
+
+
+
+
+		<footer class="app__footer">
+			<nav class="footer__nav">
+				<div class="nav__quick-links">
+					<div class="quick-links__title">
+						Quick Links
+					</div>
+					<div class="links__container">
+						<div class="links--first">
+							<a href="#" class="link__item">Healthcare Professionals</a>
+							<a href="#" class="link__item">HCP myLearning</a>
+							<a href="#" class="link__item">User Guide</a>
+						</div>
+						<div class="links--second">
+							<a href="#" class="link__item">Medtronic Diabetes</a>
+							<a href="#" class="link__item">Customer Support</a>
+							<a href="#" class="link__item">Quick Reference Guide</a>
+						</div>
+						<div class="links--third">
+							<a href="#" class="link__item">“in the know” Newsletter</a>
+							<a href="#" class="link__item">CareLink®  Personal</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav__connect-with-us">
+					<div class="connect-with-us__title">
+						Connect With Us
+					</div>
+					<div class="nav__social">
+						<a href="#" class="social__item">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-google-plus-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-twitter-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-youtube-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-google-square"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="footer__rights">
+				All Rights Reserved. Medtronic 2015
+			</div>
+		</footer>
+	</div>
+	<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+<!-- 	<script src="assets/vendor/fastclick/lib/fastclick.js"></script>
+		<script>
+		$(function() {
+			FastClick.attach(document.body);
+		});
+	</script> -->
+</body>
+</html>
