@@ -1,0 +1,173 @@
+// Section
+// Vars Colors
+
+// Section Top
+$c-dark-blue: #011f45;
+$c-l-dark-blue: #5c7e94;
+// Section Middle
+$c-medium-blue: #1386c7;
+$c-l-medium-blue: #1baade;
+$c-light-blue: #74c5e6;
+
+
+// Mixin for every article element
+@mixin section() {
+	display: flex;
+	article {
+		@include mq($until: ipad-l) {
+			padding: 15px 20px;
+		}
+		padding: 25px 30px;
+		color: #fff;
+		font-size: 14px;
+		header {
+			text-transform: uppercase;
+			font-family: $e-bold;
+			color: #fff;
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+	}
+}
+// Mixin for ul > li
+@mixin lists($border-color) {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			@include mq($until: ipad-l) {
+				padding: 5px;
+			}
+			padding: 15px 5px;
+			border-bottom: 1px dashed $border-color;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+section.landing {
+	.section {
+		// Section Top
+		&__top {
+			@include section;
+			.article__top--left {
+				@include mq($until: ipad-p) {
+					width: 100%;
+				}
+				background: $c-dark-blue;
+				width: percentage(640/1040);
+				@include lists(#466482);
+			}
+			.article__top--right {
+				@include mq($until: ipad-p) {
+					width: 100%;
+				}
+				display: flex;
+				width: percentage(400/1040);
+				background: $c-l-dark-blue;
+				section:nth-child(1) {
+					margin-right: 15px;
+				}
+				section:nth-child(2) {
+					img {
+						@include img-responsive;
+					}
+				}
+				header {
+					div {
+						font-size: 16px;
+						margin-top: 10px;
+					}
+				}
+				main {
+					ul {
+						margin: 0;
+						padding: 0;
+						list-style-type: none;
+						li {
+							i {
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+		// Section Middle
+		&__middle {
+			display: flex;
+			@include mq($until: ipad-p) {
+				flex-direction: column;
+			}
+			article {
+				color: #fff;
+				font-size: 14px;
+				padding: 25px 30px;
+				padding-bottom: 70px;
+				position: relative;
+				z-index: 0;
+				header {
+					text-transform: uppercase;
+					font-family: $e-bold;
+					color: #fff;
+					font-size: 22px;
+					margin-bottom: 20px;
+					@include mq($until: ipad-p) {
+						margin-bottom: 10px;
+					}
+				}
+				@include lists(#52a5d4);
+				footer {
+					a {
+						position: absolute;
+						left: 30px;
+						bottom: 30px;
+						font-size: 14px;
+						text-transform: uppercase;
+						color: #fff;
+					}
+				}
+			}
+			.article--left {
+				@include mq($until: ipad-p) {
+					width: 100%;
+				}
+				width: percentage(520/1040);
+				background: $c-medium-blue;
+			}
+			.article--center {
+				@include mq($until: ipad-p) {
+					width: 100%;
+				}
+				width: percentage(260/1040);
+				background: $c-l-medium-blue;
+			}
+			.article--right {
+				@include mq($until: ipad-p) {
+					width: 100%;
+				}
+				width: percentage(260/1040);
+				background: $c-light-blue;
+			}
+		}
+		// Section Bottom
+		&__bottom {
+			article {
+				padding: 25px 30px;
+				font-size: 14px;
+				header {
+					text-transform: uppercase;
+					font-family: $e-bold;
+					color: $c-medium-blue;
+					font-size: 22px;
+					margin-bottom: 20px;
+				}
+			}
+			.article--left {}
+			.article--right {}
+		}
+	}
+}

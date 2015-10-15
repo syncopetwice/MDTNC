@@ -11,6 +11,7 @@
 	<![endif]-->
 </head>
 <body>
+	<!-- App -->
 	<div class="app">
 		<header class="app__header">
 			<div class="header__logotype">
@@ -64,9 +65,14 @@
 				<!-- Training Event Details -->
 				<section class="training-event-details">
 					<div class="heading">
-						training event details
+						Training event details
 					</div>
-					<div class="content__row">
+					<div class="navigation__controls">
+						<div class="back__button__container">
+							<a href="#" class="back__button">
+								<i class="fa fa-angle-left"></i> Back to Training Lists
+							</a>
+						</div>
 						<ul class="tabs">
 							<li class="tab">
 								<a href="#" class="link">Patients</a>
@@ -169,11 +175,11 @@
 									<thead>
 										<tr>
 											<th><input type="checkbox" /></th>
-											<th>Action</th>
-											<th>Patient Name</th>
+											<th>Action <i class="fa fa-angle-down"></i></th>
+											<th>Patient Name <i class="fa fa-caret-up"></i></th>
 											<th>Zip</th>
 											<th>City</th>
-											<th>Date of Birth</th>
+											<th>Date of Birth <i class="fa fa-caret-up"></th>
 											<th>Prescriber</th>
 										</tr>
 									</thead>
@@ -358,7 +364,7 @@
 							<i class="fa fa-youtube-square"></i>
 						</a>
 						<a href="#" class="social__item">
-							<i class="fa fa-google-square"></i>
+							<i class="icon--loop"></i>
 						</a>
 					</div>
 				</div>
@@ -368,12 +374,7 @@
 			</div>
 		</footer>
 	</div>
+	<!-- End :: App -->
 	<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-<!-- 	<script src="assets/vendor/fastclick/lib/fastclick.js"></script>
-		<script>
-		$(function() {
-			FastClick.attach(document.body);
-		});
-	</script> -->
 </body>
 </html>

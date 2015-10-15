@@ -29,7 +29,7 @@ var
 	});
 
 	gulp.task('scss', function () {
-		return scss(['scss/app.stylesheets.scss'], { sourcemap: true, style: 'compact', compass: true})
+		return scss(['scss/app.stylesheets.scss'], { sourcemap: true, style: 'expanded', compass: true})
 			.pipe(plumber())
 			.pipe(autoprefixer({
 					browsers: ['last 10 versions', '> 1%', 'ie 8', 'ie 9', 'ie 10', 'ie 11'],

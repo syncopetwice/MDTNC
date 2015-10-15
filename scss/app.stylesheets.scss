@@ -4,7 +4,7 @@
 @import 'ie/_';
 @import 'mixins/_';
 @import '../vendor/fontawesome/scss/font-awesome';
-
+@import 'fonts/Effra';
 *,
 *:before,
 *:after {
@@ -28,14 +28,14 @@ $light-yellow: #fecd2e;
 $light-gray: #888b8d;
 $dark-gray: #6f7274;
 // Fonts
-$e-regular: "EffraRegular", Arial, sans-serif;
-$e-medium: "EffraMedium", Arial, sans-serif;
-$e-bold: "EffraBold", Arial, sans-serif;
-$e-heavy: "EffraHeavy", Arial, sans-serif;
-$h-bold: "HelveticaNeueLTStd", Helvetica, Arial, sans-serif;
+$e-regular: "EffraRegular", Helvetica, Arial, sans-serif;
+$e-medium: "EffraMedium", Helvetica, Arial, sans-serif;
+$e-bold: "EffraBold", Helvetica, Arial, sans-serif;
+// $e-heavy: "EffraHeavy", Helvetica, Arial, sans-serif; There's no fonts in folder
 .app {
 	font-family: $e-regular;
 	min-width: 768px;
+	overflow: hidden;
 	@include mq($until: ipad-l) {
 		position: relative;
 		padding-top: 40px;

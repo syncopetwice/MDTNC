@@ -2,6 +2,7 @@
 	@include mq($until: ipad-l) {
 		padding: 9px 12px;
 		position: fixed;
+		z-index: 9999;
 		width: 100%;
 		min-width: 768px;
 		top: 0;
@@ -43,7 +44,9 @@
 		float: left;
 		font-size: 22px;
 		color: #fff;
+		text-transform: uppercase;
 		span {
+			font-family: $e-bold;
 			color: $light-yellow;
 		}
 	}

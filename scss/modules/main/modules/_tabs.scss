@@ -1,14 +1,11 @@
 .tabs {
 	list-style-type: none;
-	margin: 0;
 	background: $light-blue;
 	padding: 0px 8px;
 	border-radius: 4px;
-	display: inline-block;
-	@include mq($until: ipad-p) {
-		display: flex;
-		justify-content: center;
-	}
+	text-align: center;
+	width: 290px;
+	margin: 0 auto;
 	.tab {
 		display: inline-block;
 		position: relative;

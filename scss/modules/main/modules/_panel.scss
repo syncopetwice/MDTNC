@@ -1,12 +1,11 @@
 .panel {
-	max-width: 100%;
 	.panel__header {
 		@include mq($until: ipad-l) {
 			padding: 7px 9px;
 		}
 		@include clearfix;
 		border: 1px solid #dee1e2;
-		border-bottom: none;
+		border-bottom: 0;
 		border-top-left-radius: 6px;
 		border-top-right-radius: 6px;
 		padding: 14px 18px;
@@ -43,15 +42,15 @@
 				@include mq($until: ipad-l) {
 					margin: 5px 10px;
 				}
-				border: none;
+				border: 0;
 				margin: 15px;
 				tbody {
 					td {
 						@include mq($until: ipad-l) {
 							padding: 2px;
 						}
-						border: none;
-						padding: 10px;
+						border: 0;
+						padding: 5px;
 					}
 				}
 			}
@@ -67,6 +66,12 @@
 				th {
 					@include mq($until: ipad-l) {
 						padding: 5px;
+					}
+					.fa {
+						margin-left: 8px;
+					}
+					.fa.fa-angle-down {
+						color: #032e3a;
 					}
 					padding: 15px;
 					font-size: 14px;
