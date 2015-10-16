@@ -35,7 +35,7 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 .app {
 	font-family: $e-regular;
 	min-width: 768px;
-	overflow: hidden;
+	// overflow: hidden;
 	@include mq($until: ipad-l) {
 		position: relative;
 		padding-top: 40px;

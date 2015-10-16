@@ -9,18 +9,22 @@ $c-medium-blue: #1386c7;
 $c-l-medium-blue: #1baade;
 $c-light-blue: #74c5e6;
 
-
 // Mixin for every article element
 @mixin section() {
 	display: flex;
 	article {
 		@include mq($until: ipad-l) {
-			padding: 15px 20px;
+			padding: 15px;
+			font-size: 14px;
 		}
 		padding: 25px 30px;
 		color: #fff;
 		font-size: 14px;
 		header {
+			@include mq($until: ipad-p) {
+				margin-bottom: 5px;
+				font-size: 18px;
+			}
 			text-transform: uppercase;
 			font-family: $e-bold;
 			color: #fff;
@@ -49,23 +53,21 @@ $c-light-blue: #74c5e6;
 }
 
 section.landing {
+	display: flex;
+	flex-direction: column;
 	.section {
 		// Section Top
 		&__top {
 			@include section;
+			@include mq($until: ipad-p) {}
 			.article__top--left {
-				@include mq($until: ipad-p) {
-					width: 100%;
-				}
+				@include mq($until: ipad-p) {}
 				background: $c-dark-blue;
 				width: percentage(640/1040);
 				@include lists(#466482);
 			}
 			.article__top--right {
-				@include mq($until: ipad-p) {
-					width: 100%;
-				}
-				display: flex;
+				@include mq($until: ipad-p) {}
 				width: percentage(400/1040);
 				background: $c-l-dark-blue;
 				section:nth-child(1) {
@@ -80,6 +82,9 @@ section.landing {
 					div {
 						font-size: 16px;
 						margin-top: 10px;
+						@include mq($until: ipad-p) {
+							margin-top: 0;
+						}
 					}
 				}
 				main {
@@ -98,26 +103,13 @@ section.landing {
 		}
 		// Section Middle
 		&__middle {
-			display: flex;
-			@include mq($until: ipad-p) {
-				flex-direction: column;
-			}
+			@include section;
 			article {
-				color: #fff;
-				font-size: 14px;
-				padding: 25px 30px;
 				padding-bottom: 70px;
 				position: relative;
 				z-index: 0;
 				header {
-					text-transform: uppercase;
-					font-family: $e-bold;
 					color: #fff;
-					font-size: 22px;
-					margin-bottom: 20px;
-					@include mq($until: ipad-p) {
-						margin-bottom: 10px;
-					}
 				}
 				@include lists(#52a5d4);
 				footer {
@@ -135,39 +127,28 @@ section.landing {
 				@include mq($until: ipad-p) {
 					width: 100%;
 				}
-				width: percentage(520/1040);
+				width: 50%;
 				background: $c-medium-blue;
 			}
+			// Wrapper for classes: article--center & article--right (need for mobile devices width fix)
 			.article--center {
-				@include mq($until: ipad-p) {
-					width: 100%;
-				}
-				width: percentage(260/1040);
 				background: $c-l-medium-blue;
+				width: 25%;
 			}
 			.article--right {
-				@include mq($until: ipad-p) {
-					width: 100%;
-				}
-				width: percentage(260/1040);
 				background: $c-light-blue;
+				width: 25%;
 			}
 		}
 		// Section Bottom
 		&__bottom {
+			@include section;
 			article {
-				padding: 25px 30px;
-				font-size: 14px;
+				color: #424242;
 				header {
-					text-transform: uppercase;
-					font-family: $e-bold;
 					color: $c-medium-blue;
-					font-size: 22px;
-					margin-bottom: 20px;
 				}
 			}
-			.article--left {}
-			.article--right {}
 		}
 	}
 }

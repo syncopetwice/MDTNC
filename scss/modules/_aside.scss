@@ -1,9 +1,9 @@
 .app__sidebar {
-	@include mq($until: ipad-l) {
-		flex: 0 0 140px;
-	}
 	@include mq($until: ipad-p) {
 		flex: 1;
+	}
+	@include mq($until: ipad-l) {
+		flex: 0 0 140px;
 	}
 	flex: 0 0 230px;
 	background:$light-gray;
