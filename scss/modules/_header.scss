@@ -1,12 +1,6 @@
 .app__header {
 	@include mq($until: ipad-l) {
 		padding: 9px 12px;
-		position: absolute;
-		z-index: 9999;
-		width: 100%;
-		min-width: 768px;
-		top: 0;
-		left: 0;
 	}
 	background: $dark-blue;
 	padding: 30px 32px 32px 22px;

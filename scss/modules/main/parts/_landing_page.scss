@@ -12,6 +12,9 @@ $c-light-blue: #74c5e6;
 // Mixin for every article element
 @mixin section() {
 	display: flex;
+	@include mq($until: ipad-l) {
+		flex-direction: column;
+	}
 	article {
 		@include mq($until: ipad-l) {
 			padding: 15px;
@@ -52,34 +55,30 @@ $c-light-blue: #74c5e6;
 	}
 }
 
-section.landing {
-	display: flex;
-	flex-direction: column;
-	.section {
-		// Section Top
-		&__top {
-			@include section;
-			@include mq($until: ipad-p) {}
-			.article__top--left {
-				@include mq($until: ipad-p) {}
-				background: $c-dark-blue;
-				width: percentage(640/1040);
-				@include lists(#466482);
+.landing {
+	// Section Top
+	.section__top {
+		@include section;
+		@include clearfix;
+		.announcements {
+			width: percentage(640/1040);
+			@include mq($until: ipad-l) {
+				width: 100%;
 			}
-			.article__top--right {
-				@include mq($until: ipad-p) {}
-				width: percentage(400/1040);
-				background: $c-l-dark-blue;
-				section:nth-child(1) {
-					margin-right: 15px;
-				}
-				section:nth-child(2) {
-					img {
-						@include img-responsive;
-					}
-				}
+			background: $c-dark-blue;
+			@include lists(#466482);
+		}
+		.exceptional {
+			width: percentage(400/1040);
+			@include mq($until: ipad-l) {
+				width: 100%;
+			}
+			background: $c-l-dark-blue;
+			display: flex;
+			section.exceptional__text__container {
+				margin-right: 15px;
 				header {
-					div {
+					.subheader {
 						font-size: 16px;
 						margin-top: 10px;
 						@include mq($until: ipad-p) {
@@ -100,54 +99,67 @@ section.landing {
 					}
 				}
 			}
+			section.exceptional__avatar__container {
+				img {
+					@include img-responsive;
+				}
+			}
 		}
-		// Section Middle
-		&__middle {
-			@include section;
-			article {
-				padding-bottom: 70px;
-				position: relative;
-				z-index: 0;
-				header {
+	}
+	// Section Middle
+	.section__middle {
+		@include section;
+		@include mq($until: ipad-p) {}
+		article {
+			padding-bottom: 70px;
+			position: relative;
+			z-index: 0;
+			header {
+				color: #fff;
+			}
+			@include lists(#52a5d4);
+			footer {
+				a {
+					position: absolute;
+					left: 30px;
+					bottom: 30px;
+					font-size: 14px;
+					text-transform: uppercase;
 					color: #fff;
 				}
-				@include lists(#52a5d4);
-				footer {
-					a {
-						position: absolute;
-						left: 30px;
-						bottom: 30px;
-						font-size: 14px;
-						text-transform: uppercase;
-						color: #fff;
-					}
-				}
-			}
-			.article--left {
-				@include mq($until: ipad-p) {
-					width: 100%;
-				}
-				width: 50%;
-				background: $c-medium-blue;
-			}
-			// Wrapper for classes: article--center & article--right (need for mobile devices width fix)
-			.article--center {
-				background: $c-l-medium-blue;
-				width: 25%;
-			}
-			.article--right {
-				background: $c-light-blue;
-				width: 25%;
 			}
 		}
-		// Section Bottom
-		&__bottom {
-			@include section;
-			article {
-				color: #424242;
-				header {
-					color: $c-medium-blue;
-				}
+		.training-tips {
+			@include mq($until: ipad-l) {
+				width: 100%;
+			}
+			width: 50%;
+			background: $c-medium-blue;
+		}
+		// Wrapper for classes: article--center & article--right (need for mobile devices width fix)
+		.whats-new {
+			@include mq($until: ipad-l) {
+				width: 100%;
+			}
+			background: $c-l-medium-blue;
+			width: 25%;
+		}
+		.startright {
+			@include mq($until: ipad-l) {
+				width: 100%;
+			}
+			background: $c-light-blue;
+			width: 25%;
+		}
+	}
+	// Section Bottom
+	.section__bottom {
+		@include section;
+		article {
+			flex-basis: auto;
+			color: #424242;
+			header {
+				color: $c-medium-blue;
 			}
 		}
 	}
