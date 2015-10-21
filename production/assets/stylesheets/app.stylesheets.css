@@ -3219,6 +3219,7 @@ a:hover {
 .app {
   font-family: "EffraRegular", Helvetica, Arial, sans-serif;
   overflow: hidden;
+  min-width: 768px;
 }
 
 .app__header {

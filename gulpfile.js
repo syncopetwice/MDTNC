@@ -10,6 +10,15 @@ var
 	zip = require('gulp-zip'),
 	watch = require('gulp-watch');
 
+	var staticResources = [
+		'production/assets/**/*',
+		'scss/**/*',
+		'.bowerrc',
+		'.gitignore',
+		'gulpfile.js',
+		'package.json'
+	];
+
 	gulp.task('connect', function() {
 		connect.server ({
 			port: 8080,
@@ -21,11 +30,6 @@ var
 		gulp.src('production/**/*.html')
 			.pipe(plumber())
 			.pipe(connect.reload());
-	});
-
-	gulp.task('clean', function() {
-		return gulp.src('production/assets/css/**/*', { read: true })
-			.pipe(rimraf());
 	});
 
 	gulp.task('scss', function () {
@@ -42,37 +46,33 @@ var
 			.pipe(connect.reload())
 			.pipe(gulp.dest('production/assets/stylesheets/'));
 	});
+
 	gulp.task('archive', function () {
 		return gulp.src(
-			[
-			'production/assets/css/**/*',
-			'production/assets/images/**/*',
-			'production/assets/js/**/*',
-			'production/assets/vendor/**/*',
-			'scss/**/*',
-			'gulpfile.js',
-			'package.json'
-			],
+			staticResources,
 			{ base:'.'})
-			.pipe(zip('CPT.zip', {compress: true}))
+			.pipe(zip('CPT_assets.zip', {compress: true}))
 			.pipe(gulp.dest('./'));
 	});
+
+	gulp.task('copy', function(){
+		return gulp.src(staticResources, { base:'.'})
+			.pipe(gulp.dest('C:\\Maven\\Medtronic CPT Portal\\resource-bundles\\CPT_assets.resource\\'));
+	});
+
 	gulp.task('watch', function() {
 		gulp.watch('production/**/*.html', ['html']);
-		gulp.watch('scss/**/*', gulpsync.sync(['scss', 'archive']));
-		gulp.watch('production/assets/images/**/*', ['archive']);
-		gulp.watch('production/assets/vendor/**/*', ['archive']);
-		gulp.watch('production/assets/js/**/*', ['archive']);
+		gulp.watch('scss/**/*', gulpsync.sync(['scss', 'archive', 'copy']));
+		gulp.watch('production/assets/images/**/*', ['archive', 'copy']);
+		gulp.watch('production/assets/vendor/**/*', ['archive', 'copy']);
+		gulp.watch('production/assets/javascripts/**/*', ['archive', 'copy']);
 	});
 	gulp.task('default', gulpsync.sync([
 		// async
-		[
-			'html',
-			'clean',
-			'scss',
-			'connect',
-		],
-		// sync 
+		'html',
+		'scss',
 		'archive',
+		'copy',
+		'connect',
 		'watch'
 	]));

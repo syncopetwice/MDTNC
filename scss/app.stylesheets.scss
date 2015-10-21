@@ -35,6 +35,7 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 .app {
 	font-family: $e-regular;
 	overflow: hidden;
+	min-width: 768px;
 }
 @import 'modules/header';
 @import 'modules/main/_';
