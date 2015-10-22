@@ -3219,7 +3219,7 @@ a:hover {
 .app {
   font-family: "EffraRegular", Helvetica, Arial, sans-serif;
   overflow: hidden;
-  min-width: 768px;
+  min-width: 1024px;
 }
 
 .app__modal {
@@ -3438,10 +3438,223 @@ a:hover {
 .app__main:after {
   clear: both;
 }
-@media (min-width: 64.0625em) {
+@media (min-width: 87.5em) {
   .app__main .main__content {
     margin-left: 230px;
   }
+}
+.app__main .main__content .tabs {
+  list-style-type: none;
+  background: #0082cd;
+  padding: 0px 8px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.app__main .main__content .tabs .tab {
+  display: inline-block;
+  position: relative;
+}
+.app__main .main__content .tabs .tab:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: #fff;
+}
+.app__main .main__content .tabs .tab:last-child:after {
+  display: none;
+}
+.app__main .main__content .tabs .tab .link {
+  padding: 8px 16px;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+.app__main .main__content .table-tabs {
+  display: inline-block;
+}
+.app__main .main__content .table-tabs .table-tab {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 15px 35px;
+  color: #bcc3c4;
+}
+@media (max-width: 87.49em) {
+  .app__main .main__content .table-tabs .table-tab {
+    padding: 5px 10px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+  }
+}
+.app__main .main__content .table-tabs .table-tab.table-tab--active {
+  -webkit-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  background: #084c85;
+  color: #fff;
+}
+.app__main .main__content .table-tabs .table-tab:hover {
+  cursor: pointer;
+}
+.app__main .main__content .view-as {
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.app__main .main__content .view-as {
+  *zoom: 1;
+}
+.app__main .main__content .view-as:before, .app__main .main__content .view-as:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .view-as:after {
+  clear: both;
+}
+.app__main .main__content .view-as .view {
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #bcc3c4;
+  background: transparent;
+  padding: 10px 20px;
+  min-width: 170px;
+  border-right: 1px solid #e1e1e1;
+}
+.app__main .main__content .view-as .view.view--active {
+  color: #fff;
+  background: #084c85;
+}
+.app__main .main__content .view-as .view:hover {
+  cursor: pointer;
+}
+.app__main .main__content .view-as .view:last-child {
+  border-right: 0;
+}
+.app__main .main__content .panel .panel__header {
+  border: 1px solid #dee1e2;
+  border-bottom: 0;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 14px 18px;
+  background: #084c85;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel .panel__header {
+    padding: 7px 9px;
+  }
+}
+.app__main .main__content .panel .panel__header {
+  *zoom: 1;
+}
+.app__main .main__content .panel .panel__header:before, .app__main .main__content .panel .panel__header:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .panel .panel__header:after {
+  clear: both;
+}
+.app__main .main__content .panel .panel__header .header__title {
+  float: left;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel .panel__header .header__title {
+    font-size: 14px;
+  }
+}
+.app__main .main__content .panel .panel__header .header__controls {
+  float: right;
+}
+.app__main .main__content .panel .panel__header .header__controls a {
+  color: #fff;
+}
+.app__main .main__content .panel .panel__header .header__controls a span {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.app__main .main__content .panel .panel__header .header__controls a i {
+  font-size: 16px;
+}
+.app__main .main__content .panel .panel__body.panel__body--details {
+  border: 1px solid #dee1e2;
+}
+.app__main .main__content .panel .panel__body .panel__table {
+  border: 1px solid #dee1e2;
+  border-top: 0;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.app__main .main__content .panel .panel__body .panel__table.panel__table--details {
+  border: 0;
+  margin: 15px;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel .panel__body .panel__table.panel__table--details {
+    margin: 5px 10px;
+  }
+}
+.app__main .main__content .panel .panel__body .panel__table.panel__table--details tbody td {
+  border: 0;
+  padding: 5px;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel .panel__body .panel__table.panel__table--details tbody td {
+    padding: 2px;
+  }
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel .panel__body .panel__table {
+    font-size: 13px;
+  }
+}
+.app__main .main__content .panel .panel__body .panel__table thead th {
+  padding: 15px;
+  font-size: 14px;
+  color: #95a5a6;
+  font-weight: normal;
+  text-align: left;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel .panel__body .panel__table thead th {
+    padding: 5px;
+  }
+}
+.app__main .main__content .panel .panel__body .panel__table thead th .fa {
+  margin-left: 8px;
+}
+.app__main .main__content .panel .panel__body .panel__table thead th .fa.fa-angle-down {
+  color: #032e3a;
+}
+.app__main .main__content .panel .panel__body .panel__table tbody td {
+  font-size: 14px;
+  color: #133944;
+  border-top: 1px solid #dee1e2;
+  padding: 15px;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel .panel__body .panel__table tbody td {
+    padding: 5px;
+  }
+}
+.app__main .main__content .panel .panel__body .panel__table tbody td a {
+  font-size: 14px;
+  color: #0082cd;
 }
 .app__main .main__content .training-event-details {
   margin: 25px 10px 90px 10px;
@@ -3498,6 +3711,9 @@ a:hover {
 }
 .app__main .main__content .training-event-details .navigation__controls .back__button__container .back__button i {
   margin-right: 5px;
+}
+.app__main .main__content .training-event-details .tabs__container {
+  text-align: center;
 }
 .app__main .main__content .landing .section__top {
   display: -webkit-box;
@@ -3760,11 +3976,132 @@ a:hover {
   color: #1386c7;
 }
 .app__main .main__content .training-list {
-  padding: 10px 0 20px 0;
+  padding: 10px 20px 20px 0;
+}
+.app__main .main__content .training-list .view-as__container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.app__main .main__content .training-list .view-as__container .view-as__heading {
+  text-transform: uppercase;
+  color: #032e3a;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.app__main .main__content .training-list .controls__container {
+  border-bottom: 1px solid #eaeaea;
+  padding: 0 8px;
+  margin-bottom: 10px;
+}
+.app__main .main__content .training-list .controls__container {
+  *zoom: 1;
+}
+.app__main .main__content .training-list .controls__container:before, .app__main .main__content .training-list .controls__container:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .training-list .controls__container:after {
+  clear: both;
+}
+.app__main .main__content .training-list .controls__container .table-tabs__container {
+  float: left;
+}
+.app__main .main__content .training-list .controls__container .search__container {
+  padding-top: 15px;
+  float: right;
+}
+@media (max-width: 87.49em) {
+  .app__main .main__content .training-list .controls__container .search__container {
+    padding-top: 0;
+  }
+}
+.app__main .main__content .training-list .controls__container .search__container .search__input {
+  width: 145px;
+  height: 25px;
+  padding: 5px;
+  margin-right: 3px;
+  border-left: 1px solid #e4e4e4;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e4e4e4;
+  background: #f4f4f4;
+  font-size: 14px;
+}
+.app__main .main__content .training-list .controls__container .search__container .search__button {
+  border: 0;
+  background: none;
+}
+.app__main .main__content .training-list .controls__container .search__container .search__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-list .controls__container .search__container .search__button i {
+  font-size: 17px;
+  color: #032e3a;
+}
+.app__main .main__content .training-list .controls__container .status__container {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+}
+@media (max-width: 87.49em) {
+  .app__main .main__content .training-list .controls__container .status__container {
+    padding-top: 0;
+  }
+}
+.app__main .main__content .training-list .controls__container .status__container {
+  *zoom: 1;
+}
+.app__main .main__content .training-list .controls__container .status__container:before, .app__main .main__content .training-list .controls__container .status__container:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .training-list .controls__container .status__container:after {
+  clear: both;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__title {
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #032e3a;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link {
+  font-size: 14px;
+  text-transform: uppercase;
+  min-width: 160px;
+  color: #032e3a;
+  float: left;
+  position: relative;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link i {
+  color: #032e3a;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link .dropdown {
+  background: #fff;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  min-width: 75px;
+  border: 1px solid #e1e3e4;
+  padding: 0px 1px;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item {
+  font-size: 14px;
+  color: #95a5a6;
+  padding: 5px;
+  border-bottom: 1px solid #e3e5e6;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:last-child {
+  border-bottom: none;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:hover, .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:focus {
+  cursor: pointer;
 }
 .app__main .main__content .training-list .table--training-list {
   border: 1px solid #dee1e2;
   border-top: 0;
+  border-left: 0;
+  border-right: 0;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -3780,6 +4117,7 @@ a:hover {
   color: #95a5a6;
   font-weight: normal;
   text-align: left;
+  vertical-align: top;
 }
 @media (max-width: 64.0525em) {
   .app__main .main__content .training-list .table--training-list thead th {
@@ -3791,6 +4129,32 @@ a:hover {
 }
 .app__main .main__content .training-list .table--training-list thead th .fa.fa-angle-down {
   color: #032e3a;
+}
+.app__main .main__content .training-list .table--training-list thead th .action__link {
+  color: #95a5a6;
+  position: relative;
+}
+.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown {
+  background: #fff;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  min-width: 75px;
+  border: 1px solid #e1e3e4;
+  padding: 0px 1px;
+}
+.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item {
+  font-size: 14px;
+  color: #95a5a6;
+  padding: 5px;
+  border-bottom: 1px solid #e3e5e6;
+}
+.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item:last-child {
+  border-bottom: none;
+}
+.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item:hover, .app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item:focus {
+  cursor: pointer;
 }
 .app__main .main__content .training-list .table--training-list tbody td {
   font-size: 14px;
@@ -3807,166 +4171,32 @@ a:hover {
   font-size: 14px;
   color: #0082cd;
 }
+.app__main .main__content .training-list .table--training-list tbody td .fa {
+  font-size: 17px;
+}
 .app__main .main__content .training-list .table--training-list tbody td .fa-check-circle {
   color: #dd2c00;
+  padding-right: 8px;
+  border-right: 1px solid #dee1e2;
 }
 .app__main .main__content .training-list .table--training-list tbody td .fa-times-circle {
+  margin-left: 8px;
   color: #27ae60;
 }
-.app__main .main__content .tabs {
-  list-style-type: none;
-  background: #0082cd;
-  padding: 0px 8px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 290px;
-  margin: 0 auto;
-}
-.app__main .main__content .tabs .tab {
-  display: inline-block;
-  position: relative;
-}
-.app__main .main__content .tabs .tab:after {
-  content: '';
-  position: absolute;
-  top: 12px;
-  right: 0;
-  display: block;
-  width: 1px;
-  height: 16px;
-  background: #fff;
-}
-.app__main .main__content .tabs .tab:last-child:after {
-  display: none;
-}
-.app__main .main__content .tabs .tab .link {
-  padding: 8px 16px;
-  display: block;
-  color: #fff;
-  font-size: 16px;
-  -webkit-tap-highlight-color: transparent;
-}
-.app__main .main__content .panel .panel__header {
-  border: 1px solid #dee1e2;
-  border-bottom: 0;
-  -webkit-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
-  padding: 14px 18px;
-  background: #084c85;
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .panel .panel__header {
-    padding: 7px 9px;
-  }
-}
-.app__main .main__content .panel .panel__header {
-  *zoom: 1;
-}
-.app__main .main__content .panel .panel__header:before, .app__main .main__content .panel .panel__header:after {
-  content: "";
-  display: table;
-}
-.app__main .main__content .panel .panel__header:after {
-  clear: both;
-}
-.app__main .main__content .panel .panel__header .header__title {
-  float: left;
-  font-size: 16px;
-  font-family: "EffraBold", Helvetica, Arial, sans-serif;
-  color: #fff;
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .panel .panel__header .header__title {
-    font-size: 14px;
-  }
-}
-.app__main .main__content .panel .panel__header .header__controls {
-  float: right;
-}
-.app__main .main__content .panel .panel__header .header__controls a {
-  color: #fff;
-}
-.app__main .main__content .panel .panel__header .header__controls a span {
-  font-size: 14px;
-  margin-right: 5px;
-}
-.app__main .main__content .panel .panel__header .header__controls a i {
-  font-size: 16px;
-}
-.app__main .main__content .panel .panel__body.panel__body--details {
-  border: 1px solid #dee1e2;
-}
-.app__main .main__content .panel .panel__body .panel__table {
-  border: 1px solid #dee1e2;
-  border-top: 0;
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.app__main .main__content .panel .panel__body .panel__table.panel__table--details {
-  border: 0;
-  margin: 15px;
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .panel .panel__body .panel__table.panel__table--details {
-    margin: 5px 10px;
-  }
-}
-.app__main .main__content .panel .panel__body .panel__table.panel__table--details tbody td {
-  border: 0;
-  padding: 5px;
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .panel .panel__body .panel__table.panel__table--details tbody td {
-    padding: 2px;
-  }
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .panel .panel__body .panel__table {
-    font-size: 13px;
-  }
-}
-.app__main .main__content .panel .panel__body .panel__table thead th {
-  padding: 15px;
-  font-size: 14px;
-  color: #95a5a6;
-  font-weight: normal;
-  text-align: left;
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .panel .panel__body .panel__table thead th {
-    padding: 5px;
-  }
-}
-.app__main .main__content .panel .panel__body .panel__table thead th .fa {
-  margin-left: 8px;
-}
-.app__main .main__content .panel .panel__body .panel__table thead th .fa.fa-angle-down {
-  color: #032e3a;
-}
-.app__main .main__content .panel .panel__body .panel__table tbody td {
-  font-size: 14px;
+.app__main .main__content .training-list .table--training-list tbody td .fa-pencil {
   color: #133944;
-  border-top: 1px solid #dee1e2;
-  padding: 15px;
+  padding-right: 8px;
+  border-right: 1px solid #dee1e2;
 }
-@media (max-width: 64.0525em) {
-  .app__main .main__content .panel .panel__body .panel__table tbody td {
-    padding: 5px;
-  }
-}
-.app__main .main__content .panel .panel__body .panel__table tbody td a {
-  font-size: 14px;
-  color: #0082cd;
+.app__main .main__content .training-list .table--training-list tbody td .fa-file-text-o {
+  color: #133944;
+  margin-left: 8px;
 }
 
 .app__sidebar {
   background: #888b8d;
 }
-@media (min-width: 64.0625em) {
+@media (min-width: 87.5em) {
   .app__sidebar {
     width: 230px;
     min-height: 100%;
@@ -3980,7 +4210,7 @@ a:hover {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 64.0525em) {
+@media (max-width: 87.49em) {
   .app__sidebar .sidebar__nav .nav__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4009,7 +4239,7 @@ a:hover {
 .app__sidebar .sidebar__nav .nav__list .list__item:first-child {
   margin-top: 18px;
 }
-@media (max-width: 64.0525em) {
+@media (max-width: 87.49em) {
   .app__sidebar .sidebar__nav .nav__list .list__item:first-child {
     margin-top: 0;
   }
@@ -4027,7 +4257,7 @@ a:hover {
   padding: 10px 16px;
   margin-bottom: 18px;
 }
-@media (max-width: 64.0525em) {
+@media (max-width: 87.49em) {
   .app__sidebar .sidebar__nav .nav__list .list__item .item__link {
     margin-bottom: 0;
     font-size: 12px;
@@ -4040,7 +4270,7 @@ a:hover {
   font-size: 20px;
   margin-right: 10px;
 }
-@media (max-width: 64.0525em) {
+@media (max-width: 87.49em) {
   .app__sidebar .sidebar__nav .nav__list .list__item .item__link i {
     font-size: 12px;
     width: 12px;

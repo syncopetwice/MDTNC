@@ -1,0 +1,25 @@
+@mixin dropdown($left: 0){
+	.dropdown {
+		background: #fff;
+		position: absolute;
+		top: 120%;
+		left: $left;
+		width: 100%;
+		min-width: 75px;
+		border: 1px solid #e1e3e4;
+		padding: 0px 1px;
+		.dropdown__item {
+			font-size: 14px;
+			color: #95a5a6;
+			padding: 5px;
+			border-bottom: 1px solid #e3e5e6;
+			&:last-child {
+				border-bottom: none;
+			}
+			&:hover,
+			&:focus {
+				cursor: pointer;
+			}
+		}
+	}
+}

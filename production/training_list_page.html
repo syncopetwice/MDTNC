@@ -89,15 +89,76 @@
 			<section class="main__content">
 				<!-- Training List Page -->
 				<div class="training-list">
-					<div class="tabs">
-						<div class="tab"><a href="#" class="link">Jane Doe</a></div>
-						<div class="tab"><a href="#" class="link">ABC Diabetes Co.</a></div>
+					<!-- View As -->
+					<div class="view-as__container">
+						<div class="view-as__heading">
+							View as
+						</div>
+						<div class="view-as">
+							<div class="view view--active">
+								Jane Doe
+							</div>
+							<div class="view">
+								ABC Diabetes Co.
+							</div>
+						</div>
 					</div>
+					<!-- End :: View As -->
+					<!-- Controls: Tabs, Status & Search -->
+					<div class="controls__container">
+						<!-- Table Tabs -->
+						<div class="table-tabs__container">
+							<div class="table-tabs">
+								<div class="table-tab table-tab--active">New</div>
+								<div class="table-tab">Accepted</div>
+								<div class="table-tab">Completed</div>
+								<div class="table-tab">Pending Payment</div>
+								<div class="table-tab">Paid</div>
+							</div>
+						</div>
+						<!-- Table Tabs -->
+						<!-- Search -->
+						<div class="search__container">
+							<form action="#">
+								<input type="text" class="search__input" />
+								<button type="submit" class="search__button">
+									<i class="fa fa-search"></i>
+								</button>
+							</form>
+						</div>
+						<!-- End :: Search -->
+						<!-- Status -->
+						<div class="status__container">
+							<div class="status__title">
+								Status
+							</div>
+							<a href="#" class="status__link">
+							ALL <i class="fa fa-angle-down"></i>
+							<div class="dropdown">
+								<div class="dropdown__item">Filter 1</div>
+								<div class="dropdown__item">Filter 2</div>
+								<div class="dropdown__item">Filter 3</div>
+							</div>
+							</a>
+						</div>
+						<!-- End :: Status -->
+
+					</div>
+					<!-- End :: Controls: Tabs & Status -->
+					<!-- Table -->
 					<table class="table--training-list">
 						<thead>
 							<tr>
 								<th><input type="checkbox" /></th>
-								<th>Action <i class="fa fa-angle-down"></i></th>
+								<th>
+									<a href="#" class="action__link">
+										Action <i class="fa fa-angle-down"></i>
+										<div class="dropdown">
+											<div class="dropdown__item">Accept</div>
+											<div class="dropdown__item">Decline</div>
+										</div>
+									</a>
+								</th>
 								<th>Training Type</th>
 								<th>Patient Name <i class="fa fa-caret-up"></i></th>
 								<th>City</th>
@@ -124,10 +185,261 @@
 								<td>rita@medtronic.com</td>
 								<td>David Bole</td>
 								<td>6/19/2015</td>
-								<td></td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>
+										<a href="#"><i class="fa fa-check-circle"></i></a>
+										<a href="#"><i class="fa fa-times-circle"></i></a>
+									</td>
+									<td><a href="#">Pump-Start</a></td>
+									<td><a href="#">John Doe</a></td>
+									<td>Northridge</td>
+									<td>10/25/1976</td>
+									<td>Rita Ringer</td>
+									<td>rita@medtronic.com</td>
+									<td>David Bole</td>
+									<td>6/19/2015</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil"></i></a>
+										<a href="#"><i class="fa fa-file-text-o"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>
+										<a href="#"><i class="fa fa-check-circle"></i></a>
+										<a href="#"><i class="fa fa-times-circle"></i></a>
+									</td>
+									<td><a href="#">Pump-Start</a></td>
+									<td><a href="#">John Doe</a></td>
+									<td>Northridge</td>
+									<td>10/25/1976</td>
+									<td>Rita Ringer</td>
+									<td>rita@medtronic.com</td>
+									<td>David Bole</td>
+									<td>6/19/2015</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil"></i></a>
+										<a href="#"><i class="fa fa-file-text-o"></i></a>
+									</td>
+								</tr>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td>
+									<a href="#"><i class="fa fa-pencil"></i></a>
+									<a href="#"><i class="fa fa-file-text-o"></i></a>
+								</td>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>
+										<a href="#"><i class="fa fa-check-circle"></i></a>
+										<a href="#"><i class="fa fa-times-circle"></i></a>
+									</td>
+									<td><a href="#">Pump-Start</a></td>
+									<td><a href="#">John Doe</a></td>
+									<td>Northridge</td>
+									<td>10/25/1976</td>
+									<td>Rita Ringer</td>
+									<td>rita@medtronic.com</td>
+									<td>David Bole</td>
+									<td>6/19/2015</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil"></i></a>
+										<a href="#"><i class="fa fa-file-text-o"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>
+										<a href="#"><i class="fa fa-check-circle"></i></a>
+										<a href="#"><i class="fa fa-times-circle"></i></a>
+									</td>
+									<td><a href="#">Pump-Start</a></td>
+									<td><a href="#">John Doe</a></td>
+									<td>Northridge</td>
+									<td>10/25/1976</td>
+									<td>Rita Ringer</td>
+									<td>rita@medtronic.com</td>
+									<td>David Bole</td>
+									<td>6/19/2015</td>
+									<td>
+										<a href="#"><i class="fa fa-pencil"></i></a>
+										<a href="#"><i class="fa fa-file-text-o"></i></a>
+									</td>
+								</tr>
 							</tr>
 						</tbody>
 					</table>
+					<!-- End :: Table -->
 				</div>
 				<!-- End :: Training List Page -->
 			</section>

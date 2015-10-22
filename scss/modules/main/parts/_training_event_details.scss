@@ -37,6 +37,9 @@
 				}
 			}
 		}
+	}
+	.tabs__container {
+		text-align: center;
 		.tabs {
 			@include mq($until: ipad-l) {}
 		}

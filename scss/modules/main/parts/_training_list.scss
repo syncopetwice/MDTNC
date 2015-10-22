@@ -1,9 +1,89 @@
 .training-list {
-	padding: 10px 0 20px 0;
+	padding: 10px 20px 20px 0;
+	// View As
+	.view-as__container {
+		text-align: center;
+		margin-bottom: 20px;
+		.view-as__heading {
+			text-transform: uppercase;
+			color: #032e3a;
+			font-size: 14px;
+			margin-bottom: 7px;
+		}
+	}
+	// Controls
+	.controls__container {
+		border-bottom: 1px solid #eaeaea;
+		padding: 0 8px;
+		margin-bottom: 10px;
+		@include clearfix;
+		.table-tabs__container {
+			float: left;
+		}
+		.search__container {
+			@include mq($until: xwide) {
+				padding-top: 0;
+			}
+			padding-top: 15px;
+			float: right;
+			.search__input {
+				width: 145px;
+				height: 25px;
+				padding: 5px;
+				margin-right: 3px;
+				border-left: 1px solid #e4e4e4;
+				border-top: 1px solid #e6e6e6;
+				border-bottom: 1px solid #e2e2e2;
+				border-right: 1px solid #e4e4e4;
+				background:#f4f4f4;
+				font-size: 14px;
+			}
+			.search__button {
+				border: 0;
+				background:none;
+				&:focus {
+					outline: none;
+				}
+				i {
+					font-size: 17px;
+					color: #032e3a;
+				}
+			}
+		}
+		.status__container {
+			@include mq($until: xwide) {
+				padding-top: 0;
+			}
+			padding-top: 15px;
+			margin-right: 20px;
+			float: right;
+			@include clearfix;
+			.status__title {
+				float: left;
+				margin-right: 10px;
+				font-size: 14px;
+				color: #032e3a;
+			}
+			.status__link {
+				font-size: 14px;
+				text-transform: uppercase;
+				min-width: 160px;
+				color: #032e3a;
+				float: left;
+				position: relative;
+				i {
+					color: #032e3a;
+				}
+				@include dropdown(0);
+			}
+		}
+	}
 	// Table
 	.table--training-list {
 		border: 1px solid #dee1e2;
 		border-top: 0;
+		border-left: 0;
+		border-right: 0;
 		width: 100%;
 		border-collapse: collapse;
 		border-spacing: 0;
@@ -26,6 +106,12 @@
 				color: #95a5a6;
 				font-weight: normal;
 				text-align: left;
+				vertical-align: top;
+				.action__link {
+					color: #95a5a6;
+					position: relative;
+					@include dropdown;
+				}
 			}
 		}
 		tbody {
@@ -41,11 +127,26 @@
 					font-size: 14px;
 					color: #0082cd;
 				}
+				.fa {
+					font-size: 17px;
+				}
 				.fa-check-circle {
-					color: #dd2c00
+					color: #dd2c00;
+					padding-right: 8px;
+					border-right: 1px solid #dee1e2;
 				}
 				.fa-times-circle {
+					margin-left: 8px;
 					color: #27ae60;
+				}
+				.fa-pencil {
+					color: #133944;
+					padding-right: 8px;
+					border-right: 1px solid #dee1e2;
+				}
+				.fa-file-text-o {
+					color: #133944;
+					margin-left: 8px;
 				}
 			}
 		}
