@@ -2,6 +2,7 @@
 	@include clearfix;
 	position: relative;
 	overflow: hidden;
+	min-height: 290px;
 	.main__content {
 		@include mq($from: ipad-l) {
 			margin-left: 230px;
@@ -9,8 +10,11 @@
 		// Pages
 		@import 'parts/training_event_details';
 		@import 'parts/landing_page';
+		@import 'parts/training_list';
 		// Modules
 		@import 'modules/tabs';
+		@import 'modules/switch';
 		@import 'modules/panel';
+		@import 'modules/pagination';
 	}
 }

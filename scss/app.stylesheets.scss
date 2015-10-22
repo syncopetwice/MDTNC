@@ -1,10 +1,16 @@
 @charset "utf-8";
+// Reset styles
 @import '../vendor/normalize.scss/normalize';
+// SCSS plugin for responsive design
 @import '../vendor/sass-mq/mq';
+// Fixes for IE
 @import 'ie/_';
+// Custom mixins
 @import 'mixins/_';
+// Fonts
 @import '../vendor/fontawesome/scss/font-awesome';
 @import 'fonts/Effra';
+
 *,
 *:before,
 *:after {
@@ -37,6 +43,7 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	overflow: hidden;
 	min-width: 768px;
 }
+@import 'modules/modal/_';
 @import 'modules/header';
 @import 'modules/main/_';
 @import 'modules/aside';

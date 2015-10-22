@@ -33,7 +33,12 @@ var
 	});
 
 	gulp.task('scss', function () {
-		return scss(['scss/app.stylesheets.scss'], { sourcemap: true, style: 'expanded', compass: true})
+		return scss(['scss/app.stylesheets.scss'], { 
+			sourcemap: true,
+			style: 'expanded',
+			compass: true
+			})
+			.pipe(sourcemaps.init())
 			.pipe(plumber())
 			.pipe(autoprefixer({
 					browsers: ['last 10 versions', '> 1%', 'ie 8', 'ie 9', 'ie 10', 'ie 11'],
@@ -68,11 +73,12 @@ var
 		gulp.watch('production/assets/javascripts/**/*', ['archive', 'copy']);
 	});
 	gulp.task('default', gulpsync.sync([
-		// async
-		'html',
-		'scss',
+		[
+			'html',
+			'scss',
+			'connect'
+		],
 		'archive',
 		'copy',
-		'connect',
 		'watch'
 	]));

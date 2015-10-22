@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<title>Training List Page</title>
+	<link rel="stylesheet" href="assets/stylesheets/app.stylesheets.css" />
+	<!--[if lt IE 9]>
+		<script src="vendor/html5shiv/dist/html5shiv.js"></script>
+		<script src="vendor/respond/dest/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- App -->
+	<div class="app">
+		<!-- Modal -->
+		<div class="app__modal isClosed">
+			<div class="modal__decline">
+				<div class="modal__header">
+					<div class="modal__header__title">Decline Training</div>
+					<div class="modal__header__close">
+						<a href="#">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="modal__body">
+					<p>Please enter a reason for declining the following training/s:</p>
+					<ul>
+						<li>Training Test Name11</li>
+					</ul>
+					<form action="#">
+						<textarea name="" id="" cols="30" rows="8"></textarea>
+						<input type="button" value="Cancel" />
+						<input type="submit" value="Decline" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- End :: Modal -->
+		<header class="app__header">
+			<div class="header__logotype">
+				<a href="#"></a>
+			</div>
+			<div class="header__slogan">
+				<span>
+					Training Portal
+				</span> for certified product trainers
+			</div>
+			<div class="header__controls">
+				<a href="#" class="control__item">
+					<i class="fa fa-home"></i>
+				</a>
+				<a href="#" class="control__item">
+					<i class="fa fa-phone"></i>
+				</a>
+				<a href="#" class="control__item">
+					<i class="fa fa-sign-out"></i>
+				</a>
+			</div>
+		</header>
+		<main class="app__main">
+			<aside class="app__sidebar">
+				<nav class="sidebar__nav">
+					<ul class="nav__list">
+						<li class="list__item">
+							<a href="#" class="item__link">
+								<i class="fa fa-user"></i> My Profile
+							</a>
+						</li>
+						<li class="list__item list__item--active">
+							<a href="#" class="item__link">
+								<i class="fa fa-bar-chart"></i>
+								Trainings</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">
+							<i class="fa fa-folder-open-o"></i>
+							Resources</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">
+								<i class="fa fa-envelope"></i> Contact Us
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main__content">
+				<!-- Training List Page -->
+				<div class="training-list">
+					<div class="tabs">
+						<div class="tab"><a href="#" class="link">Jane Doe</a></div>
+						<div class="tab"><a href="#" class="link">ABC Diabetes Co.</a></div>
+					</div>
+					<table class="table--training-list">
+						<thead>
+							<tr>
+								<th><input type="checkbox" /></th>
+								<th>Action <i class="fa fa-angle-down"></i></th>
+								<th>Training Type</th>
+								<th>Patient Name <i class="fa fa-caret-up"></i></th>
+								<th>City</th>
+								<th>Date of Birth <i class="fa fa-caret-up"></i></th>
+								<th>Assigned by</th>
+								<th>Assugned by Email</th>
+								<th>Prescriber</th>
+								<th>Assigned Date</th>
+								<th>Note</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" /></td>
+								<td>
+									<a href="#"><i class="fa fa-check-circle"></i></a>
+									<a href="#"><i class="fa fa-times-circle"></i></a>
+								</td>
+								<td><a href="#">Pump-Start</a></td>
+								<td><a href="#">John Doe</a></td>
+								<td>Northridge</td>
+								<td>10/25/1976</td>
+								<td>Rita Ringer</td>
+								<td>rita@medtronic.com</td>
+								<td>David Bole</td>
+								<td>6/19/2015</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- End :: Training List Page -->
+			</section>
+		</main>
+
+		<footer class="app__footer">
+			<nav class="footer__nav">
+				<div class="nav__quick-links">
+					<div class="quick-links__title">
+						Quick Links
+					</div>
+					<div class="links__container">
+						<div class="links--first">
+							<a href="#" class="link__item">Healthcare Professionals</a>
+							<a href="#" class="link__item">HCP myLearning</a>
+							<a href="#" class="link__item">User Guide</a>
+						</div>
+						<div class="links--second">
+							<a href="#" class="link__item">Medtronic Diabetes</a>
+							<a href="#" class="link__item">Customer Support</a>
+							<a href="#" class="link__item">Quick Reference Guide</a>
+						</div>
+						<div class="links--third">
+							<a href="#" class="link__item">“in the know” Newsletter</a>
+							<a href="#" class="link__item">CareLink®  Personal</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav__connect-with-us">
+					<div class="connect-with-us__title">
+						Connect With Us
+					</div>
+					<div class="nav__social">
+						<a href="#" class="social__item">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-google-plus-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-twitter-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-youtube-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="icon--loop"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="footer__rights">
+				All Rights Reserved. Medtronic 2015
+			</div>
+		</footer>
+	</div>
+	<!-- End :: App -->
+	<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
