@@ -7,34 +7,74 @@
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: rgba(0,0,0,.2);
+	background:rgba(0,0,0,.4);
 	&.isClosed {
 		display: none;
 	}
 }
 
 @mixin modal--inner ($width: 600px) {
-	background: #fff;
 	position: absolute;
 	width: $width;
-	top: 35%;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 20px;
 
 	// Modal Header
 	.modal__header {
 		@include clearfix;
-		margin-bottom: 10px;
+		background: #084c85;
+		padding: 15px 25px;
+		font-size: 16px;
+		color: #fff;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
 	}
 	.modal__header__title {
 		float: left;
+		font-family: $e-bold;
 	}
 	.modal__header__close {
 		float: right;
 		a {
-			color: #000;
+			font-size: 20px;
+			color: #fff;
 		}
+	}
+	.modal__body {
+		padding: 30px;
+		background: #fff;
+	}
+	%modal-button {
+		display: inline-block;
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 16px;
+		font-family: $e-bold;
+		border-radius: 2px;
+		border-width: 1px;
+		border-style: solid;
+		text-transform: uppercase;
+		border-color: transparent;
+		min-width: 120px;
+		&:focus {
+			outline: none;
+		}
+	}
+	.cancel__button {
+		@extend %modal-button;
+		background:#fff;
+		margin-right: 10px;
+		color: #084c85;
+		border-color: #084c85;
+	}
+	.submit__button {
+		@extend %modal-button;
+		background:#fece2e;
+		color: #011f45;
+		border-color: #fece2e;
 	}
 }
 

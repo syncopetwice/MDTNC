@@ -42,6 +42,7 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	font-family: $e-regular;
 	overflow: hidden;
 	min-width: 1024px;
+	position: relative;
 }
 @import 'modules/modal/_';
 @import 'modules/header';

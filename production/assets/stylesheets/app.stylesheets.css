@@ -3220,6 +3220,7 @@ a:hover {
   font-family: "EffraRegular", Helvetica, Arial, sans-serif;
   overflow: hidden;
   min-width: 1024px;
+  position: relative;
 }
 
 .app__modal {
@@ -3231,25 +3232,34 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 .app__modal.isClosed {
   display: none;
 }
 
 .modal__decline {
-  background: #fff;
   position: absolute;
   width: 600px;
-  top: 35%;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding: 20px;
 }
 .modal__decline .modal__header {
-  margin-bottom: 10px;
+  background: #084c85;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .modal__decline .modal__header {
   *zoom: 1;
@@ -3263,12 +3273,46 @@ a:hover {
 }
 .modal__decline .modal__header__title {
   float: left;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
 }
 .modal__decline .modal__header__close {
   float: right;
 }
 .modal__decline .modal__header__close a {
-  color: #000;
+  font-size: 20px;
+  color: #fff;
+}
+.modal__decline .modal__body {
+  padding: 30px;
+  background: #fff;
+}
+.modal__decline .cancel__button, .modal__decline .submit__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 120px;
+}
+.modal__decline .cancel__button:focus, .modal__decline .submit__button:focus {
+  outline: none;
+}
+.modal__decline .cancel__button {
+  background: #fff;
+  margin-right: 10px;
+  color: #084c85;
+  border-color: #084c85;
+}
+.modal__decline .submit__button {
+  background: #fece2e;
+  color: #011f45;
+  border-color: #fece2e;
 }
 .modal__decline .modal__body textarea {
   display: block;
@@ -3277,18 +3321,27 @@ a:hover {
 }
 
 .modal__error {
-  background: #fff;
   position: absolute;
   width: 300px;
-  top: 35%;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding: 20px;
 }
 .modal__error .modal__header {
-  margin-bottom: 10px;
+  background: #084c85;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .modal__error .modal__header {
   *zoom: 1;
@@ -3302,12 +3355,46 @@ a:hover {
 }
 .modal__error .modal__header__title {
   float: left;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
 }
 .modal__error .modal__header__close {
   float: right;
 }
 .modal__error .modal__header__close a {
-  color: #000;
+  font-size: 20px;
+  color: #fff;
+}
+.modal__error .modal__body {
+  padding: 30px;
+  background: #fff;
+}
+.modal__error .cancel__button, .modal__error .submit__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 120px;
+}
+.modal__error .cancel__button:focus, .modal__error .submit__button:focus {
+  outline: none;
+}
+.modal__error .cancel__button {
+  background: #fff;
+  margin-right: 10px;
+  color: #084c85;
+  border-color: #084c85;
+}
+.modal__error .submit__button {
+  background: #fece2e;
+  color: #011f45;
+  border-color: #fece2e;
 }
 
 .app__header {
@@ -4300,9 +4387,6 @@ a:hover {
 .app__sidebar .sidebar__nav .nav__list:after {
   clear: both;
 }
-.app__sidebar .sidebar__nav .nav__list .list__item {
-  vertical-align: top;
-}
 .app__sidebar .sidebar__nav .nav__list .list__item:first-child {
   margin-top: 18px;
 }
@@ -4333,7 +4417,6 @@ a:hover {
 .app__sidebar .sidebar__nav .nav__list .list__item .item__link i {
   width: 22px;
   height: 20px;
-  overflow: hidden;
   font-size: 20px;
   margin-right: 10px;
 }
