@@ -3742,6 +3742,7 @@ a:hover {
 .app__main .main__content .training-event-details .navigation__controls {
   margin-bottom: 15px;
   position: relative;
+  text-align: center;
 }
 .app__main .main__content .training-event-details .navigation__controls {
   *zoom: 1;
@@ -4298,6 +4299,9 @@ a:hover {
 }
 .app__sidebar .sidebar__nav .nav__list:after {
   clear: both;
+}
+.app__sidebar .sidebar__nav .nav__list .list__item {
+  vertical-align: top;
 }
 .app__sidebar .sidebar__nav .nav__list .list__item:first-child {
   margin-top: 18px;

@@ -19,9 +19,7 @@
 			}
 			@include clearfix;
 			.list__item {
-				// @include mq($until: xwide) {
-				// 	float: left;
-				// }
+				vertical-align: top;
 				&:first-child {
 					margin-top: 18px;
 					@include mq($until: xwide) {
