@@ -3656,6 +3656,65 @@ a:hover {
   font-size: 14px;
   color: #0082cd;
 }
+.app__main .main__content .pagination {
+  display: inline-block;
+  font-size: 14px;
+  color: #2c3e50;
+}
+.app__main .main__content .pagination .pagination__title {
+  margin-right: 8px;
+}
+.app__main .main__content .pagination .fa-angle-left {
+  margin-right: 8px;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .pagination .fa-angle-left {
+    margin-right: 20px;
+  }
+}
+.app__main .main__content .pagination .fa-angle-right {
+  margin-left: 8px;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .pagination .fa-angle-right {
+    margin-left: 20px;
+  }
+}
+.app__main .main__content .pagination ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.app__main .main__content .pagination ul li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 3px;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .pagination ul li {
+    margin-right: 20px;
+  }
+}
+.app__main .main__content .pagination ul li:last-child {
+  margin-right: 0;
+}
+.app__main .main__content .pagination ul li a {
+  background: transparent;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  padding: 8px 15px;
+  color: #899da3;
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e3e4e4;
+  border-bottom: 1px solid #e5e9eb;
+  border-left: 1px solid #eaeaea;
+}
+.app__main .main__content .pagination ul li a.active {
+  background: #ebf5fb;
+  color: #032e3a;
+}
 .app__main .main__content .training-event-details {
   margin: 25px 10px 90px 10px;
 }
@@ -4098,6 +4157,7 @@ a:hover {
   cursor: pointer;
 }
 .app__main .main__content .training-list .table--training-list {
+  margin-bottom: 20px;
   border: 1px solid #dee1e2;
   border-top: 0;
   border-left: 0;
@@ -4191,6 +4251,9 @@ a:hover {
 .app__main .main__content .training-list .table--training-list tbody td .fa-file-text-o {
   color: #133944;
   margin-left: 8px;
+}
+.app__main .main__content .training-list .pagination__container {
+  text-align: center;
 }
 
 .app__sidebar {

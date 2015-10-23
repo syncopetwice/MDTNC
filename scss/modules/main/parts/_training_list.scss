@@ -80,6 +80,7 @@
 	}
 	// Table
 	.table--training-list {
+		margin-bottom: 20px;
 		border: 1px solid #dee1e2;
 		border-top: 0;
 		border-left: 0;
@@ -150,5 +151,9 @@
 				}
 			}
 		}
+	}
+	// Pagination
+	.pagination__container {
+		text-align: center;
 	}
 }
