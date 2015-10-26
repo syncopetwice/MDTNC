@@ -3286,7 +3286,12 @@ a:hover {
   padding: 30px;
   background: #fff;
 }
-.modal__decline .cancel__button, .modal__decline .submit__button {
+.modal__decline .modal__body textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.modal__decline .modal__body .cancel__button {
   display: inline-block;
   padding: 10px 20px;
   text-align: center;
@@ -3298,26 +3303,42 @@ a:hover {
   border-style: solid;
   text-transform: uppercase;
   border-color: transparent;
-  min-width: 120px;
-}
-.modal__decline .cancel__button:focus, .modal__decline .submit__button:focus {
-  outline: none;
-}
-.modal__decline .cancel__button {
+  min-width: 105px;
   background: #fff;
-  margin-right: 10px;
   color: #084c85;
   border-color: #084c85;
+  margin-right: 10px;
 }
-.modal__decline .submit__button {
-  background: #fece2e;
-  color: #011f45;
-  border-color: #fece2e;
+.modal__decline .modal__body .cancel__button:focus {
+  outline: none;
 }
-.modal__decline .modal__body textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
+.modal__decline .modal__body .cancel__button:hover {
+  background: #084c85;
+  color: #fff;
+}
+.modal__decline .modal__body .decline__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #e2541d;
+  border-color: #e2541d;
+  color: #fff;
+}
+.modal__decline .modal__body .decline__button:focus {
+  outline: none;
+}
+.modal__decline .modal__body .decline__button:hover {
+  background: #ed8057;
+  border-color: #ed8057;
 }
 
 .modal__error {
@@ -3368,7 +3389,7 @@ a:hover {
   padding: 30px;
   background: #fff;
 }
-.modal__error .cancel__button, .modal__error .submit__button {
+.modal__error .cancel__button {
   display: inline-block;
   padding: 10px 20px;
   text-align: center;
@@ -3380,21 +3401,18 @@ a:hover {
   border-style: solid;
   text-transform: uppercase;
   border-color: transparent;
-  min-width: 120px;
-}
-.modal__error .cancel__button:focus, .modal__error .submit__button:focus {
-  outline: none;
-}
-.modal__error .cancel__button {
+  min-width: 105px;
   background: #fff;
-  margin-right: 10px;
   color: #084c85;
   border-color: #084c85;
+  margin-top: 10px;
 }
-.modal__error .submit__button {
-  background: #fece2e;
-  color: #011f45;
-  border-color: #fece2e;
+.modal__error .cancel__button:focus {
+  outline: none;
+}
+.modal__error .cancel__button:hover {
+  background: #084c85;
+  color: #fff;
 }
 
 .app__header {
@@ -3571,6 +3589,7 @@ a:hover {
   font-size: 14px;
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
   text-align: center;
+  text-transform: uppercase;
   padding: 15px 35px;
   color: #bcc3c4;
 }
@@ -3582,13 +3601,14 @@ a:hover {
   }
 }
 .app__main .main__content .table-tabs .table-tab.table-tab--active {
-  -webkit-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
   background: #084c85;
   color: #fff;
 }
 .app__main .main__content .table-tabs .table-tab:hover {
   cursor: pointer;
+}
+.app__main .main__content .table-tabs .table-tab:first-child {
+  margin-left: 8px;
 }
 .app__main .main__content .view-as {
   display: inline-block;
@@ -3944,6 +3964,8 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  padding-bottom: 70px;
 }
 @media (max-width: 64.0525em) {
   .app__main .main__content .landing .section__top .exceptional {
@@ -3974,6 +3996,16 @@ a:hover {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.app__main .main__content .landing .section__top .exceptional footer {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+.app__main .main__content .landing .section__top .exceptional footer a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
 }
 .app__main .main__content .landing .section__middle {
   display: -webkit-box;
@@ -4039,10 +4071,12 @@ a:hover {
 .app__main .main__content .landing .section__middle article ul li:last-child {
   border-bottom: none;
 }
-.app__main .main__content .landing .section__middle article footer a {
+.app__main .main__content .landing .section__middle article footer {
   position: absolute;
   left: 30px;
   bottom: 30px;
+}
+.app__main .main__content .landing .section__middle article footer a {
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
@@ -4137,7 +4171,6 @@ a:hover {
 }
 .app__main .main__content .training-list .controls__container {
   border-bottom: 1px solid #eaeaea;
-  padding: 0 8px;
   margin-bottom: 10px;
 }
 .app__main .main__content .training-list .controls__container {
@@ -4342,6 +4375,99 @@ a:hover {
 }
 .app__main .main__content .training-list .pagination__container {
   text-align: center;
+}
+.app__main .main__content .patient-details {
+  padding: 30px 0;
+}
+.app__main .main__content .patient-details .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
+}
+.app__main .main__content .patient-details .sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #032e3a;
+  margin-bottom: 10px;
+}
+.app__main .main__content .patient-details .sub-heading span {
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+}
+.app__main .main__content .patient-details .navigation__controls {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.app__main .main__content .patient-details .navigation__controls .back__link {
+  font-size: 14px;
+  color: #0082cd;
+  display: block;
+}
+.app__main .main__content .patient-details .navigation__controls .back__link i {
+  margin-right: 5px;
+}
+.app__main .main__content .patient-details .table-tabs__container {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+.app__main .main__content .patient-details .panel {
+  margin: 0px 8px;
+}
+.app__main .main__content .patient-details .panel .panel__controls {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.app__main .main__content .patient-details .panel .panel__controls .decline__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #e2541d;
+  border-color: #e2541d;
+  color: #fff;
+  margin-right: 10px;
+}
+.app__main .main__content .patient-details .panel .panel__controls .decline__button:focus {
+  outline: none;
+}
+.app__main .main__content .patient-details .panel .panel__controls .decline__button:hover {
+  background: #ed8057;
+  border-color: #ed8057;
+}
+.app__main .main__content .patient-details .panel .panel__controls .accept__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fecd2e;
+  border-color: #fecd2e;
+  color: #084c85;
+}
+.app__main .main__content .patient-details .panel .panel__controls .accept__button:focus {
+  outline: none;
+}
+.app__main .main__content .patient-details .panel .panel__controls .accept__button:hover {
+  background: #ffecaf;
+  border-color: #ffecaf;
 }
 
 .app__sidebar {

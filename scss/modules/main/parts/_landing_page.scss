@@ -75,6 +75,8 @@ $c-light-blue: #74c5e6;
 			}
 			background: $c-l-dark-blue;
 			display: flex;
+			position: relative;
+			padding-bottom: 70px;
 			section.exceptional__text__container {
 				margin-right: 15px;
 				header {
@@ -104,6 +106,16 @@ $c-light-blue: #74c5e6;
 					@include img-responsive;
 				}
 			}
+			footer {
+				position: absolute;
+				left: 30px;
+				bottom: 30px;
+				a {
+					font-size: 14px;
+					text-transform: uppercase;
+					color: #fff;
+				}
+			}
 		}
 	}
 	// Section Middle
@@ -119,10 +131,10 @@ $c-light-blue: #74c5e6;
 			}
 			@include lists(#52a5d4);
 			footer {
+				position: absolute;
+				left: 30px;
+				bottom: 30px;
 				a {
-					position: absolute;
-					left: 30px;
-					bottom: 30px;
 					font-size: 14px;
 					text-transform: uppercase;
 					color: #fff;

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<title>Patient Details</title>
+	<link rel="stylesheet" href="assets/stylesheets/app.stylesheets.css" />
+	<!--[if lt IE 9]>
+		<script src="vendor/html5shiv/dist/html5shiv.js"></script>
+		<script src="vendor/respond/dest/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- App -->
+	<div class="app">
+		<header class="app__header">
+			<div class="header__logotype">
+				<a href="#"></a>
+			</div>
+			<div class="header__slogan">
+				<span>
+					Training Portal
+				</span> for certified product trainers
+			</div>
+			<div class="header__controls">
+				<a href="#" class="control__item">
+					<i class="fa fa-home"></i>
+				</a>
+				<a href="#" class="control__item">
+					Log Out
+				</a>
+			</div>
+		</header>
+		<main class="app__main">
+			<aside class="app__sidebar"></aside>
+			<section class="main__content">
+				<!-- Patient Details -->
+				<div class="patient-details">
+					<div class="heading">
+						Patient Details
+					</div>
+					<div class="sub-heading">
+						Trainer Account: <span>Sarah Reed</span>
+					</div>
+					<!-- Navigation Controls -->
+					<div class="navigation__controls">
+						<a href="#" class="back__link">
+							<i class="fa fa-angle-left"></i>
+							Back to Training
+						</a>
+					</div>
+					<!-- End :: Navigation Controls -->
+					<!-- Table Tabs -->
+					<div class="table-tabs__container">
+						<div class="table-tabs">
+							<div class="table-tab table-tab--active">Patient Information</div>
+							<div class="table-tab">Prescriber Info</div>
+							<div class="table-tab">Devices Owned</div>
+							<div class="table-tab">Startright Note</div>
+						</div>
+					</div>
+					<!-- Table Tabs -->
+					<!-- Panel -->
+					<div class="content__row">
+						<div class="panel">
+							<div class="panel__header">
+								<div class="header__title">
+									Patient Contact Information
+								</div>
+							</div>
+							<div class="panel__body panel__body--details">
+								<table class="panel__table panel__table--details">
+									<tbody>
+										<tr>
+											<td>
+												Training Type: <a href="#">Pump Start</a>
+											</td>
+											<td>
+												Scheduled Training Date
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Status: New / Accepted
+											</td>
+											<td>
+												
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Name: Garry Reid
+											</td>
+											<td>
+												DOB: 01/13/1982
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Street: 123 Main Street
+											</td>
+											<td>
+												Phone: 2938-4939-203
+											</td>
+										</tr>
+										<tr>
+											<td>
+												City: Los Angeles
+											</td>
+											<td>
+												Alternate Phone: 2938-2932-329
+											</td>
+										</tr>
+										<tr>
+											<td>
+												State: CA
+											</td>
+											<td>
+												Email: garry@gmail.com
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Zip: 91234
+											</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="panel__controls">
+									<input type="button" value="Decline Training" class="decline__button" />
+									<input type="button" value="Accept Training" class="accept__button" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End :: Panel -->
+				</div>
+				<!-- End :: Patient Details -->
+			</section>
+		</main>
+
+		<footer class="app__footer">
+			<nav class="footer__nav">
+				<div class="nav__quick-links">
+					<div class="quick-links__title">
+						Quick Links
+					</div>
+					<div class="links__container">
+						<div class="links--first">
+							<a href="#" class="link__item">Healthcare Professionals</a>
+							<a href="#" class="link__item">HCP myLearning</a>
+							<a href="#" class="link__item">User Guide</a>
+						</div>
+						<div class="links--second">
+							<a href="#" class="link__item">Medtronic Diabetes</a>
+							<a href="#" class="link__item">Customer Support</a>
+							<a href="#" class="link__item">Quick Reference Guide</a>
+						</div>
+						<div class="links--third">
+							<a href="#" class="link__item">“in the know” Newsletter</a>
+							<a href="#" class="link__item">CareLink®  Personal</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav__connect-with-us">
+					<div class="connect-with-us__title">
+						Connect With Us
+					</div>
+					<div class="nav__social">
+						<a href="#" class="social__item">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-google-plus-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-twitter-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-youtube-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="icon--loop"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="footer__rights">
+				All Rights Reserved. Medtronic 2015
+			</div>
+		</footer>
+	</div>
+	<!-- End :: App -->
+	<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+</body>
+</html>

@@ -33,6 +33,8 @@ $light-blue: #0082cd;
 $light-yellow: #fecd2e;
 $light-gray: #888b8d;
 $dark-gray: #6f7274;
+
+
 // Fonts
 $e-regular: "EffraRegular", Helvetica, Arial, sans-serif;
 $e-medium: "EffraMedium", Helvetica, Arial, sans-serif;
@@ -44,6 +46,7 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	min-width: 1024px;
 	position: relative;
 }
+@import 'modules/buttons';
 @import 'modules/modal/_';
 @import 'modules/header';
 @import 'modules/main/_';
