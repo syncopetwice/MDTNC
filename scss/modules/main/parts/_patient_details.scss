@@ -34,8 +34,10 @@
 		margin-bottom: 10px;
 		border-bottom: 1px solid #eaeaea;
 	}
+	.tabs__container {
+		margin: 0 8px;
+	}
 	.panel {
-		margin: 0px 8px;
 		.panel__controls {
 			margin-bottom: 25px;
 			text-align: center;

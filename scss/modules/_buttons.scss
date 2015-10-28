@@ -66,3 +66,13 @@ $accept-bg-hover: #ffecaf;
 		}
 	}
 }
+@mixin login-button(){
+	.login__button {
+		@include button;
+		padding: 5px 35px;
+		background: #fece2e;
+		border-color: #fece2e;
+		color: #011f45;
+		@content;
+	}
+}

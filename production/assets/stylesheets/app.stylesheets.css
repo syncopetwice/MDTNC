@@ -3219,7 +3219,7 @@ a:hover {
 .app {
   font-family: "EffraRegular", Helvetica, Arial, sans-serif;
   overflow: hidden;
-  min-width: 1024px;
+  min-width: 768px;
   position: relative;
 }
 
@@ -4156,6 +4156,104 @@ a:hover {
 .app__main .main__content .landing .section__bottom article header {
   color: #1386c7;
 }
+.app__main .main__content .login .banner {
+  height: 500px;
+  background: transparent url("../images/UI/login_page/login_bg.png") left top no-repeat;
+  background-size: 100% auto;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .login .banner {
+    height: 380px;
+  }
+}
+.app__main .main__content .login .login-form {
+  background: #011f45;
+  padding: 70px 0;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .login .login-form {
+    padding: 50px 0;
+  }
+}
+.app__main .main__content .login .login-form .login-form__inner {
+  width: 730px;
+  margin: 0 auto;
+}
+.app__main .main__content .login .login-form .login-form__inner .login-form__heading {
+  color: #fff;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.app__main .main__content .login .form {
+  *zoom: 1;
+}
+.app__main .main__content .login .form:before, .app__main .main__content .login .form:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .login .form:after {
+  clear: both;
+}
+.app__main .main__content .login .form .form__control {
+  float: left;
+  margin-right: 15px;
+}
+.app__main .main__content .login .form .form__control:last-child {
+  margin-right: 0;
+}
+.app__main .main__content .login .form .form__control .title {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.app__main .main__content .login .form .form__control .title .required {
+  color: #ff0000;
+}
+.app__main .main__content .login .form .form__control input:focus {
+  outline: none;
+}
+.app__main .main__content .login .form .form__control .input__text {
+  width: 280px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0 4px;
+  height: 30px;
+  border: 1px solid #b0b3b3;
+}
+.app__main .main__content .login .form .form__control .forgot {
+  margin-top: 20px;
+}
+.app__main .main__content .login .form .form__control .forgot a {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #fff;
+}
+.app__main .main__content .login .form .form__control .login__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  padding: 5px 35px;
+  background: #fece2e;
+  border-color: #fece2e;
+  color: #011f45;
+  margin-top: 29px;
+}
+.app__main .main__content .login .form .form__control .login__button:focus {
+  outline: none;
+}
 .app__main .main__content .training-list {
   padding: 10px 20px 20px 0;
 }
@@ -4413,8 +4511,8 @@ a:hover {
   margin-bottom: 10px;
   border-bottom: 1px solid #eaeaea;
 }
-.app__main .main__content .patient-details .panel {
-  margin: 0px 8px;
+.app__main .main__content .patient-details .tabs__container {
+  margin: 0 8px;
 }
 .app__main .main__content .patient-details .panel .panel__controls {
   margin-bottom: 25px;
