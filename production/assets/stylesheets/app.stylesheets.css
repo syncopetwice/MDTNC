@@ -3490,7 +3490,7 @@ a:hover {
 }
 @media (max-width: 64.0525em) {
   .app__header .header__controls {
-    padding-top: 0;
+    padding-top: 1px;
   }
 }
 .app__header .header__controls {
@@ -3510,11 +3510,13 @@ a:hover {
   display: block;
   text-decoration: none;
   font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 64.0525em) {
   .app__header .header__controls .control__item {
-    margin-right: 33px;
+    font-size: 14px;
   }
 }
 .app__header .header__controls .control__item:focus, .app__header .header__controls .control__item:active {
@@ -4158,7 +4160,7 @@ a:hover {
 }
 .app__main .main__content .login .banner {
   height: 500px;
-  background: transparent url("../images/UI/login_page/login_bg.png") left top no-repeat;
+  background: transparent url("../images/UI/login_page/login_bg.jpg") left top no-repeat;
   background-size: 100% auto;
 }
 @media (max-width: 64.0525em) {
@@ -4408,6 +4410,10 @@ a:hover {
 }
 .app__main .main__content .training-list .table--training-list thead th .fa.fa-angle-down {
   color: #032e3a;
+}
+.app__main .main__content .training-list .table--training-list thead th a {
+  font-size: 14px;
+  color: #95a5a6;
 }
 .app__main .main__content .training-list .table--training-list thead th .action__link {
   color: #95a5a6;

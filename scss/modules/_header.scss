@@ -51,14 +51,14 @@
 	}
 	.header__controls {
 		@include mq($until: ipad-l) {
-			padding-top: 0;
+			padding-top: 1px;
 		}
 		float: right;
 		padding-top: 6px;
 		@include clearfix;
 		.control__item {
 			@include mq($until: ipad-l) {
-				margin-right: 33px;
+				font-size: 14px;
 			}
 			float: left;
 			color: #fff;
@@ -66,6 +66,8 @@
 			display: block;
 			text-decoration: none;
 			font-size: 20px;
+			line-height: 18px;
+			text-transform: uppercase;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, .5);
 			&:focus,
 			&:active {
@@ -78,6 +80,7 @@
 			&:last-child {
 				margin-right: 0;
 			}
+
 		}
 	}
 }
