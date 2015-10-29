@@ -3598,8 +3598,6 @@ a:hover {
 @media (max-width: 87.49em) {
   .app__main .main__content .table-tabs .table-tab {
     padding: 5px 10px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
   }
 }
 .app__main .main__content .table-tabs .table-tab.table-tab--active {
@@ -3650,13 +3648,12 @@ a:hover {
 .app__main .main__content .view-as .view:last-child {
   border-right: 0;
 }
+.app__main .main__content .panel .italic {
+  font-style: italic;
+}
 .app__main .main__content .panel .panel__header {
   border: 1px solid #dee1e2;
   border-bottom: 0;
-  -webkit-border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  border-top-right-radius: 6px;
   padding: 14px 18px;
   background: #084c85;
 }
@@ -3823,6 +3820,117 @@ a:hover {
 .app__main .main__content .pagination ul li a.active {
   background: #ebf5fb;
   color: #032e3a;
+}
+.app__main .main__content .accept-training-event {
+  padding: 30px 3px;
+}
+.app__main .main__content .accept-training-event .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
+}
+.app__main .main__content .accept-training-event .sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #032e3a;
+  margin-bottom: 10px;
+}
+.app__main .main__content .accept-training-event .sub-heading span {
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+}
+.app__main .main__content .accept-training-event .navigation__controls {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.app__main .main__content .accept-training-event .navigation__controls .back__link {
+  font-size: 14px;
+  color: #0082cd;
+  display: block;
+}
+.app__main .main__content .accept-training-event .navigation__controls .back__link i {
+  margin-right: 5px;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .cancel__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fff;
+  color: #084c85;
+  border-color: #084c85;
+  margin-right: 10px;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .cancel__button:focus {
+  outline: none;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .cancel__button:hover {
+  background: #084c85;
+  color: #fff;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .decline__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #e2541d;
+  border-color: #e2541d;
+  color: #fff;
+  margin-right: 10px;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .decline__button:focus {
+  outline: none;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .decline__button:hover {
+  background: #ed8057;
+  border-color: #ed8057;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .accept__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fecd2e;
+  border-color: #fecd2e;
+  color: #084c85;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .accept__button:focus {
+  outline: none;
+}
+.app__main .main__content .accept-training-event .panel .panel__controls .accept__button:hover {
+  background: #ffecaf;
+  border-color: #ffecaf;
 }
 .app__main .main__content .training-event-details {
   margin: 25px 10px 90px 10px;
@@ -4519,6 +4627,9 @@ a:hover {
 }
 .app__main .main__content .patient-details .tabs__container {
   margin: 0 8px;
+}
+.app__main .main__content .patient-details .tabs__container .tab {
+  display: none;
 }
 .app__main .main__content .patient-details .panel .panel__controls {
   margin-bottom: 25px;

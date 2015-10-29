@@ -36,6 +36,9 @@
 	}
 	.tabs__container {
 		margin: 0 8px;
+		.tab {
+			display: none;
+		}
 	}
 	.panel {
 		.panel__controls {

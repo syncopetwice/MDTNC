@@ -77,18 +77,26 @@
 					<!-- End :: Navigation Controls -->
 					<!-- Table Tabs -->
 					<div class="table-tabs__container">
-						<div class="table-tabs">
-							<li class="table-tab table-tab--active">Patient Information</li>
-							<li class="table-tab">Prescriber Info</li>
-							<li class="table-tab">Devices Owned</li>
-							<li class="table-tab">Startright Note</li>
+						<div class="table-tabs" id="js-tab-nav">
+							<a class="table-tab table-tab--active" href="#js-tab-1">
+								Patient Information
+							</a>
+							<a class="table-tab" href="#js-tab-2">
+								Prescriber Info
+							</a>
+							<a class="table-tab" href="#js-tab-3">
+								Devices Owned
+							</a>
+							<a class="table-tab" href="#js-tab-4">
+								Startright Note
+							</a>
 						</div>
 					</div>
 					<!-- End :: Table Tabs -->
 					<!-- Tabs -->
 					<div class="tabs__container">
 						<!-- Tab 1 : Patient Information-->
-							<div class="tab">
+							<div class="tab" id="js-tab-1">
 								<!-- Panel -->
 								<div class="panel">
 									<div class="panel__header">
@@ -165,7 +173,7 @@
 							</div>
 						<!-- End :: Tab 1 -->
 						<!-- Tab 2 : Prescriber Info-->
-							<div class="tab">
+							<div class="tab" id="js-tab-2">
 								<!-- Panel -->
 								<div class="panel">
 									<div class="panel__header">
@@ -220,7 +228,7 @@
 							</div>
 						<!-- End :: Tab 2 -->
 						<!-- Tab 3 : Devices Owned-->
-							<div class="tab">
+							<div class="tab" id="js-tab-3">
 								<!-- Panel -->
 								<div class="panel">
 									<div class="panel__header">
@@ -256,7 +264,7 @@
 							</div>
 						<!-- End :: Tab 3 -->
 						<!-- Tab 4 : StartRight Notes-->
-							<div class="tab">
+							<div class="tab" id="js-tab-4">
 								<!-- Panel -->
 								<div class="panel">
 									<div class="panel__header">
@@ -354,5 +362,24 @@
 	</div>
 	<!-- End :: App -->
 	<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+			// Tabs
+			var navs = $('#js-tab-nav').find('a');
+			navs.on('click', function(event){
+				event.preventDefault();
+				$(this)
+					.addClass('table-tab--active')
+					.siblings()
+					.removeClass('table-tab--active');
+				$(this.hash)
+					.show()
+					.siblings()
+					.hide();
+			})
+				.first()
+				.click();
+		});
+	</script>
 </body>
 </html>
