@@ -32,6 +32,7 @@ $accept-bg-hover: #ffecaf;
 		color: $dark-blue;
 		border-color: $dark-blue;
 		@content;
+		&:focus,
 		&:hover {
 			background: $cancel-bg-hover;
 			color: $cancel-bg;
@@ -46,6 +47,7 @@ $accept-bg-hover: #ffecaf;
 		border-color: $decline-bg;
 		color: #fff;
 		@content;
+		&:focus,
 		&:hover {
 			background: $decline-bg-hover;
 			border-color: $decline-bg-hover;
@@ -60,6 +62,7 @@ $accept-bg-hover: #ffecaf;
 		border-color: $accept-bg;
 		color: $dark-blue;
 		@content;
+		&:focus,
 		&:hover {
 			background: $accept-bg-hover;
 			border-color: $accept-bg-hover;
@@ -74,5 +77,10 @@ $accept-bg-hover: #ffecaf;
 		border-color: #fece2e;
 		color: #011f45;
 		@content;
+		&:focus,
+		&:hover {
+			background: $accept-bg-hover;
+			border-color: $accept-bg-hover;
+		}
 	}
 }

@@ -1,5 +1,5 @@
 .accept-training-event {
-	padding: 30px 3px;
+	padding: 30px 8px;
 	.heading {
 		text-align: center;
 		text-transform: uppercase;
@@ -37,6 +37,80 @@
 			@include cancel-button () {margin-right: 10px};
 			@include decline-button () {margin-right: 10px;};
 			@include accept-button;
+		}
+	}
+	input {
+		width: 188px;
+	}
+	input,
+	textarea {
+		-webkit-appearance: none;
+		box-shadow: none;
+		border-radius: 2px;
+		border: 1px solid #e1e1e1;
+		padding: 5px;
+		font-size: 14px;
+		color: #133944;
+	}
+	.label {
+		margin-right: 10px;
+	}
+	// Dates
+	.dates {
+		margin: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		.scheduled {
+			flex: 0 0 auto;
+		}
+		.completion {
+			flex: 0 0 auto;
+		}
+	}
+	// Add New Note
+	.add-new-note {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		.label {
+			text-align: right;
+			padding-top: 35px;
+			flex: 0 0 170px;
+			margin-right: 14px;
+		}
+		textarea {
+			height: 100px;
+			width: 100%;
+			display: block;
+			resize: vertical;
+			flex: 1 1 auto;
+		}
+	}
+	// Notes
+	.notes {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		.label {
+			text-align: right;
+			padding-top: 35px;
+			flex: 0 0 170px;
+			margin-right: 14px;
+		}
+		.note {
+			padding: 10px 20px;
+			border: 1px solid #e1e1e1;
+			border-radius: 2px;
+			background:#ebecf0;
+			flex: 1 1 auto;
+			font-size: 14px;
+			color: #133944;
+			.added-by {
+				font-family: $e-bold;
+			}
+			p {
+				margin-top: 0;
+			}
 		}
 	}
 }
