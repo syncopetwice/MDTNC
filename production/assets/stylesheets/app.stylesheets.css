@@ -4685,6 +4685,59 @@ a:hover {
   text-align: center;
   margin-bottom: 20px;
 }
+.app__main .main__content .training-list .buttons__container {
+  margin: 20px 0;
+  text-align: center;
+}
+.app__main .main__content .training-list .buttons__container .decline__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #e2541d;
+  border-color: #e2541d;
+  color: #fff;
+  margin-right: 10px;
+}
+.app__main .main__content .training-list .buttons__container .decline__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-list .buttons__container .decline__button:focus, .app__main .main__content .training-list .buttons__container .decline__button:hover {
+  background: #ed8057;
+  border-color: #ed8057;
+}
+.app__main .main__content .training-list .buttons__container .accept__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fecd2e;
+  border-color: #fecd2e;
+  color: #084c85;
+}
+.app__main .main__content .training-list .buttons__container .accept__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-list .buttons__container .accept__button:focus, .app__main .main__content .training-list .buttons__container .accept__button:hover {
+  background: #ffecaf;
+  border-color: #ffecaf;
+}
 .app__main .main__content .patient-details {
   padding: 30px 0;
 }

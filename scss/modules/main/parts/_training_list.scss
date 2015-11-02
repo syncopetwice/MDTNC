@@ -142,4 +142,13 @@
 		text-align: center;
 		margin-bottom: 20px;
 	}
+	// Buttons
+	.buttons__container {
+		margin: 20px 0;
+		text-align: center;
+		@include decline-button () {
+			margin-right: 10px;
+		};
+		@include accept-button;
+	}
 }
