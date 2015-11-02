@@ -3751,8 +3751,11 @@ a:hover {
 .app__main .main__content .panel .panel__body .panel__table thead th .fa.fa-angle-down {
   color: #032e3a;
 }
+.app__main .main__content .panel .panel__body .panel__table thead th a {
+  color: #0082cd;
+}
 .app__main .main__content .panel .panel__body .panel__table tbody td {
-  font-size: 16px;
+  font-size: 14px;
   color: #133944;
   border-top: 1px solid #dee1e2;
   padding: 15px;
@@ -3763,7 +3766,7 @@ a:hover {
   }
 }
 .app__main .main__content .panel .panel__body .panel__table tbody td a {
-  font-size: 16px;
+  font-size: 14px;
   color: #0082cd;
 }
 .app__main .main__content .pagination {
@@ -4483,7 +4486,7 @@ a:hover {
   border-color: #ffecaf;
 }
 .app__main .main__content .training-list {
-  padding: 10px 20px 20px 0;
+  margin-top: 15px;
 }
 .app__main .main__content .training-list .view-as__container {
   text-align: center;
@@ -4582,6 +4585,7 @@ a:hover {
   color: #032e3a;
 }
 .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown {
+  display: block;
   background: #fff;
   position: absolute;
   top: 120%;
@@ -4590,6 +4594,9 @@ a:hover {
   min-width: 75px;
   border: 1px solid #e1e3e4;
   padding: 0px 1px;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link .dropdown.isClosed {
+  display: none;
 }
 .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item {
   font-size: 14px;
@@ -4603,49 +4610,53 @@ a:hover {
 .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:hover, .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:focus {
   cursor: pointer;
 }
-.app__main .main__content .training-list .table--training-list {
+.app__main .main__content .training-list .panel {
+  margin: 0 10px;
   margin-bottom: 20px;
-  border: 1px solid #dee1e2;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+}
+.app__main .main__content .training-list .panel .panel__table .highlighted {
+  background: #eaecef;
+  padding: 0;
+}
+.app__main .main__content .training-list .panel .group-trainings-table--inner {
   width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
 }
-@media (max-width: 64.0525em) {
-  .app__main .main__content .training-list .table--training-list {
-    font-size: 13px;
-  }
+.app__main .main__content .training-list .panel .group-trainings-table--inner tbody tr:first-child td {
+  border-top: 2px solid #fff;
 }
-.app__main .main__content .training-list .table--training-list thead th {
-  padding: 15px;
-  font-size: 14px;
-  color: #95a5a6;
-  font-weight: normal;
-  text-align: left;
-  vertical-align: top;
+.app__main .main__content .training-list .panel .group-trainings-table--inner tbody tr:last-child td {
+  border-bottom: 2px solid #fff;
 }
-@media (max-width: 64.0525em) {
-  .app__main .main__content .training-list .table--training-list thead th {
-    padding: 5px;
-  }
+.app__main .main__content .training-list .panel .group-trainings-table--inner tbody tr td {
+  border-top: 0;
 }
-.app__main .main__content .training-list .table--training-list thead th .fa {
+.app__main .main__content .training-list .fa {
+  font-size: 17px;
+}
+.app__main .main__content .training-list .fa-check-circle {
+  color: #dd2c00;
+  padding-right: 8px;
+  border-right: 1px solid #dee1e2;
+}
+.app__main .main__content .training-list .fa-times-circle {
+  margin-left: 8px;
+  color: #27ae60;
+}
+.app__main .main__content .training-list .fa-pencil {
+  color: #133944;
+  padding-right: 8px;
+  border-right: 1px solid #dee1e2;
+}
+.app__main .main__content .training-list .fa-file-text-o {
+  color: #133944;
   margin-left: 8px;
 }
-.app__main .main__content .training-list .table--training-list thead th .fa.fa-angle-down {
-  color: #032e3a;
-}
-.app__main .main__content .training-list .table--training-list thead th a {
-  font-size: 14px;
-  color: #95a5a6;
-}
-.app__main .main__content .training-list .table--training-list thead th .action__link {
+.app__main .main__content .training-list .action__link {
   color: #95a5a6;
   position: relative;
 }
-.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown {
+.app__main .main__content .training-list .action__link .dropdown {
+  display: block;
   background: #fff;
   position: absolute;
   top: 120%;
@@ -4655,56 +4666,24 @@ a:hover {
   border: 1px solid #e1e3e4;
   padding: 0px 1px;
 }
-.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item {
+.app__main .main__content .training-list .action__link .dropdown.isClosed {
+  display: none;
+}
+.app__main .main__content .training-list .action__link .dropdown .dropdown__item {
   font-size: 14px;
   color: #95a5a6;
   padding: 5px;
   border-bottom: 1px solid #e3e5e6;
 }
-.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item:last-child {
+.app__main .main__content .training-list .action__link .dropdown .dropdown__item:last-child {
   border-bottom: none;
 }
-.app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item:hover, .app__main .main__content .training-list .table--training-list thead th .action__link .dropdown .dropdown__item:focus {
+.app__main .main__content .training-list .action__link .dropdown .dropdown__item:hover, .app__main .main__content .training-list .action__link .dropdown .dropdown__item:focus {
   cursor: pointer;
-}
-.app__main .main__content .training-list .table--training-list tbody td {
-  font-size: 14px;
-  color: #133944;
-  border-top: 1px solid #dee1e2;
-  padding: 15px;
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .training-list .table--training-list tbody td {
-    padding: 5px;
-  }
-}
-.app__main .main__content .training-list .table--training-list tbody td a {
-  font-size: 14px;
-  color: #0082cd;
-}
-.app__main .main__content .training-list .table--training-list tbody td .fa {
-  font-size: 17px;
-}
-.app__main .main__content .training-list .table--training-list tbody td .fa-check-circle {
-  color: #dd2c00;
-  padding-right: 8px;
-  border-right: 1px solid #dee1e2;
-}
-.app__main .main__content .training-list .table--training-list tbody td .fa-times-circle {
-  margin-left: 8px;
-  color: #27ae60;
-}
-.app__main .main__content .training-list .table--training-list tbody td .fa-pencil {
-  color: #133944;
-  padding-right: 8px;
-  border-right: 1px solid #dee1e2;
-}
-.app__main .main__content .training-list .table--training-list tbody td .fa-file-text-o {
-  color: #133944;
-  margin-left: 8px;
 }
 .app__main .main__content .training-list .pagination__container {
   text-align: center;
+  margin-bottom: 20px;
 }
 .app__main .main__content .patient-details {
   padding: 30px 0;
@@ -4801,6 +4780,17 @@ a:hover {
 .app__main .main__content .patient-details .panel .panel__controls .accept__button:focus, .app__main .main__content .patient-details .panel .panel__controls .accept__button:hover {
   background: #ffecaf;
   border-color: #ffecaf;
+}
+.app__main .main__content .resources {
+  padding: 30px 8px;
+}
+.app__main .main__content .resources .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
 }
 
 .app__sidebar {

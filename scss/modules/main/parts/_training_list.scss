@@ -1,5 +1,5 @@
 .training-list {
-	padding: 10px 20px 20px 0;
+	margin-top: 15px;
 	// View As
 	.view-as__container {
 		text-align: center;
@@ -77,86 +77,69 @@
 			}
 		}
 	}
-	// Table
-	.table--training-list {
+	// Panel
+	.panel {
+		margin: 0 10px;
 		margin-bottom: 20px;
-		border: 1px solid #dee1e2;
-		border-top: 0;
-		border-left: 0;
-		border-right: 0;
-		width: 100%;
-		border-collapse: collapse;
-		border-spacing: 0;
-		@include mq($until: ipad-l) {
-			font-size: 13px;
-		}
-		thead {
-			th {
-				@include mq($until: ipad-l) {
-					padding: 5px;
-				}
-				.fa {
-					margin-left: 8px;
-				}
-				.fa.fa-angle-down {
-					color: #032e3a;
-				}
-				padding: 15px;
-				font-size: 14px;
-				color: #95a5a6;
-				font-weight: normal;
-				text-align: left;
-				vertical-align: top;
-				a {
-					font-size: 14px;
-					color: #95a5a6;
-				}
-				.action__link {
-					color: #95a5a6;
-					position: relative;
-					@include dropdown;
-				}
+		// Group Trainings Inner Table
+		.panel__table {
+			.highlighted {
+				background:#eaecef;
+				padding: 0;
 			}
 		}
-		tbody {
-			td {
-				@include mq($until: ipad-l) {
-					padding: 5px;
-				}
-				font-size: 14px;
-				color: #133944;
-				border-top: 1px solid #dee1e2;
-				padding: 15px;
-				a {
-					font-size: 14px;
-					color: #0082cd;
-				}
-				.fa {
-					font-size: 17px;
-				}
-				.fa-check-circle {
-					color: #dd2c00;
-					padding-right: 8px;
-					border-right: 1px solid #dee1e2;
-				}
-				.fa-times-circle {
-					margin-left: 8px;
-					color: #27ae60;
-				}
-				.fa-pencil {
-					color: #133944;
-					padding-right: 8px;
-					border-right: 1px solid #dee1e2;
-				}
-				.fa-file-text-o {
-					color: #133944;
-					margin-left: 8px;
+		.group-trainings-table--inner {
+			width: 100%;
+			tbody {
+				tr {
+					&:first-child {
+						td {
+							border-top: 2px solid #fff;
+						}
+					}
+					&:last-child {
+						td {
+							border-bottom: 2px solid #fff;
+						}
+					}
+					td {
+						border-top: 0;
+					}
 				}
 			}
 		}
 	}
+	// Font Awesome Icons
+	.fa {
+		font-size: 17px;
+	}
+	.fa-check-circle {
+		color: #dd2c00;
+		padding-right: 8px;
+		border-right: 1px solid #dee1e2;
+	}
+	.fa-times-circle {
+		margin-left: 8px;
+		color: #27ae60;
+	}
+	.fa-pencil {
+		color: #133944;
+		padding-right: 8px;
+		border-right: 1px solid #dee1e2;
+	}
+	.fa-file-text-o {
+		color: #133944;
+		margin-left: 8px;
+	}
+	// Action Dropdown Menu
+	.action__link {
+		color: #95a5a6;
+		position: relative;
+		@include dropdown;
+	}
 	// Pagination
 	.pagination__container {
 		text-align: center;
+		margin-bottom: 20px;
 	}
 }

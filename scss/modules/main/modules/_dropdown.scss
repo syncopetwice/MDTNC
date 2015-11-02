@@ -1,5 +1,6 @@
 @mixin dropdown($left: 0){
 	.dropdown {
+		display: block;
 		background: #fff;
 		position: absolute;
 		top: 120%;
@@ -8,6 +9,9 @@
 		min-width: 75px;
 		border: 1px solid #e1e3e4;
 		padding: 0px 1px;
+		&.isClosed {
+			display: none;
+		}
 		.dropdown__item {
 			font-size: 14px;
 			color: #95a5a6;

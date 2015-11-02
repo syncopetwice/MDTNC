@@ -83,6 +83,9 @@
 					color: #95a5a6;
 					font-weight: normal;
 					text-align: left;
+					a {
+						color: #0082cd;
+					}
 				}
 			}
 			tbody {
@@ -90,12 +93,12 @@
 					@include mq($until: ipad-l) {
 						padding: 5px;
 					}
-					font-size: 16px;
+					font-size: 14px;
 					color: #133944;
 					border-top: 1px solid #dee1e2;
 					padding: 15px;
 					a {
-						font-size: 16px;
+						font-size: 14px;
 						color: #0082cd;
 					}
 				}
