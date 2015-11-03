@@ -4985,6 +4985,126 @@ a:hover {
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
 }
+.app__main .main__content .submit-payment {
+  padding: 30px 10px;
+}
+.app__main .main__content .submit-payment .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
+}
+.app__main .main__content .submit-payment .sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #032e3a;
+  margin-bottom: 10px;
+}
+.app__main .main__content .submit-payment .sub-heading span {
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+}
+.app__main .main__content .submit-payment .navigation__controls {
+  margin-bottom: 20px;
+}
+.app__main .main__content .submit-payment .navigation__controls .back__link {
+  font-size: 14px;
+  color: #0082cd;
+  display: block;
+}
+.app__main .main__content .submit-payment .navigation__controls .back__link i {
+  margin-right: 5px;
+}
+.app__main .main__content .submit-payment .panel__table {
+  margin-bottom: 20px;
+}
+.app__main .main__content .submit-payment .panel__table textarea,
+.app__main .main__content .submit-payment .panel__table select,
+.app__main .main__content .submit-payment .panel__table input {
+  min-width: 325px;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.app__main .main__content .submit-payment .panel__table textarea {
+  resize: vertical;
+  min-height: 95px;
+}
+.app__main .main__content .submit-payment .panel__table td.no-padding {
+  padding: 0;
+  width: 50%;
+}
+.app__main .main__content .submit-payment .panel__table tr {
+  vertical-align: top;
+}
+.app__main .main__content .submit-payment .panel__table .label {
+  text-align: right;
+  display: inline-block;
+  margin-top: 2px;
+  width: 170px;
+}
+.app__main .main__content .submit-payment .panel__table table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.app__main .main__content .submit-payment .buttons__container {
+  margin: 20px 0;
+  text-align: center;
+}
+.app__main .main__content .submit-payment .buttons__container .cancel__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fff;
+  color: #084c85;
+  border-color: #084c85;
+  margin-right: 10px;
+}
+.app__main .main__content .submit-payment .buttons__container .cancel__button:focus {
+  outline: none;
+}
+.app__main .main__content .submit-payment .buttons__container .cancel__button:focus, .app__main .main__content .submit-payment .buttons__container .cancel__button:hover {
+  background: #084c85;
+  color: #fff;
+}
+.app__main .main__content .submit-payment .buttons__container .accept__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fecd2e;
+  border-color: #fecd2e;
+  color: #084c85;
+}
+.app__main .main__content .submit-payment .buttons__container .accept__button:focus {
+  outline: none;
+}
+.app__main .main__content .submit-payment .buttons__container .accept__button:focus, .app__main .main__content .submit-payment .buttons__container .accept__button:hover {
+  background: #ffecaf;
+  border-color: #ffecaf;
+}
 
 .app__sidebar {
   background: #888b8d;

@@ -1,0 +1,74 @@
+.submit-payment {
+	padding: 30px 10px;
+	.heading {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-bottom: 5px;
+		font-family: $e-bold;
+		color: #032e3a;
+	}
+	.sub-heading {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 13px;
+		color: #032e3a;
+		margin-bottom: 10px;
+		span {
+			font-family: $e-bold;
+		}
+	}
+	.navigation__controls {
+		margin-bottom: 20px;
+		.back__link {
+			font-size: 14px;
+			color: $light-blue;
+			display: block;
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+	// Table
+	.panel__table {
+		margin-bottom: 20px;
+		textarea,
+		select,
+		input {
+			min-width: 325px;
+			display: block;
+			width: 100%;
+			padding: 5px;
+			border: 1px solid #e1e1e1;
+			border-radius: 2px;
+		}
+		textarea {
+			resize: vertical;
+			min-height: 95px;
+		}
+		td.no-padding {
+			padding: 0;
+			width: 50%;
+		}
+		tr {
+			vertical-align: top;
+		}
+		.label {
+			text-align: right;
+			display: inline-block;
+			margin-top: 2px;
+			width: 170px;
+		}
+		table {
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+	}
+	// Buttons
+	.buttons__container {
+		margin: 20px 0;
+		text-align: center;
+		@include cancel-button () { margin-right: 10px;}
+		@include accept-button ();
+	}
+}

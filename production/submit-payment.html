@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<title>Submit Payment</title>
+	<link rel="stylesheet" href="assets/stylesheets/app.stylesheets.css" />
+	<!--[if lt IE 9]>
+		<script src="vendor/html5shiv/dist/html5shiv.js"></script>
+		<script src="vendor/respond/dest/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- App -->
+	<div class="app">
+		<header class="app__header">
+			<div class="header__logotype">
+				<a href="#"></a>
+			</div>
+			<div class="header__slogan">
+				<span>
+					Training Portal
+				</span> for certified product trainers
+			</div>
+			<div class="header__controls">
+				<a href="#" class="control__item">
+					<i class="fa fa-home"></i>
+				</a>
+				<a href="#" class="control__item">
+					Log Out
+				</a>
+			</div>
+		</header>
+		<main class="app__main">
+			<aside class="app__sidebar">
+				<nav class="sidebar__nav">
+					<ul class="nav__list">
+						<li class="list__item">
+							<a href="#" class="item__link">
+								<i class="fa fa-user"></i> My Profile
+							</a>
+						</li>
+						<li class="list__item list__item--active">
+							<a href="#" class="item__link">
+								<i class="fa fa-bar-chart"></i>
+								Trainings</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">
+							<i class="fa fa-folder-open-o"></i>
+							Resources</a>
+						</li>
+						<li class="list__item">
+							<a href="#" class="item__link">
+								<i class="fa fa-envelope"></i> Contact Us
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main__content">
+				<!-- Submit Payment -->
+				<div class="submit-payment">
+					<div class="heading">Submit payment detail</div>
+					<div class="sub-heading">Training account: <span>Sarah Reed</span></div>
+					<!-- Navigation Controls -->
+					<div class="navigation__controls">
+						<a href="#" class="back__link">
+							<i class="fa fa-angle-left"></i>
+							Back to Training
+						</a>
+					</div>
+					<!-- End :: Navigation Controls -->
+					<!-- Panel -->
+					<div class="panel">
+						<div class="panel__header">
+							<div class="header__title">
+								Details
+							</div>
+						</div>
+						<div class="panel__body panel__body--details">
+							<table class="panel__table panel__table--details">
+								<tbody>
+									<tr>
+										<td>
+											Patients Name(s): <a href="#">Mary Tyler</a>, <a href="#">Mike Woodson</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Training Type: <a href="#">Pump Start</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Training Date: 02/24/2015
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Rate: $50/ppt
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="panel__table panel__table--details">
+								<tbody>
+									<tr>
+										<td class="no-padding">
+											<table>
+												<tbody>
+													<tr>
+														<td><span class="label">Number of Hours</span></td>
+														<td>
+															<select name="" id="">
+																<option value="">15 mins</option>
+																<option value="">20 mins</option>
+																<option value="">25 mins</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td><span class="label">Number of Miles</span></td>
+														<td><input type="text" /></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td class="no-padding">
+											<table>
+												<tbody>
+													<tr>
+														<td><span class="label">Reason for Additional Hours</span></td>
+														<td><textarea name="" id=""></textarea></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="panel__table panel__table--details">
+								<tbody>
+									<tr>
+										<td class="no-padding">
+											<table>
+												<tbody>
+													<tr>
+														<td><span class="label">Start Address</span></td>
+														<td><input type="text" /></td>
+													</tr>
+													<tr>
+														<td><span class="label">City</span></td>
+														<td><input type="text" /></td>
+													</tr>
+													<tr>
+														<td><span class="label">State</span></td>
+														<td><input type="text" /></td>
+													</tr>
+													<tr>
+														<td><span class="label">Zip</span></td>
+														<td><input type="text" /></td>
+													</tr>
+													<tr>
+														<td><span class="label">Notes</span></td>
+														<td><textarea name="" id=""></textarea></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td class="no-padding">
+											<table>
+												<tbody>
+													<tr>
+														<td><span class="label">End Address</span></td>
+														<td><input type="text" /></td>
+													</tr>
+													<tr>
+														<td><span class="label">City</span></td>
+														<td><input type="text" /></td>
+													</tr>
+													<tr>
+														<td><span class="label">State</span></td>
+														<td><input type="text" /></td>
+													</tr>
+													<tr>
+														<td><span class="label">Zip</span></td>
+														<td><input type="text" /></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="buttons__container">
+								<input type="button" value="Cancel" class="cancel__button" />
+								<input type="button" value="Submit" class="accept__button" />
+							</div>
+						</div>
+					</div>
+					<!-- End :: Panel -->
+				</div>
+				<!-- End :: Submit Payment -->
+			</section>
+		</main>
+
+		<footer class="app__footer">
+			<nav class="footer__nav">
+				<div class="nav__quick-links">
+					<div class="quick-links__title">
+						Quick Links
+					</div>
+					<div class="links__container">
+						<div class="links--first">
+							<a href="#" class="link__item">Healthcare Professionals</a>
+							<a href="#" class="link__item">HCP myLearning</a>
+							<a href="#" class="link__item">User Guide</a>
+						</div>
+						<div class="links--second">
+							<a href="#" class="link__item">Medtronic Diabetes</a>
+							<a href="#" class="link__item">Customer Support</a>
+							<a href="#" class="link__item">Quick Reference Guide</a>
+						</div>
+						<div class="links--third">
+							<a href="#" class="link__item">“in the know” Newsletter</a>
+							<a href="#" class="link__item">CareLink®  Personal</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav__connect-with-us">
+					<div class="connect-with-us__title">
+						Connect With Us
+					</div>
+					<div class="nav__social">
+						<a href="#" class="social__item">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-google-plus-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-twitter-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-instagram"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="fa fa-youtube-square"></i>
+						</a>
+						<a href="#" class="social__item">
+							<i class="icon--loop"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="footer__rights">
+				All Rights Reserved. Medtronic 2015
+			</div>
+		</footer>
+	</div>
+	<!-- End :: App -->
+	<script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
