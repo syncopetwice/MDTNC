@@ -17,6 +17,13 @@
 	.content__row {
 		margin-bottom: 10px;
 	}
+	.buttons__container {
+		margin: 20px 0;
+		text-align: center;
+		@include cancel-button() { margin-right: 10px;}
+		@include decline-button () { margin-right: 10px;}
+		@include accept-button () { margin-right: 10px;}
+	}
 	.navigation__controls {
 		@include clearfix;
 		margin-bottom: 15px;

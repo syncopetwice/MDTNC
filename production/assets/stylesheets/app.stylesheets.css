@@ -3785,6 +3785,9 @@ a:hover {
     margin-right: 20px;
   }
 }
+.app__main .main__content .pagination .fa-angle-left:hover {
+  cursor: pointer;
+}
 .app__main .main__content .pagination .fa-angle-right {
   margin-left: 8px;
 }
@@ -3792,6 +3795,9 @@ a:hover {
   .app__main .main__content .pagination .fa-angle-right {
     margin-left: 20px;
   }
+}
+.app__main .main__content .pagination .fa-angle-right:hover {
+  cursor: pointer;
 }
 .app__main .main__content .pagination ul {
   display: inline-block;
@@ -4072,6 +4078,85 @@ a:hover {
 }
 .app__main .main__content .training-event-details .content__row {
   margin-bottom: 10px;
+}
+.app__main .main__content .training-event-details .buttons__container {
+  margin: 20px 0;
+  text-align: center;
+}
+.app__main .main__content .training-event-details .buttons__container .cancel__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fff;
+  color: #084c85;
+  border-color: #084c85;
+  margin-right: 10px;
+}
+.app__main .main__content .training-event-details .buttons__container .cancel__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-event-details .buttons__container .cancel__button:focus, .app__main .main__content .training-event-details .buttons__container .cancel__button:hover {
+  background: #084c85;
+  color: #fff;
+}
+.app__main .main__content .training-event-details .buttons__container .decline__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #e2541d;
+  border-color: #e2541d;
+  color: #fff;
+  margin-right: 10px;
+}
+.app__main .main__content .training-event-details .buttons__container .decline__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-event-details .buttons__container .decline__button:focus, .app__main .main__content .training-event-details .buttons__container .decline__button:hover {
+  background: #ed8057;
+  border-color: #ed8057;
+}
+.app__main .main__content .training-event-details .buttons__container .accept__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fecd2e;
+  border-color: #fecd2e;
+  color: #084c85;
+  margin-right: 10px;
+}
+.app__main .main__content .training-event-details .buttons__container .accept__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-event-details .buttons__container .accept__button:focus, .app__main .main__content .training-event-details .buttons__container .accept__button:hover {
+  background: #ffecaf;
+  border-color: #ffecaf;
 }
 .app__main .main__content .training-event-details .navigation__controls {
   margin-bottom: 15px;
@@ -4516,6 +4601,7 @@ a:hover {
   float: left;
 }
 .app__main .main__content .training-list .controls__container .search__container {
+  margin-right: 5px;
   padding-top: 15px;
   float: right;
 }
@@ -4569,17 +4655,24 @@ a:hover {
 }
 .app__main .main__content .training-list .controls__container .status__container .status__title {
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
   font-size: 14px;
+  text-transform: uppercase;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
 }
 .app__main .main__content .training-list .controls__container .status__container .status__link {
+  border: 0;
+  margin-top: 2px;
   font-size: 14px;
   text-transform: uppercase;
   min-width: 160px;
   color: #032e3a;
   float: left;
   position: relative;
+}
+.app__main .main__content .training-list .controls__container .status__container .status__link:focus {
+  outline: none;
 }
 .app__main .main__content .training-list .controls__container .status__container .status__link i {
   color: #032e3a;
@@ -4634,13 +4727,13 @@ a:hover {
   font-size: 17px;
 }
 .app__main .main__content .training-list .fa-check-circle {
-  color: #dd2c00;
+  color: #27ae60;
   padding-right: 8px;
   border-right: 1px solid #dee1e2;
 }
 .app__main .main__content .training-list .fa-times-circle {
   margin-left: 8px;
-  color: #27ae60;
+  color: #dd2c00;
 }
 .app__main .main__content .training-list .fa-pencil {
   color: #133944;
@@ -4689,6 +4782,52 @@ a:hover {
   margin: 20px 0;
   text-align: center;
 }
+.app__main .main__content .training-list .buttons__container .print__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #1aaade;
+  color: #fff;
+  margin-right: 10px;
+}
+.app__main .main__content .training-list .buttons__container .print__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-list .buttons__container .print__button:focus, .app__main .main__content .training-list .buttons__container .print__button:hover {
+  background: #2bb5e6;
+}
+.app__main .main__content .training-list .buttons__container .group__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #75c5e6;
+  color: #fff;
+  margin-right: 10px;
+}
+.app__main .main__content .training-list .buttons__container .group__button:focus {
+  outline: none;
+}
+.app__main .main__content .training-list .buttons__container .group__button:focus, .app__main .main__content .training-list .buttons__container .group__button:hover {
+  background: #8bceea;
+}
 .app__main .main__content .training-list .buttons__container .decline__button {
   display: inline-block;
   padding: 10px 20px;
@@ -4730,6 +4869,7 @@ a:hover {
   background: #fecd2e;
   border-color: #fecd2e;
   color: #084c85;
+  margin-right: 10px;
 }
 .app__main .main__content .training-list .buttons__container .accept__button:focus {
   outline: none;

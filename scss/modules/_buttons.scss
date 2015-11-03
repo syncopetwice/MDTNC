@@ -84,3 +84,29 @@ $accept-bg-hover: #ffecaf;
 		}
 	}
 }
+
+@mixin print-button() {
+	.print__button {
+		@include button;
+		background: #1aaade;
+		color: #fff;
+		@content;
+		&:focus,
+		&:hover {
+			background: lighten(#1aaade, 5%);
+		}
+	}
+}
+
+@mixin group-button() {
+	.group__button {
+		@include button;
+		background: #75c5e6;
+		color: #fff;
+		@content;
+		&:focus,
+		&:hover {
+			background: lighten(#75c5e6, 5%);
+		}
+	}
+}

@@ -23,6 +23,7 @@
 			@include mq($until: xwide) {
 				padding-top: 0;
 			}
+			margin-right: 5px;
 			padding-top: 15px;
 			float: right;
 			.search__input {
@@ -59,17 +60,24 @@
 			@include clearfix;
 			.status__title {
 				float: left;
-				margin-right: 10px;
+				margin-right: 5px;
 				font-size: 14px;
+				text-transform: uppercase;
+				font-family: $e-bold;
 				color: #032e3a;
 			}
 			.status__link {
+				border: 0;
+				margin-top: 2px;
 				font-size: 14px;
 				text-transform: uppercase;
 				min-width: 160px;
 				color: #032e3a;
 				float: left;
 				position: relative;
+				&:focus {
+					outline: none;
+				}
 				i {
 					color: #032e3a;
 				}
@@ -114,13 +122,13 @@
 		font-size: 17px;
 	}
 	.fa-check-circle {
-		color: #dd2c00;
+		color: #27ae60;
 		padding-right: 8px;
 		border-right: 1px solid #dee1e2;
 	}
 	.fa-times-circle {
 		margin-left: 8px;
-		color: #27ae60;
+		color: #dd2c00;
 	}
 	.fa-pencil {
 		color: #133944;
@@ -146,9 +154,9 @@
 	.buttons__container {
 		margin: 20px 0;
 		text-align: center;
-		@include decline-button () {
-			margin-right: 10px;
-		};
-		@include accept-button;
+		@include print-button () { margin-right: 10px;}
+		@include group-button () { margin-right: 10px;}
+		@include decline-button () { margin-right: 10px;}
+		@include accept-button () { margin-right: 10px;}
 	}
 }
