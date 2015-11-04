@@ -29,39 +29,114 @@
 			}
 		}
 	}
-	// Table
-	.panel__table {
-		margin-bottom: 20px;
-		textarea,
-		select,
-		input {
-			min-width: 325px;
-			display: block;
+	// Panel
+	.panel {
+		font-size: 14px;
+		color: #133944;
+		a {
+			font-size: 14px;
+			color: #0082cd;
+		}
+		@include mq($until: ipad-l) {
 			width: 100%;
+		}
+		.panel__body {
+			padding: 30px;
+		}
+	}
+	.details {
+		margin-bottom: 40px;
+	}
+	// Columns
+	.columns {
+		margin-bottom: 20px;
+		@include clearfix;
+		width: 950px;
+		@include mq($until: lwide) {
+			width: 95%;
+		}
+		.column {
+			.row {
+				@include clearfix;
+				margin-bottom: 20px;
+				&.row--address {
+					margin-bottom: 5px;
+				}
+				.el-left {
+					text-align: right;
+					padding-top: 2px;
+					padding-right: 10px;
+					width: percentage(200/440);
+					float: left;
+				}
+				.el-right {
+					width: percentage(240/440);
+					float: left;
+				}
+			}
+		}
+		.column--left {
+			@extend .column;
+			float: left;
+			width: 45%;
+			margin-right: 5%;
+		}
+		.column--right {
+			@extend .column;
+			float: right;
+			width: 45%;
+		}
+		select,
+		textarea,
+		input {
+			display: block;
 			padding: 5px;
+			width: 100%;
 			border: 1px solid #e1e1e1;
 			border-radius: 2px;
+			&:focus {
+				outline: none;
+			}
 		}
 		textarea {
-			resize: vertical;
+			resize: none;
 			min-height: 95px;
 		}
-		td.no-padding {
-			padding: 0;
-			width: 50%;
+		.input--zip {
+			width: 95px;
 		}
-		tr {
-			vertical-align: top;
+		.input--number {
+			width: 110px;
 		}
-		.label {
+	}
+	// Notes
+	.notes {
+		width: 950px;
+		@include mq($until: lwide) {
+			width: 95%;
+		}
+		@include clearfix;
+		.el-left {
+			float: left;
+			width: 20.4%;
 			text-align: right;
-			display: inline-block;
-			margin-top: 2px;
-			width: 170px;
+			padding-right: 10px;
 		}
-		table {
-			border-spacing: 0;
-			border-collapse: collapse;
+		.el-right {
+			width: 79.6%;
+			float: right;
+		}
+		textarea {
+			display: block;
+			padding: 5px;
+			width: 100%;
+			border: 1px solid #e1e1e1;
+			border-radius: 2px;
+			resize: none;
+			min-height: 95px;
+			&:focus {
+				outline: none;
+			}
 		}
 	}
 	// Buttons

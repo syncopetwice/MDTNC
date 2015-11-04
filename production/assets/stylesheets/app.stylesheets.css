@@ -5017,40 +5017,145 @@ a:hover {
 .app__main .main__content .submit-payment .navigation__controls .back__link i {
   margin-right: 5px;
 }
-.app__main .main__content .submit-payment .panel__table {
+.app__main .main__content .submit-payment .panel {
+  font-size: 14px;
+  color: #133944;
+}
+.app__main .main__content .submit-payment .panel a {
+  font-size: 14px;
+  color: #0082cd;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .submit-payment .panel {
+    width: 100%;
+  }
+}
+.app__main .main__content .submit-payment .panel .panel__body {
+  padding: 30px;
+}
+.app__main .main__content .submit-payment .details {
+  margin-bottom: 40px;
+}
+.app__main .main__content .submit-payment .columns {
+  margin-bottom: 20px;
+  width: 950px;
+}
+.app__main .main__content .submit-payment .columns {
+  *zoom: 1;
+}
+.app__main .main__content .submit-payment .columns:before, .app__main .main__content .submit-payment .columns:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .submit-payment .columns:after {
+  clear: both;
+}
+@media (max-width: 64.99em) {
+  .app__main .main__content .submit-payment .columns {
+    width: 95%;
+  }
+}
+.app__main .main__content .submit-payment .columns .column .row, .app__main .main__content .submit-payment .columns .column--left .row, .app__main .main__content .submit-payment .columns .column--right .row {
   margin-bottom: 20px;
 }
-.app__main .main__content .submit-payment .panel__table textarea,
-.app__main .main__content .submit-payment .panel__table select,
-.app__main .main__content .submit-payment .panel__table input {
-  min-width: 325px;
+.app__main .main__content .submit-payment .columns .column .row, .app__main .main__content .submit-payment .columns .column--left .row, .app__main .main__content .submit-payment .columns .column--right .row {
+  *zoom: 1;
+}
+.app__main .main__content .submit-payment .columns .column .row:before, .app__main .main__content .submit-payment .columns .column--left .row:before, .app__main .main__content .submit-payment .columns .column--right .row:before, .app__main .main__content .submit-payment .columns .column .row:after, .app__main .main__content .submit-payment .columns .column--left .row:after, .app__main .main__content .submit-payment .columns .column--right .row:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .submit-payment .columns .column .row:after, .app__main .main__content .submit-payment .columns .column--left .row:after, .app__main .main__content .submit-payment .columns .column--right .row:after {
+  clear: both;
+}
+.app__main .main__content .submit-payment .columns .column .row.row--address, .app__main .main__content .submit-payment .columns .column--left .row.row--address, .app__main .main__content .submit-payment .columns .column--right .row.row--address {
+  margin-bottom: 5px;
+}
+.app__main .main__content .submit-payment .columns .column .row .el-left, .app__main .main__content .submit-payment .columns .column--left .row .el-left, .app__main .main__content .submit-payment .columns .column--right .row .el-left {
+  text-align: right;
+  padding-top: 2px;
+  padding-right: 10px;
+  width: 45.45455%;
+  float: left;
+}
+.app__main .main__content .submit-payment .columns .column .row .el-right, .app__main .main__content .submit-payment .columns .column--left .row .el-right, .app__main .main__content .submit-payment .columns .column--right .row .el-right {
+  width: 54.54545%;
+  float: left;
+}
+.app__main .main__content .submit-payment .columns .column--left {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+.app__main .main__content .submit-payment .columns .column--right {
+  float: right;
+  width: 45%;
+}
+.app__main .main__content .submit-payment .columns select,
+.app__main .main__content .submit-payment .columns textarea,
+.app__main .main__content .submit-payment .columns input {
   display: block;
-  width: 100%;
   padding: 5px;
+  width: 100%;
   border: 1px solid #e1e1e1;
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.app__main .main__content .submit-payment .panel__table textarea {
-  resize: vertical;
+.app__main .main__content .submit-payment .columns select:focus,
+.app__main .main__content .submit-payment .columns textarea:focus,
+.app__main .main__content .submit-payment .columns input:focus {
+  outline: none;
+}
+.app__main .main__content .submit-payment .columns textarea {
+  resize: none;
   min-height: 95px;
 }
-.app__main .main__content .submit-payment .panel__table td.no-padding {
-  padding: 0;
-  width: 50%;
+.app__main .main__content .submit-payment .columns .input--zip {
+  width: 95px;
 }
-.app__main .main__content .submit-payment .panel__table tr {
-  vertical-align: top;
+.app__main .main__content .submit-payment .columns .input--number {
+  width: 110px;
 }
-.app__main .main__content .submit-payment .panel__table .label {
+.app__main .main__content .submit-payment .notes {
+  width: 950px;
+}
+@media (max-width: 64.99em) {
+  .app__main .main__content .submit-payment .notes {
+    width: 95%;
+  }
+}
+.app__main .main__content .submit-payment .notes {
+  *zoom: 1;
+}
+.app__main .main__content .submit-payment .notes:before, .app__main .main__content .submit-payment .notes:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .submit-payment .notes:after {
+  clear: both;
+}
+.app__main .main__content .submit-payment .notes .el-left {
+  float: left;
+  width: 20.4%;
   text-align: right;
-  display: inline-block;
-  margin-top: 2px;
-  width: 170px;
+  padding-right: 10px;
 }
-.app__main .main__content .submit-payment .panel__table table {
-  border-spacing: 0;
-  border-collapse: collapse;
+.app__main .main__content .submit-payment .notes .el-right {
+  width: 79.6%;
+  float: right;
+}
+.app__main .main__content .submit-payment .notes textarea {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  resize: none;
+  min-height: 95px;
+}
+.app__main .main__content .submit-payment .notes textarea:focus {
+  outline: none;
 }
 .app__main .main__content .submit-payment .buttons__container {
   margin: 20px 0;

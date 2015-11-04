@@ -79,124 +79,103 @@
 							</div>
 						</div>
 						<div class="panel__body panel__body--details">
-							<table class="panel__table panel__table--details">
-								<tbody>
-									<tr>
-										<td>
-											Patients Name(s): <a href="#">Mary Tyler</a>, <a href="#">Mike Woodson</a>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Training Type: <a href="#">Pump Start</a>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Training Date: 02/24/2015
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Rate: $50/ppt
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<table class="panel__table panel__table--details">
-								<tbody>
-									<tr>
-										<td class="no-padding">
-											<table>
-												<tbody>
-													<tr>
-														<td><span class="label">Number of Hours</span></td>
-														<td>
-															<select name="" id="">
-																<option value="">15 mins</option>
-																<option value="">20 mins</option>
-																<option value="">25 mins</option>
-															</select>
-														</td>
-													</tr>
-													<tr>
-														<td><span class="label">Number of Miles</span></td>
-														<td><input type="text" /></td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-										<td class="no-padding">
-											<table>
-												<tbody>
-													<tr>
-														<td><span class="label">Reason for Additional Hours</span></td>
-														<td><textarea name="" id=""></textarea></td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<table class="panel__table panel__table--details">
-								<tbody>
-									<tr>
-										<td class="no-padding">
-											<table>
-												<tbody>
-													<tr>
-														<td><span class="label">Start Address</span></td>
-														<td><input type="text" /></td>
-													</tr>
-													<tr>
-														<td><span class="label">City</span></td>
-														<td><input type="text" /></td>
-													</tr>
-													<tr>
-														<td><span class="label">State</span></td>
-														<td><input type="text" /></td>
-													</tr>
-													<tr>
-														<td><span class="label">Zip</span></td>
-														<td><input type="text" /></td>
-													</tr>
-													<tr>
-														<td><span class="label">Notes</span></td>
-														<td><textarea name="" id=""></textarea></td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-										<td class="no-padding">
-											<table>
-												<tbody>
-													<tr>
-														<td><span class="label">End Address</span></td>
-														<td><input type="text" /></td>
-													</tr>
-													<tr>
-														<td><span class="label">City</span></td>
-														<td><input type="text" /></td>
-													</tr>
-													<tr>
-														<td><span class="label">State</span></td>
-														<td><input type="text" /></td>
-													</tr>
-													<tr>
-														<td><span class="label">Zip</span></td>
-														<td><input type="text" /></td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="details">
+								<div>Patients Name(s): <a href="#">Mary Tyler</a>, <a href="#">Mike Woodson</a></div>
+								<div>Training Type: <a href="#">Pump Start</a></div>
+								<div>Training Date: 02/24/2015</div>
+								<div>Rate: $50/ppt</div>
+							</div>
+							
+
+							<!-- Columns -->
+							<div class="columns">
+
+								<!-- Column :: Left -->
+								<div class="column--left">
+									<div class="row">
+										<div class="el-left">Number of Hours</div>
+										<div class="el-right"><select name="" id="" class="input--number"><option value="">15 mins</option><option value="">20 mins</option><option value="">25 mins</option></select></div>
+									</div>
+									<div class="row row--numbers">
+										<div class="el-left">Total Round Trip Miles</div>
+										<div class="el-right"><input type="text" / class="input--number"></div>
+									</div>
+								</div>
+								<!-- End :: Column :: Left -->
+
+								<!-- Column :: Right -->
+								<div class="column--right">
+									<div class="row">
+										<div class="el-left">Reason for Additional Hours</div>
+										<div class="el-right"><textarea name="" id=""></textarea></div>
+									</div>
+								</div>
+								<!-- End :: Column :: Right -->
+							</div>
+
+							<!-- End :: Columns -->
+
+
+
+							<!-- Columns -->
+							<div class="columns">
+								<!-- Column :: Left -->
+								<div class="column--left">
+									<div class="row row--address">
+										<div class="el-left">Start Address</div>
+										<div class="el-right"><input type="text" /></div>
+									</div>
+									<div class="row row--address">
+										<div class="el-left">City</div>
+										<div class="el-right"><input type="text" /></div>
+									</div>
+									<div class="row row--address">
+										<div class="el-left">State</div>
+										<div class="el-right"><input type="text" /></div>
+									</div>
+									<div class="row">
+										<div class="el-left">Zip</div>
+										<div class="el-right"><input type="text" class="input--zip" /></div>
+									</div>
+								</div>
+								<!-- End :: Column :: Left -->
+
+								<!-- Column :: Right -->
+								<div class="column--right">
+									<div class="row row--address">
+										<div class="el-left">End Address</div>
+										<div class="el-right"><input type="text" /></div>
+									</div>
+									<div class="row row--address">
+										<div class="el-left">City</div>
+										<div class="el-right"><input type="text" /></div>
+									</div>
+									<div class="row row--address">
+										<div class="el-left">State</div>
+										<div class="el-right"><input type="text" /></div>
+									</div>
+									<div class="row">
+										<div class="el-left">Zip</div>
+										<div class="el-right"><input type="text" class="input--zip" /></div>
+									</div>
+								</div>
+								<!-- End :: Column :: Right -->
+							</div>
+							<!-- End :: Columns -->
+							<div class="notes">
+								<div class="el-left">
+									Notes
+								</div>
+								<div class="el-right">
+									<textarea name="" id=""></textarea>
+								</div>
+							</div>
+							<!-- Buttons -->
 							<div class="buttons__container">
 								<input type="button" value="Cancel" class="cancel__button" />
 								<input type="button" value="Submit" class="accept__button" />
 							</div>
+							<!-- End :: Buttons -->
 						</div>
 					</div>
 					<!-- End :: Panel -->
