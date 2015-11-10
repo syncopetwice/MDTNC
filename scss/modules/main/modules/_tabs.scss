@@ -1,6 +1,6 @@
 .tabs {
 	list-style-type: none;
-	background: $light-blue;
+	// background: $light-blue;
 	padding: 0px 8px;
 	border-radius: 4px;
 	display: inline-block;
@@ -11,12 +11,12 @@
 		&:after {
 			content: '';
 			position: absolute;
-			top: 12px;
+			top: 14px;
 			right: 0;
 			display: block;
 			width: 1px;
-			height: 16px;
-			background: #fff;
+			height: 12px;
+			background: $light-blue;
 		}
 		&:last-child {
 			&:after {
@@ -26,8 +26,8 @@
 		.link {
 			padding: 8px 16px;
 			display: block;
-			color: #fff;
-			font-size: 16px;
+			color: $light-blue;
+			font-size: 14px;
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		}
 	}

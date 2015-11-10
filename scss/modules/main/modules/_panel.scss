@@ -1,4 +1,10 @@
 .panel {
+	&.panel--sm {
+		max-width: 900px;
+		@include mq($until: ipad-l) {
+			max-width: 100%;
+		}
+	}
 	.italic {
 		font-style: italic;
 	}
@@ -78,13 +84,13 @@
 					.fa.fa-angle-down {
 						color: #032e3a;
 					}
-					padding: 15px;
+					padding: 15px 20px;
 					font-size: 14px;
 					color: #95a5a6;
 					font-weight: normal;
 					text-align: left;
 					a {
-						color: #0082cd;
+						color: #95a5a6;
 					}
 				}
 			}
@@ -96,7 +102,7 @@
 					font-size: 14px;
 					color: #133944;
 					border-top: 1px solid #dee1e2;
-					padding: 15px;
+					padding: 20px;
 					a {
 						font-size: 14px;
 						color: #0082cd;

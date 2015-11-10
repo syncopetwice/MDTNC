@@ -8,6 +8,8 @@
 			margin-left: 230px;
 		}
 		// Modules
+		@import 'modules/action-links';
+		@import 'modules/utils';
 		@import 'modules/tabs';
 		@import 'modules/table-tabs';
 		@import 'modules/view-as';
@@ -15,13 +17,14 @@
 		@import 'modules/dropdown';
 		@import 'modules/pagination';
 		// Pages
-		@import 'parts/accept_training_event';
-		@import 'parts/training_event_details';
-		@import 'parts/landing';
-		@import 'parts/login';
-		@import 'parts/training_list';
-		@import 'parts/patient_details';
-		@import 'parts/resources';
-		@import 'parts/submit_payment';
+		@import 'pages/accept_training_event';
+		@import 'pages/business_trainer_account';
+		@import 'pages/training_event_details';
+		@import 'pages/landing';
+		@import 'pages/login';
+		@import 'pages/training_list';
+		@import 'pages/patient_details';
+		@import 'pages/resources';
+		@import 'pages/submit_payment';
 	}
 }

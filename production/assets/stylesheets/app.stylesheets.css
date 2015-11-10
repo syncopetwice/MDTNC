@@ -3550,9 +3550,65 @@ a:hover {
     margin-left: 230px;
   }
 }
+.app__main .main__content .panel__table tbody .fa {
+  font-size: 17px;
+}
+.app__main .main__content .panel__table tbody .fa-list-alt {
+  border-right: 1px solid #dee1e2;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+@media (max-width: 48.0525em) {
+  .app__main .main__content .panel__table tbody .fa-list-alt {
+    border: 0;
+  }
+}
+.app__main .main__content .panel__table tbody .fa-pencil-square-o {
+  border-right: 1px solid #dee1e2;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+@media (max-width: 48.0525em) {
+  .app__main .main__content .panel__table tbody .fa-pencil-square-o {
+    border: 0;
+  }
+}
+.app__main .main__content .panel__table tbody .fa-times-circle {
+  color: #dd2c00;
+}
+.app__main .main__content .panel__table tbody .fa-check-circle {
+  color: #27ae60;
+  border-right: 1px solid #dee1e2;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+@media (max-width: 48.0525em) {
+  .app__main .main__content .panel__table tbody .fa-check-circle {
+    border: 0;
+  }
+}
+.app__main .main__content .panel__table tbody .fa-pencil {
+  color: #133944;
+  border-right: 1px solid #dee1e2;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+@media (max-width: 48.0525em) {
+  .app__main .main__content .panel__table tbody .fa-pencil {
+    border: 0;
+  }
+}
+.app__main .main__content .panel__table tbody .fa-file-text-o {
+  color: #133944;
+}
+.app__main .main__content .content__row {
+  margin-bottom: 10px;
+}
+.app__main .main__content .content__row--lg {
+  margin-bottom: 20px;
+}
 .app__main .main__content .tabs {
   list-style-type: none;
-  background: #0082cd;
   padding: 0px 8px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -3566,12 +3622,12 @@ a:hover {
 .app__main .main__content .tabs .tab:after {
   content: '';
   position: absolute;
-  top: 12px;
+  top: 14px;
   right: 0;
   display: block;
   width: 1px;
-  height: 16px;
-  background: #fff;
+  height: 12px;
+  background: #0082cd;
 }
 .app__main .main__content .tabs .tab:last-child:after {
   display: none;
@@ -3579,8 +3635,8 @@ a:hover {
 .app__main .main__content .tabs .tab .link {
   padding: 8px 16px;
   display: block;
-  color: #fff;
-  font-size: 16px;
+  color: #0082cd;
+  font-size: 14px;
   -webkit-tap-highlight-color: transparent;
 }
 .app__main .main__content .table-tabs {
@@ -3588,8 +3644,8 @@ a:hover {
 }
 .app__main .main__content .table-tabs .table-tab {
   display: inline-block;
-  font-size: 14px;
-  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-family: "EffraMedium", Helvetica, Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   padding: 15px 35px;
@@ -3647,6 +3703,14 @@ a:hover {
 }
 .app__main .main__content .view-as .view:last-child {
   border-right: 0;
+}
+.app__main .main__content .panel.panel--sm {
+  max-width: 900px;
+}
+@media (max-width: 64.0525em) {
+  .app__main .main__content .panel.panel--sm {
+    max-width: 100%;
+  }
 }
 .app__main .main__content .panel .italic {
   font-style: italic;
@@ -3734,7 +3798,7 @@ a:hover {
   }
 }
 .app__main .main__content .panel .panel__body .panel__table thead th {
-  padding: 15px;
+  padding: 15px 20px;
   font-size: 14px;
   color: #95a5a6;
   font-weight: normal;
@@ -3752,13 +3816,13 @@ a:hover {
   color: #032e3a;
 }
 .app__main .main__content .panel .panel__body .panel__table thead th a {
-  color: #0082cd;
+  color: #95a5a6;
 }
 .app__main .main__content .panel .panel__body .panel__table tbody td {
   font-size: 14px;
   color: #133944;
   border-top: 1px solid #dee1e2;
-  padding: 15px;
+  padding: 20px;
 }
 @media (max-width: 64.0525em) {
   .app__main .main__content .panel .panel__body .panel__table tbody td {
@@ -4055,6 +4119,96 @@ a:hover {
 .app__main .main__content .accept-training-event .notes .note p {
   margin-top: 0;
 }
+.app__main .main__content .business-trainer-account {
+  padding: 30px 0;
+}
+.app__main .main__content .business-trainer-account .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
+}
+.app__main .main__content .business-trainer-account .panel {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 48.0525em) {
+  .app__main .main__content .business-trainer-account .panel {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.app__main .main__content .business-trainer-account .panel__table--details input[type="checkbox"] {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.app__main .main__content .business-trainer-account .dropdown {
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  min-width: 75px;
+  border: 1px solid #e1e3e4;
+  padding: 0px 1px;
+}
+.app__main .main__content .business-trainer-account .dropdown.isClosed {
+  display: none;
+}
+.app__main .main__content .business-trainer-account .dropdown .dropdown__item {
+  font-size: 14px;
+  color: #95a5a6;
+  padding: 5px;
+  border-bottom: 1px solid #e3e5e6;
+}
+.app__main .main__content .business-trainer-account .dropdown .dropdown__item:last-child {
+  border-bottom: none;
+}
+.app__main .main__content .business-trainer-account .dropdown .dropdown__item:hover, .app__main .main__content .business-trainer-account .dropdown .dropdown__item:focus {
+  cursor: pointer;
+}
+.app__main .main__content .business-trainer-account .controls__container {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 10px;
+}
+.app__main .main__content .business-trainer-account .controls__container {
+  *zoom: 1;
+}
+.app__main .main__content .business-trainer-account .controls__container:before, .app__main .main__content .business-trainer-account .controls__container:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .business-trainer-account .controls__container:after {
+  clear: both;
+}
+.app__main .main__content .business-trainer-account .table-tabs__container {
+  float: left;
+}
+.app__main .main__content .business-trainer-account .show__controls {
+  padding: 15px 0;
+  margin-right: 30px;
+  font-size: 14px;
+  float: right;
+  color: #032e3a;
+}
+.app__main .main__content .business-trainer-account .show__controls .label {
+  margin-right: 15px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+}
+.app__main .main__content .business-trainer-account .show__controls .select {
+  font-size: 14px;
+  margin-right: 15px;
+  border: none;
+}
+.app__main .main__content .business-trainer-account .show__controls .select:hover {
+  cursor: pointer;
+}
+.app__main .main__content .business-trainer-account .show__controls .select:focus {
+  outline: none;
+}
 .app__main .main__content .training-event-details {
   margin: 25px 10px 90px 10px;
 }
@@ -4075,9 +4229,6 @@ a:hover {
   .app__main .main__content .training-event-details .heading {
     margin: 20px 0 10px 0;
   }
-}
-.app__main .main__content .training-event-details .content__row {
-  margin-bottom: 10px;
 }
 .app__main .main__content .training-event-details .buttons__container {
   margin: 20px 0;
@@ -4709,7 +4860,6 @@ a:hover {
 }
 .app__main .main__content .training-list .panel .panel__table .highlighted {
   background: #eaecef;
-  padding: 0;
 }
 .app__main .main__content .training-list .panel .group-trainings-table--inner {
   width: 100%;
@@ -4722,27 +4872,6 @@ a:hover {
 }
 .app__main .main__content .training-list .panel .group-trainings-table--inner tbody tr td {
   border-top: 0;
-}
-.app__main .main__content .training-list .fa {
-  font-size: 17px;
-}
-.app__main .main__content .training-list .fa-check-circle {
-  color: #27ae60;
-  padding-right: 8px;
-  border-right: 1px solid #dee1e2;
-}
-.app__main .main__content .training-list .fa-times-circle {
-  margin-left: 8px;
-  color: #dd2c00;
-}
-.app__main .main__content .training-list .fa-pencil {
-  color: #133944;
-  padding-right: 8px;
-  border-right: 1px solid #dee1e2;
-}
-.app__main .main__content .training-list .fa-file-text-o {
-  color: #133944;
-  margin-left: 8px;
 }
 .app__main .main__content .training-list .action__link {
   color: #95a5a6;
