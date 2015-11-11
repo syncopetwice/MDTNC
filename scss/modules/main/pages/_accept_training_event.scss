@@ -1,23 +1,6 @@
 .accept-training-event {
 	padding: 30px 8px;
-	.heading {
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 18px;
-		margin-bottom: 5px;
-		font-family: $e-bold;
-		color: #032e3a;
-	}
-	.sub-heading {
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 13px;
-		color: #032e3a;
-		margin-bottom: 10px;
-		span {
-			font-family: $e-bold;
-		}
-	}
+	@include heading(5px);
 	.navigation__controls {
 		margin-left: 10px;
 		margin-bottom: 20px;
@@ -41,16 +24,6 @@
 	}
 	input {
 		width: 188px;
-	}
-	input,
-	textarea {
-		-webkit-appearance: none;
-		box-shadow: none;
-		border-radius: 2px;
-		border: 1px solid #e1e1e1;
-		padding: 5px;
-		font-size: 14px;
-		color: #133944;
 	}
 	.label {
 		margin-right: 10px;

@@ -2,7 +2,7 @@
 	@include clearfix;
 	position: relative;
 	overflow: hidden;
-	min-height: 290px;
+	min-height: 350px;
 	.main__content {
 		@include mq($from: xwide) {
 			margin-left: 230px;
@@ -19,6 +19,7 @@
 		// Pages
 		@import 'pages/accept_training_event';
 		@import 'pages/business_trainer_account';
+		@import 'pages/edit_cpt_profile';
 		@import 'pages/training_event_details';
 		@import 'pages/landing';
 		@import 'pages/login';

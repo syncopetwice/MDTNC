@@ -4,3 +4,25 @@
 .content__row--lg {
 	margin-bottom: 20px;
 }
+
+@mixin heading($margin-bottom: 30px) {
+	.heading {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-bottom: $margin-bottom;
+		font-family: $e-bold;
+		color: #032e3a;
+	}
+}
+
+.sub-heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #032e3a;
+	margin-bottom: 10px;
+	span {
+		font-family: $e-bold;
+	}
+}

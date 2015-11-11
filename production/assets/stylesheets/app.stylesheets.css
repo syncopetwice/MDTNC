@@ -3216,6 +3216,48 @@ a:hover {
   text-decoration: none;
 }
 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  padding: 0 5px;
+  border: 1px solid #e1e1e1;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-height: 28px;
+  color: #133944;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  border: 1px solid #c3c3c3;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+select {
+  border: none;
+  font-size: 14px;
+}
+select:hover {
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+}
+
 .app {
   font-family: "EffraRegular", Helvetica, Arial, sans-serif;
   overflow: hidden;
@@ -3533,7 +3575,7 @@ a:hover {
 .app__main {
   position: relative;
   overflow: hidden;
-  min-height: 290px;
+  min-height: 350px;
 }
 .app__main {
   *zoom: 1;
@@ -3606,6 +3648,16 @@ a:hover {
 }
 .app__main .main__content .content__row--lg {
   margin-bottom: 20px;
+}
+.app__main .main__content .sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #032e3a;
+  margin-bottom: 10px;
+}
+.app__main .main__content .sub-heading span {
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
 }
 .app__main .main__content .tabs {
   list-style-type: none;
@@ -3803,6 +3855,7 @@ a:hover {
   color: #95a5a6;
   font-weight: normal;
   text-align: left;
+  vertical-align: top;
 }
 @media (max-width: 64.0525em) {
   .app__main .main__content .panel .panel__body .panel__table thead th {
@@ -3909,16 +3962,6 @@ a:hover {
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
 }
-.app__main .main__content .accept-training-event .sub-heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #032e3a;
-  margin-bottom: 10px;
-}
-.app__main .main__content .accept-training-event .sub-heading span {
-  font-family: "EffraBold", Helvetica, Arial, sans-serif;
-}
 .app__main .main__content .accept-training-event .navigation__controls {
   margin-left: 10px;
   margin-bottom: 20px;
@@ -4011,18 +4054,6 @@ a:hover {
 }
 .app__main .main__content .accept-training-event input {
   width: 188px;
-}
-.app__main .main__content .accept-training-event input,
-.app__main .main__content .accept-training-event textarea {
-  -webkit-appearance: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  border: 1px solid #e1e1e1;
-  padding: 5px;
-  font-size: 14px;
-  color: #133944;
 }
 .app__main .main__content .accept-training-event .label {
   margin-right: 10px;
@@ -4199,36 +4230,156 @@ a:hover {
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
 }
 .app__main .main__content .business-trainer-account .show__controls .select {
-  font-size: 14px;
   margin-right: 15px;
-  border: none;
 }
-.app__main .main__content .business-trainer-account .show__controls .select:hover {
-  cursor: pointer;
+.app__main .main__content .edit-cpt-profile {
+  padding: 30px 10px 20px 10px;
 }
-.app__main .main__content .business-trainer-account .show__controls .select:focus {
-  outline: none;
-}
-.app__main .main__content .training-event-details {
-  margin: 25px 10px 90px 10px;
-}
-@media (max-width: 64.0525em) {
-  .app__main .main__content .training-event-details {
-    margin: 10px 10px 40px 10px;
-  }
-}
-.app__main .main__content .training-event-details .heading {
-  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+.app__main .main__content .edit-cpt-profile .heading {
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
 }
+.app__main .main__content .edit-cpt-profile .panel .panel__header {
+  min-height: 38px;
+}
+.app__main .main__content .edit-cpt-profile .columns {
+  font-size: 14px;
+  color: #133944;
+  margin-bottom: 60px;
+}
+.app__main .main__content .edit-cpt-profile .columns {
+  *zoom: 1;
+}
+.app__main .main__content .edit-cpt-profile .columns:before, .app__main .main__content .edit-cpt-profile .columns:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .edit-cpt-profile .columns:after {
+  clear: both;
+}
+.app__main .main__content .edit-cpt-profile .columns .column, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right {
+  width: 48%;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.app__main .main__content .edit-cpt-profile .columns .column.column--left, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left {
+  float: left;
+}
+.app__main .main__content .edit-cpt-profile .columns .column.column--right, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right {
+  float: right;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row {
+  margin-bottom: 20px;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row {
+  *zoom: 1;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row:before, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row:before, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row:before, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row:before, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row:before, .app__main .main__content .edit-cpt-profile .columns .column .row:after, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row:after, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row:after, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row:after, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row:after, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row:after, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row:after, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row:after, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row:after {
+  clear: both;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row.empty, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row.empty, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row.empty, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row.empty, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row.empty {
+  height: 23.636px;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row:last-child, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row:last-child, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row:last-child, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row:last-child, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row:last-child {
+  margin-bottom: 0;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row .label, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row .label, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row .label, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row .label, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row .label {
+  text-align: right;
+  width: 80px;
+  float: left;
+  margin-right: 15px;
+}
+.app__main .main__content .edit-cpt-profile .columns .column .row .field, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--left .row .field, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--left .row .field, .app__main .main__content .edit-cpt-profile .submit-payment .columns .column--right .row .field, .app__main .main__content .submit-payment .edit-cpt-profile .columns .column--right .row .field {
+  float: left;
+  width: -webkit-calc(100% - 95px);
+  width: calc(100% - 95px);
+}
+.app__main .main__content .edit-cpt-profile .input--sm {
+  width: 280px;
+  max-width: 100%;
+}
+.app__main .main__content .edit-cpt-profile .input--lg {
+  width: 100%;
+}
+.app__main .main__content .edit-cpt-profile .buttons {
+  text-align: center;
+}
+.app__main .main__content .edit-cpt-profile .buttons .cancel__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fff;
+  color: #084c85;
+  border-color: #084c85;
+  margin-right: 10px;
+  min-width: 125px;
+  padding: 6px;
+}
+.app__main .main__content .edit-cpt-profile .buttons .cancel__button:focus {
+  outline: none;
+}
+.app__main .main__content .edit-cpt-profile .buttons .cancel__button:focus, .app__main .main__content .edit-cpt-profile .buttons .cancel__button:hover {
+  background: #084c85;
+  color: #fff;
+}
+.app__main .main__content .edit-cpt-profile .buttons .accept__button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fecd2e;
+  border-color: #fecd2e;
+  color: #084c85;
+  min-width: 125px;
+  padding: 6px;
+}
+.app__main .main__content .edit-cpt-profile .buttons .accept__button:focus {
+  outline: none;
+}
+.app__main .main__content .edit-cpt-profile .buttons .accept__button:focus, .app__main .main__content .edit-cpt-profile .buttons .accept__button:hover {
+  background: #ffecaf;
+  border-color: #ffecaf;
+}
+.app__main .main__content .training-event-details {
+  padding: 25px 10px 90px 10px;
+}
 @media (max-width: 64.0525em) {
-  .app__main .main__content .training-event-details .heading {
-    margin: 20px 0 10px 0;
+  .app__main .main__content .training-event-details {
+    padding: 10px 10px 40px 10px;
   }
+}
+.app__main .main__content .training-event-details .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
 }
 .app__main .main__content .training-event-details .buttons__container {
   margin: 20px 0;
@@ -5018,16 +5169,6 @@ a:hover {
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
 }
-.app__main .main__content .patient-details .sub-heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #032e3a;
-  margin-bottom: 10px;
-}
-.app__main .main__content .patient-details .sub-heading span {
-  font-family: "EffraBold", Helvetica, Arial, sans-serif;
-}
 .app__main .main__content .patient-details .navigation__controls {
   margin-left: 10px;
   margin-bottom: 20px;
@@ -5125,16 +5266,6 @@ a:hover {
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
 }
-.app__main .main__content .submit-payment .sub-heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 13px;
-  color: #032e3a;
-  margin-bottom: 10px;
-}
-.app__main .main__content .submit-payment .sub-heading span {
-  font-family: "EffraBold", Helvetica, Arial, sans-serif;
-}
 .app__main .main__content .submit-payment .navigation__controls {
   margin-bottom: 20px;
 }
@@ -5223,17 +5354,7 @@ a:hover {
 .app__main .main__content .submit-payment .columns select,
 .app__main .main__content .submit-payment .columns textarea,
 .app__main .main__content .submit-payment .columns input {
-  display: block;
-  padding: 5px;
   width: 100%;
-  border: 1px solid #e1e1e1;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-.app__main .main__content .submit-payment .columns select:focus,
-.app__main .main__content .submit-payment .columns textarea:focus,
-.app__main .main__content .submit-payment .columns input:focus {
-  outline: none;
 }
 .app__main .main__content .submit-payment .columns textarea {
   resize: none;

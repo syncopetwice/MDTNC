@@ -1,19 +1,9 @@
 .training-event-details {
 	@include mq($until: ipad-l) {
-		margin: 10px 10px 40px 10px;
+		padding: 10px 10px 40px 10px;
 	}
-	margin: 25px 10px 90px 10px;
-	.heading {
-		@include mq($until: ipad-l) {
-			margin: 20px 0 10px 0;
-		}
-		font-family: $e-bold;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 18px;
-		margin-bottom: 25px;
-		color: #032e3a;
-	}
+	padding: 25px 10px 90px 10px;
+	@include heading(5px);
 	.buttons__container {
 		margin: 20px 0;
 		text-align: center;
