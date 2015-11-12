@@ -3457,6 +3457,55 @@ select:focus {
   color: #fff;
 }
 
+.modal__assign-new-cpt {
+  position: absolute;
+  width: 950px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.modal__assign-new-cpt .modal__header {
+  background: #084c85;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.modal__assign-new-cpt .modal__header {
+  *zoom: 1;
+}
+.modal__assign-new-cpt .modal__header:before, .modal__assign-new-cpt .modal__header:after {
+  content: "";
+  display: table;
+}
+.modal__assign-new-cpt .modal__header:after {
+  clear: both;
+}
+.modal__assign-new-cpt .modal__header__title {
+  float: left;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+}
+.modal__assign-new-cpt .modal__header__close {
+  float: right;
+}
+.modal__assign-new-cpt .modal__header__close a {
+  font-size: 20px;
+  color: #fff;
+}
+.modal__assign-new-cpt .modal__body {
+  padding: 30px;
+  background: #fff;
+}
+
 .app__header {
   background: #084c85;
   padding: 30px 32px 32px 22px;
@@ -4161,6 +4210,54 @@ select:focus {
   margin-bottom: 30px;
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt {
+  position: absolute;
+  width: 950px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header {
+  background: #084c85;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header {
+  *zoom: 1;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header:before, .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header:after {
+  content: "";
+  display: table;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header:after {
+  clear: both;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header__title {
+  float: left;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header__close {
+  float: right;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header__close a {
+  font-size: 20px;
+  color: #fff;
+}
+.app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__body {
+  padding: 30px;
+  background: #fff;
 }
 .app__main .main__content .business-trainer-account .panel {
   margin-left: 10px;
