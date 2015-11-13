@@ -33,9 +33,13 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	min-width: 1024px;
 	position: relative;
 }
+@import 'modules/action-links';
+@import 'modules/utils';
 @import 'modules/buttons';
-@import 'modules/modal/_';
 @import 'modules/header';
+@import 'modules/dropdown';
+@import 'modules/panel';
+@import 'modules/modal/_';
 @import 'modules/main/_';
 @import 'modules/aside';
 @import 'modules/footer';

@@ -1,3 +1,62 @@
 .modal__assign-new-cpt {
 	@include modal--inner(950px);
+	@include heading(20px);
+	.heading__controls {
+		text-align: center;
+		margin-bottom: 25px;
+		.label {
+			margin-right: 15px;
+		}
+		.entries {
+			margin-left: 15px;
+		}
+		select {
+			min-width: 40px;
+		}
+	}
+	.controls {
+		@include clearfix;
+		.buttons {
+			float: left;
+			margin-bottom: 15px;
+			@include cancel-button () { margin-right: 10px; };
+			@include accept-button;
+		}
+		.search {
+			float: right;
+			margin-top: 8px;
+			.search__input {
+				width: 145px;
+				height: 25px;
+				padding: 5px;
+				margin-right: 3px;
+				border-left: 1px solid #e4e4e4;
+				border-top: 1px solid #e6e6e6;
+				border-bottom: 1px solid #e2e2e2;
+				border-right: 1px solid #e4e4e4;
+				background:#f4f4f4;
+				font-size: 14px;
+			}
+			.search__button {
+				border: 0;
+				background:none;
+				margin-right: 10px;
+				&:focus {
+					outline: none;
+				}
+				i {
+					font-size: 17px;
+					color: #032e3a;
+				}
+			}
+		}
+	}
+	.panel {
+		.panel__body {
+			.panel__table {
+				@include dropdown;
+				border: 1px solid #dee1e2;
+			}
+		}
+	}
 }
