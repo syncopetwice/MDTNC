@@ -32,6 +32,10 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	overflow: hidden;
 	min-width: 1024px;
 	position: relative;
+	// Sticky Footer
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 @import 'modules/action-links';
 @import 'modules/utils';
