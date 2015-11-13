@@ -4617,6 +4617,9 @@ select:focus {
 .app__main .main__content .business-trainer-account .show__controls .select {
   margin-right: 15px;
 }
+.app__main .main__content .contact-us {
+  background: #000;
+}
 .app__main .main__content .edit-cpt-profile {
   padding: 30px 10px 20px 10px;
 }
