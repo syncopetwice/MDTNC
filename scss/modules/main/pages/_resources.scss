@@ -8,5 +8,48 @@
 	}
 	.tabs__container {
 		margin: 0 8px;
+		padding: 0 8px;
+	}
+	.welcome {
+		padding: 20px;
+		h3,
+		p {
+			color: #032e3a;
+		}
+		h3 {
+			font-size: 16px;
+			margin: 5px 0;
+		}
+		p {
+			margin: 10px 0;
+			font-size: 14px;
+		}
+		.introduction {
+			width: 80%;
+			@include accept-button () {margin-top:20px;};
+		}
+	}
+	.panel {
+		margin-top: 30px;
+		.tabs {
+			padding: 0;
+			margin-bottom: 10px;
+			.tab {
+				&:first-child {
+					.link {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+		.panel__body {
+			.panel__table {
+				border-top: 1px solid #dee1e2;
+			}
+		}
+	}
+	.buttons {
+		@include accept-button() {margin-right: 10px;};
+		@include decline-button();
 	}
 }

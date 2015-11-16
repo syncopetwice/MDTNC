@@ -1,7 +1,7 @@
 .app__footer {
 	background: $medium-blue;
 	.footer__nav {
-		@include mq($until: ipad-l) {
+		@include mq($until: xwide) {
 			width: 100%;
 			padding: 15px 20px;
 		}
@@ -10,7 +10,7 @@
 		margin: 0 auto;
 		@include clearfix;
 		.nav__quick-links {
-			@include mq($until: ipad-l) {
+			@include mq($until: xwide) {
 				width: 100%;
 				float: none;
 				margin-bottom: 10px;
@@ -19,7 +19,7 @@
 			float: left;
 			@include clearfix;
 			.quick-links__title {
-				@include mq($until: ipad-l) {
+				@include mq($until: xwide) {
 					width: 100%;
 					float: none;
 					margin: 0;
@@ -33,7 +33,7 @@
 				float: left;
 				position: relative;
 				&:after {
-					@include mq($until: ipad-l) {
+					@include mq($until: xwide) {
 						display: none;
 					}
 					content: '';
@@ -47,7 +47,7 @@
 				}
 			}
 			.links__container {
-				@include mq($until: ipad-l) {
+				@include mq($until: xwide) {
 					width: 100%;
 					padding-left: 20px;
 				}
@@ -57,7 +57,7 @@
 				padding-left: 30px;
 				.links {
 					&--first {
-						@include mq($until: ipad-l) {
+						@include mq($until: xwide) {
 							width: 33%;
 						}
 						@extend .links;
@@ -65,7 +65,7 @@
 						width: 195px;
 					}
 					&--second {
-						@include mq($until: ipad-l) {
+						@include mq($until: xwide) {
 							width: 33%;
 						}
 						@extend .links;
@@ -73,7 +73,7 @@
 						width: 170px;
 					}
 					&--third {
-						@include mq($until: ipad-l) {
+						@include mq($until: xwide) {
 							width: 33%;
 						}
 						@extend .links;
@@ -82,7 +82,7 @@
 						margin-right: 10px;
 					}
 					.link__item {
-						@include mq($until: ipad-l) {
+						@include mq($until: xwide) {
 							margin-bottom: 8px;
 						}
 						display: block;
@@ -101,7 +101,7 @@
 			}
 		}
 		.nav__connect-with-us {
-			@include mq($until: ipad-l) {
+			@include mq($until: xwide) {
 				width: 100%;
 				float: none;
 			}
@@ -109,7 +109,7 @@
 			width: 385px;
 			@include clearfix;
 			.connect-with-us__title {
-				@include mq($until: ipad-l) {
+				@include mq($until: xwide) {
 					width: 100%;
 					float: none;
 					margin: 0;
@@ -124,7 +124,7 @@
 				font-family: $e-bold;
 				position: relative;
 				&:after {
-					@include mq($until: ipad-l) {
+					@include mq($until: xwide) {
 						display: none;
 					}
 					content: '';
@@ -138,14 +138,14 @@
 				}
 			}
 			.nav__social {
-				@include mq($until: ipad-l) {
+				@include mq($until: xwide) {
 					margin: 0;
 				}
 				float: left;
 				margin-top: 22px;
 				padding-left: 20px;
 				.social__item {
-					@include mq($until: ipad-l) {
+					@include mq($until: xwide) {
 						margin-right: 20px;
 						&:last-child {
 							margin-right: 0;
@@ -172,7 +172,7 @@
 
 	}
 	.footer__rights {
-		@include mq($until: ipad-l) {
+		@include mq($until: xwide) {
 			padding: 10px 0;
 		}
 		border-top: 1px solid #396c98;
