@@ -3274,6 +3274,11 @@ select:focus {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .app {
+    height: 100vh;
+  }
+}
 
 .panel__table tbody .fa {
   font-size: 17px;
@@ -3461,6 +3466,10 @@ select:focus {
   margin-right: 0;
 }
 
+.panel.panel--resources .panel__body .panel__table {
+  width: 670px;
+  border-top: 1px solid #dee1e2;
+}
 .panel.panel--sm {
   max-width: 900px;
 }
@@ -5792,7 +5801,7 @@ select:focus {
   border-color: #ffecaf;
 }
 .app__main .main__content .resources {
-  padding: 30px 8px;
+  padding: 30px 0;
 }
 .app__main .main__content .resources .heading {
   text-align: center;
@@ -5801,6 +5810,13 @@ select:focus {
   margin-bottom: 5px;
   font-family: "EffraBold", Helvetica, Arial, sans-serif;
   color: #032e3a;
+}
+.app__main .main__content .resources .table-tabs__container {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+.app__main .main__content .resources .tabs__container {
+  margin: 0 8px;
 }
 .app__main .main__content .submit-payment {
   padding: 30px 10px;

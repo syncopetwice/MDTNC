@@ -1,5 +1,14 @@
 // Should Be Available To Modals And Pages
 .panel {
+	// Specific for Resources Page
+	&.panel--resources {
+		.panel__body {
+			.panel__table {
+				width: 670px;
+				border-top: 1px solid #dee1e2;
+			}
+		}
+	}
 	&.panel--sm {
 		max-width: 900px;
 		@include mq($until: ipad-l) {
