@@ -3568,6 +3568,7 @@ select:focus {
   font-size: 14px;
   color: #95a5a6;
   font-weight: normal;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
   text-align: left;
   vertical-align: top;
 }
@@ -5524,7 +5525,6 @@ select:focus {
   margin-top: 2px;
   font-size: 14px;
   text-transform: uppercase;
-  min-width: 160px;
   color: #032e3a;
   float: left;
   position: relative;
