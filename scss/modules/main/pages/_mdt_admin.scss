@@ -64,5 +64,9 @@
 	.panel {
 		margin-bottom: 25px;
 	}
+	// Remove right border from edit link
+	.panel__table tbody .fa-pencil-square-o {
+		border-right: 0;
+	}
 	@include dropdown;
 }

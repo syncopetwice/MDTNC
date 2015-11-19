@@ -109,6 +109,12 @@
 			}
 			tbody {
 				td {
+					&.has-new-note {
+						background: #fecd2e;
+						.fa-pencil {
+							border-right: 1px solid #133944;
+						}
+					}
 					@include mq($until: ipad-l) {
 						padding: 5px;
 					}

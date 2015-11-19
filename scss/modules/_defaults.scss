@@ -1,7 +1,3 @@
-// Sticky Footer
-
-// End :: Sticky Footer
-
 *,
 *:before,
 *:after {
@@ -11,8 +7,10 @@
 }
 
 a {
+	color: #0082cd;
 	text-decoration: none;
 	&:hover {
+		color: #0082cd;
 		text-decoration: none;
 	}
 }

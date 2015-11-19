@@ -3210,9 +3210,11 @@ th {
 }
 
 a {
+  color: #0082cd;
   text-decoration: none;
 }
 a:hover {
+  color: #0082cd;
   text-decoration: none;
 }
 
@@ -3592,6 +3594,12 @@ select:focus {
   color: #133944;
   border-top: 1px solid #dee1e2;
   padding: 20px;
+}
+.panel .panel__body .panel__table tbody td.has-new-note {
+  background: #fecd2e;
+}
+.panel .panel__body .panel__table tbody td.has-new-note .fa-pencil {
+  border-right: 1px solid #133944;
 }
 @media (max-width: 64.0525em) {
   .panel .panel__body .panel__table tbody td {
@@ -4215,6 +4223,7 @@ select:focus {
   color: #084c85;
   border-color: #084c85;
   margin-right: 10px;
+  width: auto;
 }
 .app__main .main__content .accept-training-event .panel .panel__controls .cancel__button:focus {
   outline: none;
@@ -4240,6 +4249,7 @@ select:focus {
   border-color: #e2541d;
   color: #fff;
   margin-right: 10px;
+  width: auto;
 }
 .app__main .main__content .accept-training-event .panel .panel__controls .decline__button:focus {
   outline: none;
@@ -4264,6 +4274,7 @@ select:focus {
   background: #fecd2e;
   border-color: #fecd2e;
   color: #084c85;
+  width: auto;
 }
 .app__main .main__content .accept-training-event .panel .panel__controls .accept__button:focus {
   outline: none;
@@ -4642,7 +4653,16 @@ select:focus {
   margin-right: 15px;
 }
 .app__main .main__content .contact-us {
-  background: #000;
+  padding: 20px;
+  margin: 0 0 15px 0;
+}
+.app__main .main__content .contact-us .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
 }
 .app__main .main__content .edit-cpt-profile {
   padding: 30px 10px 20px 10px;
@@ -5402,6 +5422,9 @@ select:focus {
 }
 .app__main .main__content .mdt-admin .panel {
   margin-bottom: 25px;
+}
+.app__main .main__content .mdt-admin .panel__table tbody .fa-pencil-square-o {
+  border-right: 0;
 }
 .app__main .main__content .mdt-admin .dropdown {
   display: block;

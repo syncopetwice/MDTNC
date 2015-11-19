@@ -17,9 +17,9 @@
 		.panel__controls {
 			margin-bottom: 25px;
 			text-align: center;
-			@include cancel-button () {margin-right: 10px};
-			@include decline-button () {margin-right: 10px;};
-			@include accept-button;
+			@include cancel-button () {margin-right: 10px; width: auto;};
+			@include decline-button () {margin-right: 10px; width: auto;};
+			@include accept-button () {width: auto;};
 		}
 	}
 	input {
