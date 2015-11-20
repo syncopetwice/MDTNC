@@ -3333,6 +3333,9 @@ select:focus {
 .panel__table tbody .fa-file-text-o {
   color: #133944;
 }
+.panel__table tbody .fa-no-border {
+  border: 0;
+}
 
 .content__row {
   margin-bottom: 10px;
@@ -3991,6 +3994,82 @@ select:focus {
 }
 .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover, .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:focus {
   cursor: pointer;
+}
+
+.modal__submit-payment {
+  position: absolute;
+  width: 450px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.modal__submit-payment .modal__header {
+  background: #084c85;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.modal__submit-payment .modal__header {
+  *zoom: 1;
+}
+.modal__submit-payment .modal__header:before, .modal__submit-payment .modal__header:after {
+  content: "";
+  display: table;
+}
+.modal__submit-payment .modal__header:after {
+  clear: both;
+}
+.modal__submit-payment .modal__header__title {
+  float: left;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+}
+.modal__submit-payment .modal__header__close {
+  float: right;
+}
+.modal__submit-payment .modal__header__close a {
+  font-size: 20px;
+  color: #fff;
+}
+.modal__submit-payment .modal__body {
+  padding: 30px;
+  background: #fff;
+}
+.modal__submit-payment .cancel__button {
+  display: inline-block;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  border-color: transparent;
+  min-width: 105px;
+  background: #fff;
+  color: #084c85;
+  border-color: #084c85;
+}
+.modal__submit-payment .cancel__button:focus {
+  outline: none;
+}
+.modal__submit-payment .cancel__button:focus, .modal__submit-payment .cancel__button:hover {
+  background: #084c85;
+  color: #fff;
+}
+.modal__submit-payment p {
+  margin: 0 0 15px 0;
 }
 
 .app__main {
@@ -4654,7 +4733,7 @@ select:focus {
 }
 .app__main .main__content .contact-us {
   padding: 20px;
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
 }
 .app__main .main__content .contact-us .heading {
   text-align: center;
@@ -5590,6 +5669,9 @@ select:focus {
 }
 .app__main .main__content .training-list .panel .panel__table .highlighted {
   background: #eaecef;
+}
+.app__main .main__content .training-list .panel .panel__table .fa-pencil-square-o {
+  border-right: 0;
 }
 .app__main .main__content .training-list .panel .group-trainings-table--inner {
   width: 100%;

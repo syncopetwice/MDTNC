@@ -1,0 +1,7 @@
+.modal__submit-payment {
+	@include modal--inner(450px);
+	@include cancel-button;
+	p {
+		margin: 0 0 15px 0;
+	}
+}
