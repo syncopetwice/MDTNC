@@ -5534,6 +5534,14 @@ select:focus {
 .app__main .main__content .training-list {
   margin-top: 15px;
 }
+.app__main .main__content .training-list .heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "EffraBold", Helvetica, Arial, sans-serif;
+  color: #032e3a;
+}
 .app__main .main__content .training-list .view-as__container {
   text-align: center;
   margin-bottom: 20px;
@@ -5544,9 +5552,20 @@ select:focus {
   font-size: 14px;
   margin-bottom: 7px;
 }
+.app__main .main__content .training-list .back__button__container {
+  margin: 0 10px;
+}
+.app__main .main__content .training-list .back__button__container .back__button {
+  color: #0082cd;
+  font-size: 14px;
+}
+.app__main .main__content .training-list .back__button__container .back__button i {
+  margin-right: 5px;
+}
 .app__main .main__content .training-list .controls__container {
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 10px;
+  min-height: 54px;
 }
 .app__main .main__content .training-list .controls__container {
   *zoom: 1;
