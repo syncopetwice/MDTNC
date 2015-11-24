@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+	color: #0082cd;
+	text-decoration: none;
+	&:hover {
+		color: #0082cd;
+		text-decoration: none;
+	}
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+	padding: 0 5px;
+	border: 1px solid #e1e1e1;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 16px;
+	appearance: none;
+	min-height: 28px;
+	color: #133944;
+	box-shadow: none;
+	&:focus {
+		outline: none;
+	}
+}
+input[type="checkbox"] {
+	border: 1px solid #c3c3c3;
+	border-radius: 2px;
+}
+select {
+	border: none;
+	font-size: 14px;
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+	}
+}

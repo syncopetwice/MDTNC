@@ -1,0 +1,61 @@
+.app__sidebar {
+	@include mq($from: xwide) {
+		width: 230px;
+		min-height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	background:$light-gray;
+	.sidebar__nav {
+		.nav__list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			@include mq($until: xwide) {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			@include clearfix;
+			.list__item {
+				&:first-child {
+					margin-top: 18px;
+					@include mq($until: xwide) {
+						margin-top: 0;
+					}
+				}
+				&.list__item--active {
+					.item__link {
+						color: $light-yellow;
+						background: $dark-gray;
+					}
+				}
+				.item__link {
+					font-size: 14px;
+					font-family: $e-medium;
+					color: #fff;
+					display: block;
+					text-transform: uppercase;
+					padding: 10px 16px;
+					margin-bottom: 18px;
+					@include mq($until: xwide) {
+						margin-bottom: 0;
+						font-size: 12px;
+					}
+					i {
+						@include mq($until: xwide) {
+							font-size: 12px;
+							width: 12px;
+							height: 10px;
+						}
+						width: 22px;
+						height: 20px;
+						font-size: 20px;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}

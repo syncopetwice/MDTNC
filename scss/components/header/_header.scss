@@ -1,0 +1,86 @@
+.app__header {
+	@include mq($until: ipad-l) {
+		padding: 9px 12px;
+	}
+	background: $dark-blue;
+	padding: 30px 32px 32px 22px;
+	@include clearfix;
+	.header__logotype {
+		float: left;
+		a {
+			@include mq($until: ipad-l) {
+				margin-right: 15px;
+				width: 100px;
+				padding-top: 2px;
+				height: 17px;
+			}
+			@include ie() {
+				background: transparent url('../images/UI/header/logotype-ie.png');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+			}
+			overflow: hidden;
+			display: block;
+			width: 157px;
+			height: 26px;
+			margin-right: 24px;
+			text-decoration: none;
+			background: transparent url('../images/UI/header/logotype.png');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.header__slogan {
+		@include mq($until: ipad-l) {
+			padding: 0;
+			padding-top: 2px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		float: left;
+		font-size: 22px;
+		color: #fff;
+		text-transform: uppercase;
+		span {
+			font-family: $e-bold;
+			color: $light-yellow;
+		}
+	}
+	.header__controls {
+		@include mq($until: ipad-l) {
+			padding-top: 1px;
+		}
+		float: right;
+		padding-top: 6px;
+		@include clearfix;
+		.control__item {
+			@include mq($until: ipad-l) {
+				font-size: 14px;
+			}
+			float: left;
+			color: #fff;
+			margin-right: 27px;
+			display: block;
+			text-decoration: none;
+			font-size: 20px;
+			line-height: 18px;
+			text-transform: uppercase;
+			-webkit-tap-highlight-color: rgba(255, 255, 255, .5);
+			&:focus,
+			&:active {
+				background:none;
+				outline: none;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+
+		}
+	}
+}

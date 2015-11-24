@@ -1,19 +1,6 @@
 @charset "utf-8";
-// Reset styles
-@import '../vendor/normalize.scss/normalize';
-// SCSS plugin for responsive design
-@import '../vendor/sass-mq/mq';
-// Fixes for IE
-@import 'ie/_';
-// Custom mixins
-@import 'mixins/_';
-// Fonts
-@import '../vendor/fontawesome/scss/font-awesome';
-@import 'fonts/Effra';
 
-@import 'modules/defaults';
-
-// Vars
+// Color Vars
 $dark-blue: #084c85;
 $medium-blue: #0e4c82;
 $light-blue: #0082cd;
@@ -21,13 +8,25 @@ $light-yellow: #fecd2e;
 $light-gray: #888b8d;
 $dark-gray: #6f7274;
 
-
-// Fonts
+// Fonts Vars
 $e-regular: "EffraRegular", Helvetica, Arial, sans-serif;
 $e-medium: "EffraMedium", Helvetica, Arial, sans-serif;
 $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 // $e-heavy: "EffraHeavy", Helvetica, Arial, sans-serif; There's no fonts in folder
+
+// Reset styles
+@import '../vendor/normalize.scss/normalize';
+// SCSS plugin for responsive design
+@import '../vendor/sass-mq/mq';
+// Custom mixins
+@import 'mixins/_mixins';
+// Fonts
+@import '../vendor/fontawesome/scss/font-awesome';
+@import 'fonts/Effra';
+
+// Namespace for application styles
 .app {
+	@import 'modules/_modules';
 	font-family: $e-regular;
 	overflow: hidden;
 	min-width: 1024px;
@@ -39,14 +38,9 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	@include ie() {
 		height: 100vh;
 	}
+	@import 'components/modal/_modal';
+	@import 'components/header/_header';
+	@import 'components/main/_main';
+	@import 'components/footer/_footer';
 }
-@import 'modules/action-links';
-@import 'modules/utils';
-@import 'modules/buttons';
-@import 'modules/header';
-@import 'modules/dropdown';
-@import 'modules/panel';
-@import 'modules/modal/_';
-@import 'modules/main/_';
-@import 'modules/aside';
-@import 'modules/footer';
+

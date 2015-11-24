@@ -1,6 +1,0 @@
-.modal__error {
-	@include modal--inner(300px);
-	@include cancel-button() {
-		margin-top: 10px;
-	};
-}

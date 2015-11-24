@@ -1,0 +1,41 @@
+// Clearfix Hack
+@mixin clearfix() {
+	& {
+		*zoom: 1;
+	}
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+// Twitter Bootstrap Image Responsive
+@mixin img-responsive(){
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+// CSS Media Query Hack for IE10/11
+@mixin ie(){
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		@content;
+	}
+}
+
+// Headings on different pages have different margin-bottom
+@mixin heading($margin-bottom: 30px) {
+	.heading {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-bottom: $margin-bottom;
+		font-family: $e-bold;
+		color: #032e3a;
+	}
+}
+
+@import 'buttons';

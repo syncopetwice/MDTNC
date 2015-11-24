@@ -1,0 +1,27 @@
+.app__main {
+	@include clearfix;
+	position: relative;
+	overflow: hidden;
+	min-height: 350px;
+	flex: 1;
+	// Sidebar
+	@import 'sidebar/_sidebar';
+	.main__content {
+		@include mq($from: xwide) {
+			margin-left: 230px;
+		}
+		// Pages
+		@import 'pages/accept_training_event';
+		@import 'pages/business_trainer_account';
+		@import 'pages/contact_us';
+		@import 'pages/edit_cpt_profile';
+		@import 'pages/training_event_details';
+		@import 'pages/landing';
+		@import 'pages/login';
+		@import 'pages/mdt_admin';
+		@import 'pages/training_list';
+		@import 'pages/patient_details';
+		@import 'pages/resources';
+		@import 'pages/submit_payment';
+	}
+}

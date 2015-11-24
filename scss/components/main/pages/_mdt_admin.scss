@@ -1,0 +1,72 @@
+.mdt-admin {
+	padding-top: 35px;
+	padding-bottom: 70px;
+	.buttons {
+		text-align: center;
+		@include cancel-button () {
+			margin-right: 10px;
+			min-width: 135px;
+		};
+		@include accept-button () {
+			min-width: 220px;
+		};
+	}
+	// Controls Container
+	.controls__container {
+		@include clearfix;
+		border-bottom: 1px solid #eaeaea;
+	}
+	// Tabs
+	.table-tabs__container {
+		float: left;
+	}
+	// Show Controls
+	.show__controls {
+		@include mq($until: xwide) {
+			padding: 5px 0;
+		}
+		padding: 15px 0;
+		margin-right: 30px;
+		font-size: 14px;
+		float: right;
+		color: #032e3a;
+		.label {
+			margin-right: 15px;
+			font-family: $e-bold;
+		}
+		.select {
+			margin-right: 15px;
+		}
+	}
+	.search__input {
+		width: 145px;
+		height: 25px;
+		padding: 5px;
+		margin-right: 3px;
+		// border-left: 1px solid #e4e4e4;
+		// border-top: 1px solid #e6e6e6;
+		// border-bottom: 1px solid #e2e2e2;
+		// border-right: 1px solid #e4e4e4;
+		background:#f4f4f4;
+		font-size: 14px;
+	}
+	.search__button {
+		border: 0;
+		background:none;
+		&:focus {
+			outline: none;
+		}
+		i {
+			font-size: 17px;
+			color: #032e3a;
+		}
+	}
+	.panel {
+		margin-bottom: 25px;
+	}
+	// Remove right border from edit link
+	.panel__table tbody .fa-pencil-square-o {
+		border-right: 0;
+	}
+	@include dropdown;
+}

@@ -1,0 +1,57 @@
+.app__modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background:rgba(0,0,0,.4);
+	&.isClosed {
+		display: none;
+	}
+}
+
+@mixin modal--inner ($width: 600px) {
+	position: absolute;
+	width: $width;
+	// border-top-left-radius: 6px;
+	// border-top-right-radius: 6px;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	// Modal Header
+	.modal__header {
+		@include clearfix;
+		background: $dark-blue;
+		padding: 15px 25px;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+		// border-top-left-radius: 6px;
+		// border-top-right-radius: 6px;
+	}
+	.modal__header__title {
+		float: left;
+		font-family: $e-bold;
+	}
+	.modal__header__close {
+		float: right;
+		a {
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+	.modal__body {
+		padding: 30px;
+		background: #fff;
+	}
+
+}
+
+@import 'modals/_decline';
+@import 'modals/_error';
+@import 'modals/_assign_new_cpt';
+@import 'modals/_submit-payment';
