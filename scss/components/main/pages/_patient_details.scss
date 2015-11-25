@@ -25,7 +25,7 @@
 	}
 	.panel {
 		.panel__controls {
-			margin-bottom: 25px;
+			margin: 20px 0;
 			text-align: center;
 			@include decline-button() {
 				margin-right: 10px

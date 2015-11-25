@@ -55,6 +55,10 @@
 			padding: 15px;
 			border: 1px solid #dee1e2;
 		}
+		.panel--w-1024 {
+			width: 100%;
+			max-width: 1024px;
+		}
 		.panel__table {
 			&.panel__table--sm {
 				width: 100%;
@@ -88,6 +92,17 @@
 					@include mq($until: ipad-l) {
 						padding: 5px;
 					}
+					// Utils Classes for width
+					.w-5 {
+						width: 5%;
+					}
+					.w-10 {
+						width: 10%;
+					}
+					.w-15 {
+						width: 15%;
+					}
+					// End :: Utils Classes
 					.fa {
 						margin-left: 8px;
 					}

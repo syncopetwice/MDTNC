@@ -38,6 +38,13 @@
 		@include mq($until: lwide) {
 			width: 95%;
 		}
+		.columns-title {
+			font-size: 16px;
+			font-family: $e-medium;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			color: $dark-blue;
+		}
 		.column {
 			.row {
 				@include clearfix;
@@ -88,6 +95,7 @@
 	// Notes
 	.notes {
 		width: 950px;
+		margin-bottom: 5px;
 		@include mq($until: lwide) {
 			width: 95%;
 		}
@@ -97,6 +105,7 @@
 			width: 20.4%;
 			text-align: right;
 			padding-right: 10px;
+			padding-top: 33px;
 		}
 		.el-right {
 			width: 79.6%;
@@ -113,6 +122,14 @@
 			&:focus {
 				outline: none;
 			}
+		}
+		.note--exist {
+			border-radius: 4px;
+			background:#ebecf0;
+			padding: 20px;
+			border: 1px solid #e1e1e1;
+			font-size: 14px;
+			color: #133944;
 		}
 	}
 	// Buttons

@@ -6,10 +6,14 @@
 			display: block;
 			width: 100%;
 			margin-bottom: 10px;
+			padding: 5px;
 		}
 		@include cancel-button() {
 			margin-right: 10px;
 		}
 		@include decline-button();
+		ul {
+			list-style-type: square;
+		}
 	}
 }
