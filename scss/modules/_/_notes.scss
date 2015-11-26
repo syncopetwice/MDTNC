@@ -1,0 +1,42 @@
+// Used on:
+// AcceptTraining
+// cptsubmitpaymentdetail
+
+.notes {
+	width: 950px;
+	margin-bottom: 5px;
+	@include mq($until: lwide) {
+		width: 95%;
+	}
+	@include clearfix;
+	.el-left {
+		float: left;
+		width: 20.4%;
+		text-align: right;
+		padding-right: 10px;
+		padding-top: 33px;
+	}
+	.el-right {
+		width: 79.6%;
+		float: right;
+	}
+	textarea {
+		display: block;
+		padding: 5px;
+		width: 100%;
+		border: 1px solid #e1e1e1;
+		resize: none;
+		min-height: 95px;
+		&:focus {
+			outline: none;
+		}
+	}
+	.note--exist {
+		border-radius: 4px;
+		background:#ebecf0;
+		padding: 20px;
+		border: 1px solid #e1e1e1;
+		font-size: 14px;
+		color: #133944;
+	}
+}

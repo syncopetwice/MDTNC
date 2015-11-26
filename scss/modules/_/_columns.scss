@@ -1,0 +1,72 @@
+.columns {
+	width: 950px;
+	margin-bottom: 20px;
+	@include clearfix;
+	@include mq($until: lwide) {
+		width: 95%;
+	}
+	.columns-title {
+		font-size: 16px;
+		font-family: $e-medium;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		color: $dark-blue;
+	}
+	.column {
+		.row {
+			@include clearfix;
+			margin-bottom: 20px;
+			&.row--no-margin {
+				margin-bottom: 0;
+			}
+			&.row--address {
+				margin-bottom: 5px;
+			}
+			.el-left {
+				text-align: right;
+				padding-top: 2px;
+				padding-right: 10px;
+				width: percentage(200/440);
+				float: left;
+			}
+			.el-right {
+				width: percentage(240/440);
+				float: left;
+			}
+		}
+	}
+	.column--left {
+		@extend .column;
+		float: left;
+		width: 45%;
+		margin-right: 5%;
+	}
+	.column--right {
+		@extend .column;
+		float: right;
+		width: 45%;
+	}
+	select,
+	textarea,
+	input {
+		width: 100%;
+	}
+	textarea {
+		resize: none;
+		min-height: 95px;
+	}
+	.input--zip {
+		width: 95px;
+	}
+	.input--number {
+		width: 110px;
+	}
+	// Dates Salesforce
+	.dateInput {
+		text-align: center;
+		.dateFormat {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
