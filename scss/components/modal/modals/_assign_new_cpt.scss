@@ -19,8 +19,7 @@
 		.buttons {
 			float: left;
 			margin-bottom: 15px;
-			@include cancel-button () { margin-right: 10px; };
-			@include accept-button;
+			.cancel__button { margin-right: 10px;}
 		}
 		.search {
 			float: right;

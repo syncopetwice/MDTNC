@@ -1,3 +1,12 @@
+// Dates Salesforce
+.dateInput {
+	text-align: center;
+	.dateFormat {
+		display: block;
+		margin: 0 auto;
+	}
+}
+// Columns
 .columns {
 	width: 950px;
 	margin-bottom: 20px;
@@ -60,13 +69,5 @@
 	}
 	.input--number {
 		width: 110px;
-	}
-	// Dates Salesforce
-	.dateInput {
-		text-align: center;
-		.dateFormat {
-			display: block;
-			margin: 0 auto;
-		}
 	}
 }

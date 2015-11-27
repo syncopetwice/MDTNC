@@ -21,8 +21,8 @@
 	.buttons {
 		margin: 20px 0;
 		text-align: center;
-		@include cancel-button () {margin-right: 10px; width: auto;};
-		@include decline-button () {margin-right: 10px; width: auto;};
-		@include accept-button () {width: auto;};
+		.cancel__button {margin-right: 10px; width: auto;}
+		.decline__button {margin-right: 10px; width: auto;}
+		.accept__button {width: auto;}
 	}
 }

@@ -27,10 +27,9 @@
 		.panel__controls {
 			margin: 20px 0;
 			text-align: center;
-			@include decline-button() {
+			.decline__button {
 				margin-right: 10px
-			};
-			@include accept-button();
+			}
 		}
 	}
 }

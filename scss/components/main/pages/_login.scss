@@ -63,7 +63,7 @@
 					color: #fff;
 				}
 			}
-			@include login-button() {
+			.login__button {
 				margin-top: 29px;
 			}
 		}

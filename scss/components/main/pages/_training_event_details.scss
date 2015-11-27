@@ -7,9 +7,9 @@
 	.buttons__container {
 		margin: 20px 0;
 		text-align: center;
-		@include cancel-button() { margin-right: 10px;}
-		@include decline-button () { margin-right: 10px;}
-		@include accept-button () { margin-right: 10px;}
+		.cancel__button { margin-right: 10px;}
+		.decline__button { margin-right: 10px;}
+		// .accept__button { margin-right: 10px;}
 	}
 	.navigation__controls {
 		@include clearfix;

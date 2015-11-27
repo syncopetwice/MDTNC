@@ -35,7 +35,7 @@ var
 	gulp.task('scss', function () {
 		return scss(['scss/app.stylesheets.scss'], { 
 			sourcemap: true,
-			style: 'compressed',
+			style: 'compact',
 			compass: true
 			})
 			.pipe(sourcemaps.init())

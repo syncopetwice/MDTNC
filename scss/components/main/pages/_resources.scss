@@ -26,7 +26,7 @@
 		}
 		.introduction {
 			width: 80%;
-			@include accept-button () {margin-top:20px;};
+			.accept__button {margin-top:20px;}
 		}
 	}
 	.panel {
@@ -49,7 +49,6 @@
 		}
 	}
 	.buttons {
-		@include accept-button() {margin-right: 10px;};
-		@include decline-button();
+		.accept__button {margin-right: 10px;}
 	}
 }

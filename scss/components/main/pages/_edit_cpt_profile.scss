@@ -55,14 +55,14 @@
 	}
 	.buttons {
 		text-align: center;
-		@include cancel-button() {
+		.cancel__button {
 			margin-right: 10px;
 			min-width: 125px;
-			padding: 6px;
-		};
-		@include accept-button() {
+			// padding: 6px;
+		}
+		.accept__button {
 			min-width: 125px;
-			padding: 6px;
-		};
+			// padding: 6px;
+		}
 	}
 }

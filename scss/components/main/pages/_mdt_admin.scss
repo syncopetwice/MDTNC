@@ -3,13 +3,13 @@
 	padding-bottom: 70px;
 	.buttons {
 		text-align: center;
-		@include cancel-button () {
+		.cancel__button {
 			margin-right: 10px;
 			min-width: 135px;
-		};
-		@include accept-button () {
+		}
+		.accept__button {
 			min-width: 220px;
-		};
+		}
 	}
 	// Controls Container
 	.controls__container {
