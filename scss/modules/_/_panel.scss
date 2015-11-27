@@ -27,6 +27,7 @@
 		border-bottom: 0;
 		padding: 14px 18px;
 		background: $dark-blue;
+		min-height: 38px;
 		.header__title {
 			@include mq($until: ipad-l) {
 				font-size: 14px;

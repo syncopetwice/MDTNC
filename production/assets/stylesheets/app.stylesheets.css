@@ -1498,7 +1498,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .panel.panel--sm { max-width: 900px; }
 @media (max-width: 64.0525em) { .app .panel.panel--sm { max-width: 100%; } }
 .app .panel .italic { font-style: italic; }
-.app .panel .panel__header { border: 1px solid #dee1e2; border-bottom: 0; padding: 14px 18px; background: #084c85; }
+.app .panel .panel__header { border: 1px solid #dee1e2; border-bottom: 0; padding: 14px 18px; background: #084c85; min-height: 38px; }
 @media (max-width: 64.0525em) { .app .panel .panel__header { padding: 7px 9px; } }
 .app .panel .panel__header { *zoom: 1; }
 .app .panel .panel__header:before, .app .panel .panel__header:after { content: ""; display: table; }
@@ -1533,7 +1533,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .panel .panel__body .panel__table tbody td a { font-size: 14px; color: #0082cd; }
 .app .dateInput { text-align: center; }
 .app .dateInput .dateFormat { display: block; margin: 0 auto; }
-.app .columns { width: 950px; margin-bottom: 20px; }
+.app .columns { width: 950px; margin-bottom: 20px; font-size: 14px; }
 .app .columns { *zoom: 1; }
 .app .columns:before, .app .columns:after { content: ""; display: table; }
 .app .columns:after { clear: both; }
@@ -1545,7 +1545,11 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .columns .column .row:after, .app .columns .column--left .row:after, .app .columns .column--right .row:after { clear: both; }
 .app .columns .column .row.row--no-margin, .app .columns .column--left .row.row--no-margin, .app .columns .column--right .row.row--no-margin { margin-bottom: 0; }
 .app .columns .column .row.row--address, .app .columns .column--left .row.row--address, .app .columns .column--right .row.row--address { margin-bottom: 5px; }
-.app .columns .column .row .el-left, .app .columns .column--left .row .el-left, .app .columns .column--right .row .el-left { text-align: right; padding-top: 2px; padding-right: 10px; width: 45.45455%; float: left; }
+.app .columns .column .row.row--edit-cpt.empty, .app .columns .column--left .row.row--edit-cpt.empty, .app .columns .column--right .row.row--edit-cpt.empty { min-height: 26px; }
+.app .columns .column .row.row--edit-cpt .el-left, .app .columns .column--left .row.row--edit-cpt .el-left, .app .columns .column--right .row.row--edit-cpt .el-left { width: 20.45455%; }
+.app .columns .column .row.row--edit-cpt .el-right, .app .columns .column--left .row.row--edit-cpt .el-right, .app .columns .column--right .row.row--edit-cpt .el-right { width: 79.54545%; }
+.app .columns .column .row.row--edit-cpt .input--sm, .app .columns .column--left .row.row--edit-cpt .input--sm, .app .columns .column--right .row.row--edit-cpt .input--sm { width: 80%; }
+.app .columns .column .row .el-left, .app .columns .column--left .row .el-left, .app .columns .column--right .row .el-left { text-align: right; padding-right: 10px; width: 45.45455%; float: left; }
 .app .columns .column .row .el-right, .app .columns .column--left .row .el-right, .app .columns .column--right .row .el-right { width: 54.54545%; float: left; }
 .app .columns .column--left { float: left; width: 45%; margin-right: 5%; }
 .app .columns .column--right { float: right; width: 45%; }
@@ -1732,24 +1736,6 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .contact-us .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
 .app .app__main .main__content .edit-cpt-profile { padding: 30px 10px 20px 10px; }
 .app .app__main .main__content .edit-cpt-profile .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
-.app .app__main .main__content .edit-cpt-profile .panel .panel__header { min-height: 38px; }
-.app .app__main .main__content .edit-cpt-profile .columns { font-size: 14px; color: #133944; margin-bottom: 60px; }
-.app .app__main .main__content .edit-cpt-profile .columns { *zoom: 1; }
-.app .app__main .main__content .edit-cpt-profile .columns:before, .app .app__main .main__content .edit-cpt-profile .columns:after { content: ""; display: table; }
-.app .app__main .main__content .edit-cpt-profile .columns:after { clear: both; }
-.app .app__main .main__content .edit-cpt-profile .columns .column, .app .app__main .main__content .edit-cpt-profile .columns .column--left, .app .app__main .main__content .edit-cpt-profile .columns .column--right { width: 48%; padding: 10px; padding-bottom: 0; }
-.app .app__main .main__content .edit-cpt-profile .columns .column.column--left, .app .app__main .main__content .edit-cpt-profile .columns .column--left, .app .app__main .main__content .edit-cpt-profile .columns .column--left.column--right { float: left; }
-.app .app__main .main__content .edit-cpt-profile .columns .column.column--right, .app .app__main .main__content .edit-cpt-profile .columns .column--right.column--left, .app .app__main .main__content .edit-cpt-profile .columns .column--right { float: right; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row { margin-bottom: 20px; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row { *zoom: 1; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row:before, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row:before, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row:before, .app .app__main .main__content .edit-cpt-profile .columns .column .row:after, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row:after, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row:after { content: ""; display: table; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row:after, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row:after, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row:after { clear: both; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row.empty, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row.empty, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row.empty { height: 23.636px; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row:last-child, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row:last-child, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row:last-child { margin-bottom: 0; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row .label, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row .label, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row .label { text-align: right; width: 80px; float: left; margin-right: 15px; }
-.app .app__main .main__content .edit-cpt-profile .columns .column .row .field, .app .app__main .main__content .edit-cpt-profile .columns .column--left .row .field, .app .app__main .main__content .edit-cpt-profile .columns .column--right .row .field { float: left; width: -webkit-calc(100% - 95px); width: calc(100% - 95px); }
-.app .app__main .main__content .edit-cpt-profile .input--sm { width: 280px; max-width: 100%; }
-.app .app__main .main__content .edit-cpt-profile .input--lg { width: 100%; }
 .app .app__main .main__content .edit-cpt-profile .buttons { text-align: center; }
 .app .app__main .main__content .edit-cpt-profile .buttons .cancel__button { margin-right: 10px; min-width: 125px; }
 .app .app__main .main__content .edit-cpt-profile .buttons .accept__button { min-width: 125px; }

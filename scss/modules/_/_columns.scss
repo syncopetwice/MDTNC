@@ -10,6 +10,7 @@
 .columns {
 	width: 950px;
 	margin-bottom: 20px;
+	font-size: 14px;
 	@include clearfix;
 	@include mq($until: lwide) {
 		width: 95%;
@@ -31,9 +32,25 @@
 			&.row--address {
 				margin-bottom: 5px;
 			}
+			// Different Sizes for "Edit CPT Profile" Page
+			&.row--edit-cpt {
+				&.empty {
+					min-height: 26px;
+				}
+				.el-left {
+					width: percentage(90/440);
+				}
+				.el-right {
+					width: percentage(350/440);
+				}
+				.input--sm {
+					width: 80%;
+				}
+			}
+			// Default Sizes
 			.el-left {
 				text-align: right;
-				padding-top: 2px;
+				// padding-top: 2px;
 				padding-right: 10px;
 				width: percentage(200/440);
 				float: left;

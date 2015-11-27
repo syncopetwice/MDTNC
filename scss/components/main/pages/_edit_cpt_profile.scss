@@ -1,58 +1,6 @@
 .edit-cpt-profile {
 	padding: 30px 10px 20px 10px;
 	@include heading;
-	.panel {
-		.panel__header {
-			min-height: 38px;
-		}
-	}
-	.columns {
-		@include clearfix;
-		font-size: 14px;
-		color: #133944;
-		margin-bottom: 60px;
-		.column {
-			&.column--left {
-				float: left;
-			}
-			&.column--right {
-				float: right;
-			}
-			width: 48%;
-			padding: 10px;
-			padding-bottom: 0;
-			.row {
-				@include clearfix;
-				margin-bottom: 20px;
-				&.empty {
-					height: 23.636px;
-				}
-				&:last-child {
-					margin-bottom: 0;
-				}
-				.label {
-					text-align: right;
-					// width: 115px;
-					width: 80px;
-					float: left;
-					margin-right: 15px;
-				}
-				.field {
-					float: left;
-					width: calc(100% - 95px);
-				}
-			}
-		}
-	}
-	.input {
-		&--sm {
-			width: 280px;
-			max-width: 100%;
-		}
-		&--lg {
-			width: 100%;
-		}
-	}
 	.buttons {
 		text-align: center;
 		.cancel__button {
