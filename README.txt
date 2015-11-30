@@ -8,6 +8,11 @@ https://app.smartsheet.com/b/home
 login: oleg.drozdov@vrpinc.com
 pass: drozdovpass1
 
+JIRA
+https://medtronicdiabetes.atlassian.net
+login: oleg.drozdov@vrpinc.com
+pass: drozdovpass1
+
 Сайт
 https://dev08-medtronicdiabetes.cs14.force.com/cpt/CPTMDTAdmin
 login: konstantin.kopylov@vrpinc.com.hcp

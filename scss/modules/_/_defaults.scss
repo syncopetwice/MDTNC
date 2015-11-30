@@ -46,3 +46,10 @@ select {
 		outline: none;
 	}
 }
+
+// Icon Down for Action Dropdown
+.fa.fa-angle-down {
+	&:hover {
+		cursor: pointer;
+	}
+}

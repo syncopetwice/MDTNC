@@ -21,6 +21,9 @@
 			&:last-child {
 				border-bottom: none;
 			}
+			&:hover {
+				background: darken(#f6f6f6,3%);
+			}
 			&:hover,
 			&:focus {
 				cursor: pointer;

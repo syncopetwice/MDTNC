@@ -5,7 +5,7 @@
 .notes {
 	width: 950px;
 	margin-bottom: 10px;
-	@include mq($until: lwide) {
+	@include mq($until: xwide) {
 		width: 95%;
 	}
 	@include clearfix;

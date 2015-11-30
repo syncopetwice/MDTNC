@@ -35,8 +35,10 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	// Fixes For IE10/11
 	@include ie() {
 		height: 100vh;
+		overflow: visible;
 	}
 	@import 'components/modal/_modal';
 	@import 'components/header/_header';

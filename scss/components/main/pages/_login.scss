@@ -1,15 +1,12 @@
 .login {
 	.banner {
-		@include mq($until: ipad-l) {
-			height: 380px;
-		}
 		height: 500px;
 		background:transparent url('../images/UI/login_page/login_bg.jpg') left top no-repeat;
 		background-size: 100% auto;
 	}
 	.login-form {
 		@include mq($until: ipad-l) {
-			padding: 50px 0;
+			padding: 30px 0;
 		}
 		background:#011f45;
 		padding: 70px 0;

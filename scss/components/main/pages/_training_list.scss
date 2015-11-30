@@ -25,6 +25,9 @@
 	}
 	// Controls
 	.controls__container {
+		@include mq($until: xwide) {
+			min-height: auto;
+		}
 		border-bottom: 1px solid #eaeaea;
 		margin-bottom: 10px;
 		min-height: 54px;
@@ -34,7 +37,7 @@
 		}
 		.search__container {
 			@include mq($until: xwide) {
-				padding-top: 0;
+				padding-top: 3px;
 			}
 			margin-right: 5px;
 			padding-top: 15px;
@@ -65,7 +68,7 @@
 		}
 		.status__container {
 			@include mq($until: xwide) {
-				padding-top: 0;
+				padding: 5px 10px;
 			}
 			padding-top: 15px;
 			margin-right: 20px;

@@ -1427,6 +1427,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app select { border: none; font-size: 14px; }
 .app select:hover { cursor: pointer; }
 .app select:focus { outline: none; }
+.app .fa.fa-angle-down:hover { cursor: pointer; }
 .app .cancel__button { display: inline-block; padding: 8px 20px; text-align: center; font-size: 16px; font-family: "EffraBold", Helvetica, Arial, sans-serif; border-width: 1px; border-style: solid; text-transform: uppercase; border-color: transparent; min-width: 105px; background: #fff; color: #084c85; border-color: #084c85; }
 .app .cancel__button:focus { outline: none; }
 .app .cancel__button:focus, .app .cancel__button:hover { background: #084c85; color: #fff; }
@@ -1452,7 +1453,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .tabs .tab .link { padding: 8px 16px; display: block; color: #0082cd; font-size: 14px; -webkit-tap-highlight-color: transparent; }
 .app .table-tabs { display: inline-block; }
 .app .table-tabs .table-tab { display: inline-block; font-size: 13px; font-family: "EffraMedium", Helvetica, Arial, sans-serif; text-align: center; text-transform: uppercase; padding: 15px 35px; color: #bcc3c4; }
-@media (max-width: 87.49em) { .app .table-tabs .table-tab { padding: 5px 10px; } }
+@media (max-width: 103.115em) { .app .table-tabs .table-tab { padding: 5px 10px; } }
 .app .table-tabs .table-tab.table-tab--active { background: #084c85; color: #fff; }
 .app .table-tabs .table-tab:hover { cursor: pointer; }
 .app .table-tabs .table-tab:first-child { margin-left: 8px; }
@@ -1461,20 +1462,21 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .view-as:before, .app .view-as:after { content: ""; display: table; }
 .app .view-as:after { clear: both; }
 .app .view-as .view { float: left; text-align: center; font-size: 16px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #bcc3c4; background: transparent; padding: 10px 20px; min-width: 170px; border-right: 1px solid #e1e1e1; }
+@media (max-width: 103.115em) { .app .view-as .view { padding: 5px 10px; } }
 .app .view-as .view.view--active { color: #fff; background: #084c85; }
 .app .view-as .view:hover { cursor: pointer; }
 .app .view-as .view:last-child { border-right: 0; }
 .app .pagination { display: inline-block; font-size: 14px; color: #2c3e50; }
 .app .pagination .pagination__title { margin-right: 8px; }
 .app .pagination .fa-angle-left { margin-right: 8px; }
-@media (max-width: 64.0525em) { .app .pagination .fa-angle-left { margin-right: 20px; } }
+@media (max-width: 103.115em) { .app .pagination .fa-angle-left { margin-right: 20px; } }
 .app .pagination .fa-angle-left:hover { cursor: pointer; }
 .app .pagination .fa-angle-right { margin-left: 8px; }
-@media (max-width: 64.0525em) { .app .pagination .fa-angle-right { margin-left: 20px; } }
+@media (max-width: 103.115em) { .app .pagination .fa-angle-right { margin-left: 20px; } }
 .app .pagination .fa-angle-right:hover { cursor: pointer; }
 .app .pagination ul { display: inline-block; margin: 0; padding: 0; list-style-type: none; }
 .app .pagination ul li { display: inline-block; text-align: center; margin-right: 3px; }
-@media (max-width: 64.0525em) { .app .pagination ul li { margin-right: 20px; } }
+@media (max-width: 103.115em) { .app .pagination ul li { margin-right: 20px; } }
 .app .pagination ul li:last-child { margin-right: 0; }
 .app .pagination ul li a { background: transparent; -webkit-border-radius: 4px; border-radius: 4px; display: block; padding: 8px 15px; color: #899da3; border-top: 1px solid #e1e1e1; border-right: 1px solid #e3e4e4; border-bottom: 1px solid #e5e9eb; border-left: 1px solid #eaeaea; }
 .app .pagination ul li a.active { background: #ebf5fb; color: #032e3a; }
@@ -1496,15 +1498,15 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .sub-heading span { font-family: "EffraBold", Helvetica, Arial, sans-serif; }
 .app .panel.panel--resources .panel__body .panel__table { width: 670px; border-top: 1px solid #dee1e2; }
 .app .panel.panel--sm { max-width: 900px; }
-@media (max-width: 64.0525em) { .app .panel.panel--sm { max-width: 100%; } }
+@media (max-width: 103.115em) { .app .panel.panel--sm { max-width: 100%; } }
 .app .panel .italic { font-style: italic; }
 .app .panel .panel__header { border: 1px solid #dee1e2; border-bottom: 0; padding: 14px 18px; background: #084c85; min-height: 38px; }
-@media (max-width: 64.0525em) { .app .panel .panel__header { padding: 7px 9px; } }
+@media (max-width: 103.115em) { .app .panel .panel__header { padding: 7px 9px; } }
 .app .panel .panel__header { *zoom: 1; }
 .app .panel .panel__header:before, .app .panel .panel__header:after { content: ""; display: table; }
 .app .panel .panel__header:after { clear: both; }
 .app .panel .panel__header .header__title { float: left; font-size: 16px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #fff; }
-@media (max-width: 64.0525em) { .app .panel .panel__header .header__title { font-size: 14px; } }
+@media (max-width: 103.115em) { .app .panel .panel__header .header__title { font-size: 14px; } }
 .app .panel .panel__header .header__controls { float: right; }
 .app .panel .panel__header .header__controls a { color: #fff; }
 .app .panel .panel__header .header__controls a span { font-size: 14px; margin-right: 5px; }
@@ -1514,22 +1516,22 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .panel .panel__body .panel__table { border: 1px solid #dee1e2; border-top: 0; width: 100%; border-collapse: collapse; border-spacing: 0; }
 .app .panel .panel__body .panel__table.panel__table--sm { width: 100%; max-width: 820px; }
 .app .panel .panel__body .panel__table.panel__table--details { border: 0; }
-@media (max-width: 64.0525em) { .app .panel .panel__body .panel__table.panel__table--details { padding: 5px 10px; } }
+@media (max-width: 103.115em) { .app .panel .panel__body .panel__table.panel__table--details { padding: 5px 10px; } }
 .app .panel .panel__body .panel__table.panel__table--details tbody td { border: 0; padding: 5px; }
-@media (max-width: 64.0525em) { .app .panel .panel__body .panel__table.panel__table--details tbody td { padding: 2px; } }
-@media (max-width: 64.0525em) { .app .panel .panel__body .panel__table { font-size: 13px; } }
+@media (max-width: 103.115em) { .app .panel .panel__body .panel__table.panel__table--details tbody td { padding: 2px; } }
+@media (max-width: 103.115em) { .app .panel .panel__body .panel__table { font-size: 13px; } }
 .app .panel .panel__body .panel__table thead th { padding: 15px 20px; font-size: 14px; color: #95a5a6; font-weight: normal; font-family: "EffraBold", Helvetica, Arial, sans-serif; text-align: left; vertical-align: top; }
-@media (max-width: 64.0525em) { .app .panel .panel__body .panel__table thead th { padding: 5px; } }
+@media (max-width: 103.115em) { .app .panel .panel__body .panel__table thead th { padding: 5px; } }
 .app .panel .panel__body .panel__table thead th .w-5 { width: 5%; }
 .app .panel .panel__body .panel__table thead th .w-10 { width: 10%; }
 .app .panel .panel__body .panel__table thead th .w-15 { width: 15%; }
 .app .panel .panel__body .panel__table thead th .fa { margin-left: 8px; }
 .app .panel .panel__body .panel__table thead th .fa.fa-angle-down { color: #032e3a; }
 .app .panel .panel__body .panel__table thead th a { position: relative; color: #95a5a6; }
-.app .panel .panel__body .panel__table tbody td { font-size: 14px; color: #133944; border-top: 1px solid #dee1e2; padding: 20px; }
+.app .panel .panel__body .panel__table tbody td { vertical-align: top; font-size: 14px; color: #133944; border-top: 1px solid #dee1e2; padding: 20px; }
 .app .panel .panel__body .panel__table tbody td.has-new-note { background: #fecd2e; }
 .app .panel .panel__body .panel__table tbody td.has-new-note .fa-pencil { border-right: 1px solid #133944; }
-@media (max-width: 64.0525em) { .app .panel .panel__body .panel__table tbody td { padding: 5px; } }
+@media (max-width: 103.115em) { .app .panel .panel__body .panel__table tbody td { padding: 5px; } }
 .app .panel .panel__body .panel__table tbody td a { font-size: 14px; color: #0082cd; }
 .app .dateInput { text-align: center; }
 .app .dateInput .dateFormat { display: block; margin: 0 auto; }
@@ -1558,7 +1560,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .columns .input--zip { width: 95px; }
 .app .columns .input--number { width: 110px; }
 .app .notes { width: 950px; margin-bottom: 10px; }
-@media (max-width: 64.99em) { .app .notes { width: 95%; } }
+@media (max-width: 103.115em) { .app .notes { width: 95%; } }
 .app .notes { *zoom: 1; }
 .app .notes:before, .app .notes:after { content: ""; display: table; }
 .app .notes:after { clear: both; }
@@ -1567,7 +1569,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .notes textarea { display: block; padding: 5px; width: 100%; border: 1px solid #e1e1e1; resize: none; min-height: 95px; }
 .app .notes textarea:focus { outline: none; }
 .app .notes .note--exist { background: #ebecf0; padding: 20px; border: 1px solid #e1e1e1; font-size: 14px; color: #133944; }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .app { height: 100vh; } }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .app { height: 100vh; overflow: visible; } }
 .app .app__modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background: rgba(0, 0, 0, 0.4); }
 .app .app__modal.isClosed { display: none; }
 .app .modal__decline { position: absolute; width: 600px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
@@ -1621,6 +1623,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown.isClosed { display: none; }
 .app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
 .app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:last-child { border-bottom: none; }
+.app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover, .app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .modal__submit-payment { position: absolute; width: 450px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .app .modal__submit-payment .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
@@ -1655,25 +1658,25 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__header .header__controls .control__item:focus, .app .app__header .header__controls .control__item:active { background: none; outline: none; }
 .app .app__header .header__controls .control__item:hover { text-decoration: none; }
 .app .app__header .header__controls .control__item:last-child { margin-right: 0; }
-.app .app__main { position: relative; overflow: hidden; min-height: 350px; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+.app .app__main { position: relative; overflow: hidden; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; }
 .app .app__main { *zoom: 1; }
 .app .app__main:before, .app .app__main:after { content: ""; display: table; }
 .app .app__main:after { clear: both; }
 .app .app__main .app__sidebar { background: #888b8d; }
-@media (min-width: 87.5em) { .app .app__main .app__sidebar { width: 230px; min-height: 100%; position: absolute; top: 0; left: 0; } }
+@media (min-width: 103.125em) { .app .app__main .app__sidebar { width: 230px; min-height: 100%; position: absolute; top: 0; left: 0; } }
 .app .app__main .app__sidebar .sidebar__nav .nav__list { list-style-type: none; margin: 0; padding: 0; }
-@media (max-width: 87.49em) { .app .app__main .app__sidebar .sidebar__nav .nav__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; } }
+@media (max-width: 103.115em) { .app .app__main .app__sidebar .sidebar__nav .nav__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; } }
 .app .app__main .app__sidebar .sidebar__nav .nav__list { *zoom: 1; }
 .app .app__main .app__sidebar .sidebar__nav .nav__list:before, .app .app__main .app__sidebar .sidebar__nav .nav__list:after { content: ""; display: table; }
 .app .app__main .app__sidebar .sidebar__nav .nav__list:after { clear: both; }
 .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item:first-child { margin-top: 18px; }
-@media (max-width: 87.49em) { .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item:first-child { margin-top: 0; } }
+@media (max-width: 103.115em) { .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item:first-child { margin-top: 0; } }
 .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item.list__item--active .item__link { color: #fecd2e; background: #6f7274; }
 .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item .item__link { font-size: 14px; font-family: "EffraMedium", Helvetica, Arial, sans-serif; color: #fff; display: block; text-transform: uppercase; padding: 10px 16px; margin-bottom: 18px; }
-@media (max-width: 87.49em) { .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item .item__link { margin-bottom: 0; font-size: 12px; } }
+@media (max-width: 103.115em) { .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item .item__link { margin-bottom: 0; font-size: 12px; } }
 .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item .item__link i { width: 22px; height: 20px; font-size: 20px; margin-right: 10px; }
-@media (max-width: 87.49em) { .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item .item__link i { font-size: 12px; width: 12px; height: 10px; } }
-@media (min-width: 87.5em) { .app .app__main .main__content { margin-left: 230px; } }
+@media (max-width: 103.115em) { .app .app__main .app__sidebar .sidebar__nav .nav__list .list__item .item__link i { font-size: 12px; width: 12px; height: 10px; } }
+@media (min-width: 103.125em) { .app .app__main .main__content { margin-left: 230px; } }
 .app .app__main .main__content .accept-training-event { padding: 30px 8px; font-size: 14px; }
 .app .app__main .main__content .accept-training-event .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 5px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
 .app .app__main .main__content .accept-training-event .navigation__controls { margin-left: 10px; margin-bottom: 20px; }
@@ -1715,6 +1718,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown.isClosed { display: none; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:last-child { border-bottom: none; }
+.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover, .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .app__main .main__content .business-trainer-account .panel { margin-left: 10px; margin-right: 10px; }
 @media (max-width: 48.0525em) { .app .app__main .main__content .business-trainer-account .panel { margin-left: 5px; margin-right: 5px; } }
@@ -1723,6 +1727,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account .dropdown.isClosed { display: none; }
 .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
 .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:last-child { border-bottom: none; }
+.app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:hover, .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .app__main .main__content .business-trainer-account .controls__container { border-bottom: 1px solid #eaeaea; margin-bottom: 10px; }
 .app .app__main .main__content .business-trainer-account .controls__container { *zoom: 1; }
@@ -1808,9 +1813,8 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .landing .section__bottom article { -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; color: #424242; }
 .app .app__main .main__content .landing .section__bottom article header { color: #1386c7; }
 .app .app__main .main__content .login .banner { height: 500px; background: transparent url("../images/UI/login_page/login_bg.jpg") left top no-repeat; background-size: 100% auto; }
-@media (max-width: 64.0525em) { .app .app__main .main__content .login .banner { height: 380px; } }
 .app .app__main .main__content .login .login-form { background: #011f45; padding: 70px 0; }
-@media (max-width: 64.0525em) { .app .app__main .main__content .login .login-form { padding: 50px 0; } }
+@media (max-width: 64.0525em) { .app .app__main .main__content .login .login-form { padding: 30px 0; } }
 .app .app__main .main__content .login .login-form .login-form__inner { width: 730px; margin: 0 auto; }
 .app .app__main .main__content .login .login-form .login-form__inner .login-form__heading { color: #fff; font-family: "EffraBold", Helvetica, Arial, sans-serif; font-size: 22px; text-transform: uppercase; margin-bottom: 15px; }
 .app .app__main .main__content .login .form { *zoom: 1; }
@@ -1835,7 +1839,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .mdt-admin .controls__container:after { clear: both; }
 .app .app__main .main__content .mdt-admin .table-tabs__container { float: left; }
 .app .app__main .main__content .mdt-admin .show__controls { padding: 15px 0; margin-right: 30px; font-size: 14px; float: right; color: #032e3a; }
-@media (max-width: 87.49em) { .app .app__main .main__content .mdt-admin .show__controls { padding: 5px 0; } }
+@media (max-width: 103.115em) { .app .app__main .main__content .mdt-admin .show__controls { padding: 5px 0; } }
 .app .app__main .main__content .mdt-admin .show__controls .label { margin-right: 15px; font-family: "EffraBold", Helvetica, Arial, sans-serif; }
 .app .app__main .main__content .mdt-admin .show__controls .select { margin-right: 15px; }
 .app .app__main .main__content .mdt-admin .search__input { width: 145px; height: 25px; padding: 5px; margin-right: 3px; background: #f4f4f4; font-size: 14px; }
@@ -1848,6 +1852,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .mdt-admin .dropdown.isClosed { display: none; }
 .app .app__main .main__content .mdt-admin .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
 .app .app__main .main__content .mdt-admin .dropdown .dropdown__item:last-child { border-bottom: none; }
+.app .app__main .main__content .mdt-admin .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .app__main .main__content .mdt-admin .dropdown .dropdown__item:hover, .app .app__main .main__content .mdt-admin .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .app__main .main__content .training-list { margin-top: 15px; }
 .app .app__main .main__content .training-list .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 5px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
@@ -1857,18 +1862,19 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .training-list .back__button__container .back__button { color: #0082cd; font-size: 14px; }
 .app .app__main .main__content .training-list .back__button__container .back__button i { margin-right: 5px; }
 .app .app__main .main__content .training-list .controls__container { border-bottom: 1px solid #eaeaea; margin-bottom: 10px; min-height: 54px; }
+@media (max-width: 103.115em) { .app .app__main .main__content .training-list .controls__container { min-height: auto; } }
 .app .app__main .main__content .training-list .controls__container { *zoom: 1; }
 .app .app__main .main__content .training-list .controls__container:before, .app .app__main .main__content .training-list .controls__container:after { content: ""; display: table; }
 .app .app__main .main__content .training-list .controls__container:after { clear: both; }
 .app .app__main .main__content .training-list .controls__container .table-tabs__container { float: left; }
 .app .app__main .main__content .training-list .controls__container .search__container { margin-right: 5px; padding-top: 15px; float: right; }
-@media (max-width: 87.49em) { .app .app__main .main__content .training-list .controls__container .search__container { padding-top: 0; } }
+@media (max-width: 103.115em) { .app .app__main .main__content .training-list .controls__container .search__container { padding-top: 3px; } }
 .app .app__main .main__content .training-list .controls__container .search__container .search__input { width: 145px; height: 25px; padding: 5px; margin-right: 3px; border-left: 1px solid #e4e4e4; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e2e2e2; border-right: 1px solid #e4e4e4; background: #f4f4f4; font-size: 14px; }
 .app .app__main .main__content .training-list .controls__container .search__container .search__button { border: 0; background: none; }
 .app .app__main .main__content .training-list .controls__container .search__container .search__button:focus { outline: none; }
 .app .app__main .main__content .training-list .controls__container .search__container .search__button i { font-size: 17px; color: #032e3a; }
 .app .app__main .main__content .training-list .controls__container .status__container { padding-top: 15px; margin-right: 20px; float: right; }
-@media (max-width: 87.49em) { .app .app__main .main__content .training-list .controls__container .status__container { padding-top: 0; } }
+@media (max-width: 103.115em) { .app .app__main .main__content .training-list .controls__container .status__container { padding: 5px 10px; } }
 .app .app__main .main__content .training-list .controls__container .status__container { *zoom: 1; }
 .app .app__main .main__content .training-list .controls__container .status__container:before, .app .app__main .main__content .training-list .controls__container .status__container:after { content: ""; display: table; }
 .app .app__main .main__content .training-list .controls__container .status__container:after { clear: both; }
@@ -1880,6 +1886,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown.isClosed { display: none; }
 .app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
 .app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:last-child { border-bottom: none; }
+.app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:hover, .app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .app__main .main__content .training-list .panel { margin: 0 10px; margin-bottom: 20px; }
 .app .app__main .main__content .training-list .panel .panel__table .highlighted { background: #eaecef; }
@@ -1893,6 +1900,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .training-list .action__link .dropdown.isClosed { display: none; }
 .app .app__main .main__content .training-list .action__link .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
 .app .app__main .main__content .training-list .action__link .dropdown .dropdown__item:last-child { border-bottom: none; }
+.app .app__main .main__content .training-list .action__link .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .app__main .main__content .training-list .action__link .dropdown .dropdown__item:hover, .app .app__main .main__content .training-list .action__link .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .app__main .main__content .training-list .pagination__container { text-align: center; margin-bottom: 20px; }
 .app .app__main .main__content .training-list .buttons__container { margin: 20px 0; text-align: center; }
@@ -1939,52 +1947,52 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .submit-payment .buttons__container .cancel__button { margin-right: 10px; }
 .app .app__footer { background: #0e4c82; }
 .app .app__footer .footer__nav { padding: 20px 0; width: 1300px; margin: 0 auto; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav { width: 100%; padding: 15px 20px; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav { width: 100%; padding: 15px 20px; } }
 .app .app__footer .footer__nav { *zoom: 1; }
 .app .app__footer .footer__nav:before, .app .app__footer .footer__nav:after { content: ""; display: table; }
 .app .app__footer .footer__nav:after { clear: both; }
 .app .app__footer .footer__nav .nav__quick-links { width: 715px; float: left; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links { width: 100%; float: none; margin-bottom: 10px; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links { width: 100%; float: none; margin-bottom: 10px; } }
 .app .app__footer .footer__nav .nav__quick-links { *zoom: 1; }
 .app .app__footer .footer__nav .nav__quick-links:before, .app .app__footer .footer__nav .nav__quick-links:after { content: ""; display: table; }
 .app .app__footer .footer__nav .nav__quick-links:after { clear: both; }
 .app .app__footer .footer__nav .nav__quick-links .quick-links__title { width: 110px; font-family: "EffraBold", Helvetica, Arial, sans-serif; font-size: 16px; color: #fff; margin-top: 25px; float: left; position: relative; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links .quick-links__title { width: 100%; float: none; margin: 0; margin-bottom: 10px; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links .quick-links__title { width: 100%; float: none; margin: 0; margin-bottom: 10px; } }
 .app .app__footer .footer__nav .nav__quick-links .quick-links__title:after { content: ''; width: 1px; height: 55px; background: #12689e; display: block; position: absolute; top: -10px; right: 0; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links .quick-links__title:after { display: none; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links .quick-links__title:after { display: none; } }
 .app .app__footer .footer__nav .nav__quick-links .links__container { width: 575px; float: left; padding-left: 30px; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links .links__container { width: 100%; padding-left: 20px; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links .links__container { width: 100%; padding-left: 20px; } }
 .app .app__footer .footer__nav .nav__quick-links .links__container { *zoom: 1; }
 .app .app__footer .footer__nav .nav__quick-links .links__container:before, .app .app__footer .footer__nav .nav__quick-links .links__container:after { content: ""; display: table; }
 .app .app__footer .footer__nav .nav__quick-links .links__container:after { clear: both; }
 .app .app__footer .footer__nav .nav__quick-links .links__container .links--first { float: left; width: 195px; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links--first { width: 33%; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links--first { width: 33%; } }
 .app .app__footer .footer__nav .nav__quick-links .links__container .links--second { float: left; width: 170px; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links--second { width: 33%; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links--second { width: 33%; } }
 .app .app__footer .footer__nav .nav__quick-links .links__container .links--third { float: left; width: 180px; margin-right: 10px; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links--third { width: 33%; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links--third { width: 33%; } }
 .app .app__footer .footer__nav .nav__quick-links .links__container .links .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--first .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--second .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--third .link__item { display: block; font-size: 14px; color: #fff; text-decoration: none; margin-bottom: 5px; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--first .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--second .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--third .link__item { margin-bottom: 8px; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__quick-links .links__container .links .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--first .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--second .link__item, .app .app__footer .footer__nav .nav__quick-links .links__container .links--third .link__item { margin-bottom: 8px; } }
 .app .app__footer .footer__nav .nav__quick-links .links__container .links .link__item:hover, .app .app__footer .footer__nav .nav__quick-links .links__container .links--first .link__item:hover, .app .app__footer .footer__nav .nav__quick-links .links__container .links--second .link__item:hover, .app .app__footer .footer__nav .nav__quick-links .links__container .links--third .link__item:hover { text-decoration: none; }
 .app .app__footer .footer__nav .nav__quick-links .links__container .links:last-child, .app .app__footer .footer__nav .nav__quick-links .links__container .links--first:last-child, .app .app__footer .footer__nav .nav__quick-links .links__container .links--second:last-child, .app .app__footer .footer__nav .nav__quick-links .links__container .links--third:last-child { margin-right: 0; }
 .app .app__footer .footer__nav .nav__connect-with-us { float: left; width: 385px; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__connect-with-us { width: 100%; float: none; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__connect-with-us { width: 100%; float: none; } }
 .app .app__footer .footer__nav .nav__connect-with-us { *zoom: 1; }
 .app .app__footer .footer__nav .nav__connect-with-us:before, .app .app__footer .footer__nav .nav__connect-with-us:after { content: ""; display: table; }
 .app .app__footer .footer__nav .nav__connect-with-us:after { clear: both; }
 .app .app__footer .footer__nav .nav__connect-with-us .connect-with-us__title { float: left; font-size: 16px; color: #fff; margin-top: 25px; padding-right: 20px; float: left; font-family: "EffraBold", Helvetica, Arial, sans-serif; position: relative; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__connect-with-us .connect-with-us__title { width: 100%; float: none; margin: 0; margin-bottom: 10px; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__connect-with-us .connect-with-us__title { width: 100%; float: none; margin: 0; margin-bottom: 10px; } }
 .app .app__footer .footer__nav .nav__connect-with-us .connect-with-us__title:after { content: ''; width: 1px; height: 55px; background: #12689e; display: block; position: absolute; top: -10px; right: 0; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__connect-with-us .connect-with-us__title:after { display: none; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__connect-with-us .connect-with-us__title:after { display: none; } }
 .app .app__footer .footer__nav .nav__connect-with-us .nav__social { float: left; margin-top: 22px; padding-left: 20px; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__connect-with-us .nav__social { margin: 0; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__connect-with-us .nav__social { margin: 0; } }
 .app .app__footer .footer__nav .nav__connect-with-us .nav__social .social__item { color: #fff; font-size: 28px; text-decoration: none; }
-@media (max-width: 87.49em) { .app .app__footer .footer__nav .nav__connect-with-us .nav__social .social__item { margin-right: 20px; }
+@media (max-width: 103.115em) { .app .app__footer .footer__nav .nav__connect-with-us .nav__social .social__item { margin-right: 20px; }
   .app .app__footer .footer__nav .nav__connect-with-us .nav__social .social__item:last-child { margin-right: 0; } }
 .app .app__footer .footer__nav .nav__connect-with-us .nav__social .social__item i.icon--loop { display: inline-block; background: transparent url("../images/UI/footer/loop-icon.png") no-repeat; background-size: 100% auto; width: 24px; height: 29px; vertical-align: bottom; }
 .app .app__footer .footer__nav .nav__connect-with-us .nav__social .social__item:hover { text-decoration: none; }
 .app .app__footer .footer__rights { border-top: 1px solid #396c98; padding: 20px 0; text-align: center; font-size: 12px; color: #fff; }
-@media (max-width: 87.49em) { .app .app__footer .footer__rights { padding: 10px 0; } }
+@media (max-width: 103.115em) { .app .app__footer .footer__rights { padding: 10px 0; } }
 
 
 
