@@ -1873,7 +1873,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .training-list .controls__container .status__container:before, .app .app__main .main__content .training-list .controls__container .status__container:after { content: ""; display: table; }
 .app .app__main .main__content .training-list .controls__container .status__container:after { clear: both; }
 .app .app__main .main__content .training-list .controls__container .status__container .status__title { float: left; margin-right: 5px; font-size: 14px; text-transform: uppercase; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link { border: 0; margin-top: 2px; font-size: 14px; text-transform: uppercase; color: #032e3a; float: left; position: relative; }
+.app .app__main .main__content .training-list .controls__container .status__container .status__link { border: 0; margin-top: 2px; font-size: 14px; text-transform: uppercase; margin-right: 5px; color: #032e3a; float: left; position: relative; }
 .app .app__main .main__content .training-list .controls__container .status__container .status__link:focus { outline: none; }
 .app .app__main .main__content .training-list .controls__container .status__container .status__link i { color: #032e3a; }
 .app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown { display: block; background: #f6f6f6; position: absolute; top: 120%; left: 0; width: 100%; min-width: 75px; border: 1px solid #e1e3e4; padding: 0px 1px; }

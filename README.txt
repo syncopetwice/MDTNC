@@ -11,9 +11,10 @@ pass: drozdovpass1
 Сайт
 https://dev08-medtronicdiabetes.cs14.force.com/cpt/CPTMDTAdmin
 login: konstantin.kopylov@vrpinc.com.hcp
+pass: 123pas5w0rd
+
 
 git: https://github.com/syncopetwice/MDTNC
-
 
 Gulp install:
 
