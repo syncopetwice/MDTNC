@@ -1,0 +1,60 @@
+// Used on pages: Training List / Admin
+.sorting {
+	@include clearfix;
+	@include mq($until: xwide) {
+		padding: 5px 0;
+	}
+	color: #032e3a;
+	padding: 15px 0 0 0;
+	margin-right: 15px;
+	font-size: 14px;
+	float: right;
+	// Item :: Sorting Element
+	.item {
+		@include mq($until: ipad-l) {
+			float: none;
+		}
+		float: left;
+		margin-right: 15px;
+		.label {
+			margin-right: 5px;
+			font-family: $e-bold;
+			text-transform: uppercase;
+		}
+		.select {
+			margin-right: 5px;
+		}
+	}
+	// Search
+	.search {
+		@include mq($until: ipad-l) {
+			float: none;
+		}
+		float: right;
+		.search__input {
+			width: 145px;
+			// height: 25px;
+			margin-right: 5px;
+			background:#f4f4f4;
+			transition: background .3s ease;
+			&:focus {
+				background:#fff;
+			}
+		}
+		.search__button {
+			border: 0;
+			background:none;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #032e3a;
+			&:focus {
+				outline: none;
+			}
+			.fa-search {
+				color: #032e3a;
+				margin-right: 3px;
+			}
+		}
+	}
+}

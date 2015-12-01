@@ -1,5 +1,5 @@
 .app__header {
-	@include mq($until: ipad-l) {
+	@include mq($until: xwide) {
 		padding: 9px 12px;
 	}
 	background: $dark-blue;
@@ -8,7 +8,7 @@
 	.header__logotype {
 		float: left;
 		a {
-			@include mq($until: ipad-l) {
+			@include mq($until: xwide) {
 				margin-right: 15px;
 				width: 100px;
 				padding-top: 2px;
@@ -34,7 +34,7 @@
 		}
 	}
 	.header__slogan {
-		@include mq($until: ipad-l) {
+		@include mq($until: xwide) {
 			padding: 0;
 			padding-top: 2px;
 			font-size: 14px;
@@ -50,14 +50,14 @@
 		}
 	}
 	.header__controls {
-		@include mq($until: ipad-l) {
+		@include mq($until: xwide) {
 			padding-top: 1px;
 		}
 		float: right;
 		padding-top: 6px;
 		@include clearfix;
 		.control__item {
-			@include mq($until: ipad-l) {
+			@include mq($until: xwide) {
 				font-size: 14px;
 			}
 			float: left;

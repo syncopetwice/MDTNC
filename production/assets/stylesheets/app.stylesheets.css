@@ -1569,6 +1569,22 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .notes textarea { display: block; padding: 5px; width: 100%; border: 1px solid #e1e1e1; resize: none; min-height: 95px; }
 .app .notes textarea:focus { outline: none; }
 .app .notes .note--exist { background: #ebecf0; padding: 20px; border: 1px solid #e1e1e1; font-size: 14px; color: #133944; }
+.app .sorting { color: #032e3a; padding: 15px 0 0 0; margin-right: 15px; font-size: 14px; float: right; }
+.app .sorting { *zoom: 1; }
+.app .sorting:before, .app .sorting:after { content: ""; display: table; }
+.app .sorting:after { clear: both; }
+@media (max-width: 103.115em) { .app .sorting { padding: 5px 0; } }
+.app .sorting .item { float: left; margin-right: 15px; }
+@media (max-width: 64.0525em) { .app .sorting .item { float: none; } }
+.app .sorting .item .label { margin-right: 5px; font-family: "EffraBold", Helvetica, Arial, sans-serif; text-transform: uppercase; }
+.app .sorting .item .select { margin-right: 5px; }
+.app .sorting .search { float: right; }
+@media (max-width: 64.0525em) { .app .sorting .search { float: none; } }
+.app .sorting .search .search__input { width: 145px; margin-right: 5px; background: #f4f4f4; -webkit-transition: background .3s ease; transition: background .3s ease; }
+.app .sorting .search .search__input:focus { background: #fff; }
+.app .sorting .search .search__button { border: 0; background: none; font-size: 14px; font-weight: bold; text-transform: uppercase; color: #032e3a; }
+.app .sorting .search .search__button:focus { outline: none; }
+.app .sorting .search .search__button .fa-search { color: #032e3a; margin-right: 3px; }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .app { height: 100vh; overflow: visible; } }
 .app .app__modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background: rgba(0, 0, 0, 0.4); }
 .app .app__modal.isClosed { display: none; }
@@ -1636,25 +1652,25 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__submit-payment .modal__body { padding: 30px; background: #fff; }
 .app .modal__submit-payment p { margin: 0 0 15px 0; }
 .app .app__header { background: #084c85; padding: 30px 32px 32px 22px; }
-@media (max-width: 64.0525em) { .app .app__header { padding: 9px 12px; } }
+@media (max-width: 103.115em) { .app .app__header { padding: 9px 12px; } }
 .app .app__header { *zoom: 1; }
 .app .app__header:before, .app .app__header:after { content: ""; display: table; }
 .app .app__header:after { clear: both; }
 .app .app__header .header__logotype { float: left; }
 .app .app__header .header__logotype a { overflow: hidden; display: block; width: 157px; height: 26px; margin-right: 24px; text-decoration: none; background: transparent url("../images/UI/header/logotype.png"); background-repeat: no-repeat; background-size: 100% auto; }
-@media (max-width: 64.0525em) { .app .app__header .header__logotype a { margin-right: 15px; width: 100px; padding-top: 2px; height: 17px; } }
+@media (max-width: 103.115em) { .app .app__header .header__logotype a { margin-right: 15px; width: 100px; padding-top: 2px; height: 17px; } }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .app .app__header .header__logotype a { background: transparent url("../images/UI/header/logotype-ie.png"); background-repeat: no-repeat; background-size: 100% auto; } }
 .app .app__header .header__logotype a:hover { text-decoration: none; }
 .app .app__header .header__slogan { float: left; font-size: 22px; color: #fff; text-transform: uppercase; }
-@media (max-width: 64.0525em) { .app .app__header .header__slogan { padding: 0; padding-top: 2px; font-size: 14px; line-height: 18px; } }
+@media (max-width: 103.115em) { .app .app__header .header__slogan { padding: 0; padding-top: 2px; font-size: 14px; line-height: 18px; } }
 .app .app__header .header__slogan span { font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #fecd2e; }
 .app .app__header .header__controls { float: right; padding-top: 6px; }
-@media (max-width: 64.0525em) { .app .app__header .header__controls { padding-top: 1px; } }
+@media (max-width: 103.115em) { .app .app__header .header__controls { padding-top: 1px; } }
 .app .app__header .header__controls { *zoom: 1; }
 .app .app__header .header__controls:before, .app .app__header .header__controls:after { content: ""; display: table; }
 .app .app__header .header__controls:after { clear: both; }
 .app .app__header .header__controls .control__item { float: left; color: #fff; margin-right: 27px; display: block; text-decoration: none; font-size: 20px; line-height: 18px; text-transform: uppercase; -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5); }
-@media (max-width: 64.0525em) { .app .app__header .header__controls .control__item { font-size: 14px; } }
+@media (max-width: 103.115em) { .app .app__header .header__controls .control__item { font-size: 14px; } }
 .app .app__header .header__controls .control__item:focus, .app .app__header .header__controls .control__item:active { background: none; outline: none; }
 .app .app__header .header__controls .control__item:hover { text-decoration: none; }
 .app .app__header .header__controls .control__item:last-child { margin-right: 0; }
@@ -1738,7 +1754,8 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account .show__controls .label { margin-right: 15px; font-family: "EffraBold", Helvetica, Arial, sans-serif; }
 .app .app__main .main__content .business-trainer-account .show__controls .select { margin-right: 15px; }
 .app .app__main .main__content .contact-us { padding: 20px; margin: 0 0 5px 0; }
-.app .app__main .main__content .contact-us .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
+.app .app__main .main__content .contact-us .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 15px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
+.app .app__main .main__content .contact-us p { margin: 0 0 10px 0; }
 .app .app__main .main__content .edit-cpt-profile { padding: 30px 10px 20px 10px; }
 .app .app__main .main__content .edit-cpt-profile .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
 .app .app__main .main__content .edit-cpt-profile .buttons { text-align: center; }
@@ -1830,22 +1847,11 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .login .form .form__control .forgot a { font-size: 14px; text-decoration: underline; color: #fff; }
 .app .app__main .main__content .login .form .form__control .login__button { margin-top: 29px; }
 .app .app__main .main__content .mdt-admin { padding-top: 35px; padding-bottom: 70px; }
-.app .app__main .main__content .mdt-admin .buttons { text-align: center; }
-.app .app__main .main__content .mdt-admin .buttons .cancel__button { margin-right: 10px; min-width: 135px; }
-.app .app__main .main__content .mdt-admin .buttons .accept__button { min-width: 220px; }
 .app .app__main .main__content .mdt-admin .controls__container { border-bottom: 1px solid #eaeaea; }
 .app .app__main .main__content .mdt-admin .controls__container { *zoom: 1; }
 .app .app__main .main__content .mdt-admin .controls__container:before, .app .app__main .main__content .mdt-admin .controls__container:after { content: ""; display: table; }
 .app .app__main .main__content .mdt-admin .controls__container:after { clear: both; }
-.app .app__main .main__content .mdt-admin .table-tabs__container { float: left; }
-.app .app__main .main__content .mdt-admin .show__controls { padding: 15px 0; margin-right: 30px; font-size: 14px; float: right; color: #032e3a; }
-@media (max-width: 103.115em) { .app .app__main .main__content .mdt-admin .show__controls { padding: 5px 0; } }
-.app .app__main .main__content .mdt-admin .show__controls .label { margin-right: 15px; font-family: "EffraBold", Helvetica, Arial, sans-serif; }
-.app .app__main .main__content .mdt-admin .show__controls .select { margin-right: 15px; }
-.app .app__main .main__content .mdt-admin .search__input { width: 145px; height: 25px; padding: 5px; margin-right: 3px; background: #f4f4f4; font-size: 14px; }
-.app .app__main .main__content .mdt-admin .search__button { border: 0; background: none; }
-.app .app__main .main__content .mdt-admin .search__button:focus { outline: none; }
-.app .app__main .main__content .mdt-admin .search__button i { font-size: 17px; color: #032e3a; }
+.app .app__main .main__content .mdt-admin .controls__container .table-tabs__container { float: left; }
 .app .app__main .main__content .mdt-admin .panel { margin-bottom: 25px; }
 .app .app__main .main__content .mdt-admin .panel__table tbody .fa-pencil-square-o { border-right: 0; }
 .app .app__main .main__content .mdt-admin .dropdown { display: block; background: #f6f6f6; position: absolute; top: 120%; left: 0; width: 100%; min-width: 75px; border: 1px solid #e1e3e4; padding: 0px 1px; }
@@ -1854,6 +1860,9 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .mdt-admin .dropdown .dropdown__item:last-child { border-bottom: none; }
 .app .app__main .main__content .mdt-admin .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .app__main .main__content .mdt-admin .dropdown .dropdown__item:hover, .app .app__main .main__content .mdt-admin .dropdown .dropdown__item:focus { cursor: pointer; }
+.app .app__main .main__content .mdt-admin .buttons { text-align: center; }
+.app .app__main .main__content .mdt-admin .buttons .cancel__button { margin-right: 10px; min-width: 135px; }
+.app .app__main .main__content .mdt-admin .buttons .accept__button { min-width: 220px; }
 .app .app__main .main__content .training-list { margin-top: 15px; }
 .app .app__main .main__content .training-list .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 5px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
 .app .app__main .main__content .training-list .view-as__container { text-align: center; margin-bottom: 20px; }
@@ -1867,27 +1876,6 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .training-list .controls__container:before, .app .app__main .main__content .training-list .controls__container:after { content: ""; display: table; }
 .app .app__main .main__content .training-list .controls__container:after { clear: both; }
 .app .app__main .main__content .training-list .controls__container .table-tabs__container { float: left; }
-.app .app__main .main__content .training-list .controls__container .search__container { margin-right: 5px; padding-top: 15px; float: right; }
-@media (max-width: 103.115em) { .app .app__main .main__content .training-list .controls__container .search__container { padding-top: 3px; } }
-.app .app__main .main__content .training-list .controls__container .search__container .search__input { width: 145px; height: 25px; padding: 5px; margin-right: 3px; border-left: 1px solid #e4e4e4; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e2e2e2; border-right: 1px solid #e4e4e4; background: #f4f4f4; font-size: 14px; }
-.app .app__main .main__content .training-list .controls__container .search__container .search__button { border: 0; background: none; }
-.app .app__main .main__content .training-list .controls__container .search__container .search__button:focus { outline: none; }
-.app .app__main .main__content .training-list .controls__container .search__container .search__button i { font-size: 17px; color: #032e3a; }
-.app .app__main .main__content .training-list .controls__container .status__container { padding-top: 15px; margin-right: 20px; float: right; }
-@media (max-width: 103.115em) { .app .app__main .main__content .training-list .controls__container .status__container { padding: 5px 10px; } }
-.app .app__main .main__content .training-list .controls__container .status__container { *zoom: 1; }
-.app .app__main .main__content .training-list .controls__container .status__container:before, .app .app__main .main__content .training-list .controls__container .status__container:after { content: ""; display: table; }
-.app .app__main .main__content .training-list .controls__container .status__container:after { clear: both; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__title { float: left; margin-right: 5px; font-size: 14px; text-transform: uppercase; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link { border: 0; margin-top: 2px; font-size: 14px; text-transform: uppercase; margin-right: 5px; color: #032e3a; float: left; position: relative; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link:focus { outline: none; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link i { color: #032e3a; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown { display: block; background: #f6f6f6; position: absolute; top: 120%; left: 0; width: 100%; min-width: 75px; border: 1px solid #e1e3e4; padding: 0px 1px; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown.isClosed { display: none; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:last-child { border-bottom: none; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:hover { background: #eeeeee; }
-.app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:hover, .app .app__main .main__content .training-list .controls__container .status__container .status__link .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .app__main .main__content .training-list .panel { margin: 0 10px; margin-bottom: 20px; }
 .app .app__main .main__content .training-list .panel .panel__table .highlighted { background: #eaecef; }
 .app .app__main .main__content .training-list .panel .panel__table .fa-pencil-square-o { border-right: 0; }

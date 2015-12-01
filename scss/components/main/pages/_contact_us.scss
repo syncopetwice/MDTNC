@@ -1,5 +1,8 @@
 .contact-us {
-	@include heading;
+	@include heading(15px);
 	padding: 20px;
 	margin: 0 0 5px 0;
+	p {
+		margin: 0 0 10px 0;
+	}
 }
