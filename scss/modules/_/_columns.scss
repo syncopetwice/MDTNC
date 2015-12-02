@@ -74,12 +74,21 @@
 	}
 	select,
 	textarea,
-	input {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
 		width: 100%;
 	}
 	textarea {
+		padding: 5px;
 		resize: none;
 		min-height: 95px;
+	}
+	// Hidden Salesforce link
+	.lookupInput {
+		a {
+			display: none;
+		}
 	}
 	.input--zip {
 		width: 95px;

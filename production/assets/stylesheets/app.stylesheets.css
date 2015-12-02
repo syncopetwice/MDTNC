@@ -1556,8 +1556,9 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .columns .column .row .el-right, .app .columns .column--left .row .el-right, .app .columns .column--right .row .el-right { width: 54.54545%; float: left; }
 .app .columns .column--left { float: left; width: 45%; margin-right: 5%; }
 .app .columns .column--right { float: right; width: 45%; }
-.app .columns select, .app .columns textarea, .app .columns input { width: 100%; }
-.app .columns textarea { resize: none; min-height: 95px; }
+.app .columns select, .app .columns textarea, .app .columns input[type="text"], .app .columns input[type="password"], .app .columns input[type="email"] { width: 100%; }
+.app .columns textarea { padding: 5px; resize: none; min-height: 95px; }
+.app .columns .lookupInput a { display: none; }
 .app .columns .input--zip { width: 95px; }
 .app .columns .input--number { width: 110px; }
 .app .notes { width: 950px; margin-bottom: 10px; }
