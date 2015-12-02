@@ -17,21 +17,16 @@
 			margin-right: 5px;
 			font-family: $e-bold;
 			text-transform: uppercase;
-		}
-		.label--select {
-			margin-right: 15px;
-			padding-right: 15px;
-			position: relative;
-			&:after {
-				content: '';
-				width: 11px;
-				height: 7px;
-				position: absolute;
-				top: 6px;
-				right: 0;
-				background: url('../images/UI/select.png') no-repeat;
-				background-size: 100% auto;
+			&.label--m-left {
+				margin-left: 10px;
 			}
+		}
+		.select {
+			background: url('../images/UI/select.png') no-repeat;
+			background-position: center right;
+			background-size: 11px 7px;
+			padding-right: 12px;
+			text-transform: uppercase;
 		}
 	}
 	// Search

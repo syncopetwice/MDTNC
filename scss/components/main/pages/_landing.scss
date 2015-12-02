@@ -12,22 +12,22 @@ $c-light-blue: #74c5e6;
 // Mixin for every article element
 @mixin section() {
 	display: flex;
-	@include mq($until: ipad-l) {
-		flex-direction: column;
-	}
+	// @include mq($until: ipad-l) {
+	// 	flex-direction: column;
+	// }
 	article {
-		@include mq($until: ipad-l) {
-			padding: 15px;
-			font-size: 14px;
-		}
+		// @include mq($until: ipad-l) {
+		// 	padding: 15px;
+		// 	font-size: 14px;
+		// }
 		padding: 25px 30px;
 		color: #fff;
 		font-size: 14px;
 		header {
-			@include mq($until: ipad-p) {
-				margin-bottom: 5px;
-				font-size: 18px;
-			}
+			// @include mq($until: ipad-p) {
+			// 	margin-bottom: 5px;
+			// 	font-size: 18px;
+			// }
 			text-transform: uppercase;
 			font-family: $e-bold;
 			color: #fff;
@@ -43,9 +43,9 @@ $c-light-blue: #74c5e6;
 		padding: 0;
 		list-style-type: none;
 		li {
-			@include mq($until: ipad-l) {
-				padding: 5px;
-			}
+			// @include mq($until: ipad-l) {
+			// 	padding: 5px;
+			// }
 			padding: 15px 5px;
 			border-bottom: 1px dashed $border-color;
 			&:last-child {
@@ -62,17 +62,29 @@ $c-light-blue: #74c5e6;
 		@include clearfix;
 		.announcements {
 			width: percentage(640/1040);
-			@include mq($until: ipad-l) {
-				width: 100%;
-			}
+			position: relative;
+			padding-bottom: 70px;
+			// @include mq($until: ipad-l) {
+			// 	width: 100%;
+			// }
 			background: $c-dark-blue;
 			@include lists(#466482);
+			footer {
+				position: absolute;
+				left: 30px;
+				bottom: 30px;
+				a {
+					font-size: 14px;
+					text-transform: uppercase;
+					color: #fff;
+				}
+			}
 		}
 		.exceptional {
 			width: percentage(400/1040);
-			@include mq($until: ipad-l) {
-				width: 100%;
-			}
+			// @include mq($until: ipad-l) {
+			// 	width: 100%;
+			// }
 			background: $c-l-dark-blue;
 			display: flex;
 			position: relative;
@@ -83,9 +95,9 @@ $c-light-blue: #74c5e6;
 					.subheader {
 						font-size: 16px;
 						margin-top: 10px;
-						@include mq($until: ipad-p) {
-							margin-top: 0;
-						}
+						// @include mq($until: ipad-p) {
+						// 	margin-top: 0;
+						// }
 					}
 				}
 				main {
@@ -121,7 +133,6 @@ $c-light-blue: #74c5e6;
 	// Section Middle
 	.section__middle {
 		@include section;
-		@include mq($until: ipad-p) {}
 		article {
 			padding-bottom: 70px;
 			position: relative;
@@ -142,24 +153,24 @@ $c-light-blue: #74c5e6;
 			}
 		}
 		.training-tips {
-			@include mq($until: ipad-l) {
-				width: 100%;
-			}
+			// @include mq($until: ipad-l) {
+			// 	width: 100%;
+			// }
 			width: 50%;
 			background: $c-medium-blue;
 		}
 		// Wrapper for classes: article--center & article--right (need for mobile devices width fix)
 		.whats-new {
-			@include mq($until: ipad-l) {
-				width: 100%;
-			}
+			// @include mq($until: ipad-l) {
+			// 	width: 100%;
+			// }
 			background: $c-l-medium-blue;
 			width: 25%;
 		}
 		.startright {
-			@include mq($until: ipad-l) {
-				width: 100%;
-			}
+			// @include mq($until: ipad-l) {
+			// 	width: 100%;
+			// }
 			background: $c-light-blue;
 			width: 25%;
 		}
