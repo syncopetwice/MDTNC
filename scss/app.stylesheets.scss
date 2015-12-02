@@ -28,8 +28,7 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 .app {
 	@import 'modules/_modules';
 	font-family: $e-regular;
-	overflow: hidden;
-	min-width: 1024px;
+	min-width: 1200px;
 	position: relative;
 	// Sticky Footer
 	display: flex;
@@ -38,7 +37,6 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 	// Fixes For IE10/11
 	@include ie() {
 		height: 100vh;
-		overflow: visible;
 	}
 	@import 'components/modal/_modal';
 	@import 'components/header/_header';

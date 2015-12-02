@@ -11,9 +11,6 @@
 	float: right;
 	// Item :: Sorting Element
 	.item {
-		@include mq($until: ipad-l) {
-			float: none;
-		}
 		float: left;
 		margin-right: 15px;
 		.label {
@@ -21,15 +18,24 @@
 			font-family: $e-bold;
 			text-transform: uppercase;
 		}
-		.select {
-			margin-right: 5px;
+		.label--select {
+			margin-right: 15px;
+			padding-right: 15px;
+			position: relative;
+			&:after {
+				content: '';
+				width: 11px;
+				height: 7px;
+				position: absolute;
+				top: 6px;
+				right: 0;
+				background: url('../images/UI/select.png') no-repeat;
+				background-size: 100% auto;
+			}
 		}
 	}
 	// Search
 	.search {
-		@include mq($until: ipad-l) {
-			float: none;
-		}
 		float: right;
 		.search__input {
 			width: 145px;

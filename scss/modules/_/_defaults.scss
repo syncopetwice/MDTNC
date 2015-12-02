@@ -24,26 +24,35 @@ textarea {
 	// border-radius: 2px;
 	font-size: 14px;
 	line-height: 16px;
-	appearance: none;
 	min-height: 28px;
 	color: #133944;
 	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 0;
 	&:focus {
 		outline: none;
 	}
 }
 input[type="checkbox"] {
 	border: 1px solid #c3c3c3;
-	// border-radius: 2px;
 }
 select {
-	border: none;
 	font-size: 14px;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	background: none;
+	color: #032e3a;
 	&:hover {
 		cursor: pointer;
 	}
 	&:focus {
 		outline: none;
+	}
+	// IE Hack to remove arrow in select
+	&::-ms-expand {
+		display: none;
 	}
 }
 
