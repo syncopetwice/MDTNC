@@ -1481,18 +1481,13 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .pagination ul li:last-child { margin-right: 0; }
 .app .pagination ul li a { background: transparent; -webkit-border-radius: 4px; border-radius: 4px; display: block; padding: 8px 15px; color: #899da3; border-top: 1px solid #e1e1e1; border-right: 1px solid #e3e4e4; border-bottom: 1px solid #e5e9eb; border-left: 1px solid #eaeaea; }
 .app .pagination ul li a.active { background: #ebf5fb; color: #032e3a; }
-.app .panel__table tbody .fa { font-size: 17px; }
-.app .panel__table tbody .fa-list-alt { border-right: 1px solid #dee1e2; padding-right: 8px; margin-right: 8px; }
-@media (max-width: 48.0525em) { .app .panel__table tbody .fa-list-alt { border: 0; } }
-.app .panel__table tbody .fa-pencil-square-o { border-right: 1px solid #dee1e2; padding-right: 8px; margin-right: 8px; }
-@media (max-width: 48.0525em) { .app .panel__table tbody .fa-pencil-square-o { border: 0; } }
-.app .panel__table tbody .fa-times-circle { color: #dd2c00; }
-.app .panel__table tbody .fa-check-circle { color: #27ae60; border-right: 1px solid #dee1e2; padding-right: 8px; margin-right: 8px; }
-@media (max-width: 48.0525em) { .app .panel__table tbody .fa-check-circle { border: 0; } }
-.app .panel__table tbody .fa-pencil { color: #133944; border-right: 1px solid #dee1e2; padding-right: 8px; margin-right: 8px; }
-@media (max-width: 48.0525em) { .app .panel__table tbody .fa-pencil { border: 0; } }
-.app .panel__table tbody .fa-file-text-o { color: #133944; }
-.app .panel__table tbody .fa-no-border { border: 0; }
+.app .panel__table tbody .actions { min-width: 65px; padding-left: 2px; }
+.app .panel__table tbody .actions a .fa { font-size: 17px; border-right: 1px solid #dee1e2; padding-right: 8px; margin-right: 8px; }
+.app .panel__table tbody .actions a .fa-times-circle { color: #dd2c00; }
+.app .panel__table tbody .actions a .fa-check-circle { color: #27ae60; }
+.app .panel__table tbody .actions a .fa-pencil { color: #133944; }
+.app .panel__table tbody .actions a .fa-file-text-o { color: #133944; }
+.app .panel__table tbody .actions a:last-child .fa { border: 0; padding-right: 0; margin-right: 0; }
 .app .content__row { margin-bottom: 10px; }
 .app .content__row--lg { margin-bottom: 20px; }
 .app .sub-heading { text-align: center; text-transform: uppercase; font-size: 13px; color: #032e3a; margin-bottom: 10px; }
@@ -1521,18 +1516,24 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .panel .panel__body .panel__table.panel__table--details tbody td { border: 0; padding: 5px; }
 @media (max-width: 103.115em) { .app .panel .panel__body .panel__table.panel__table--details tbody td { padding: 2px; } }
 @media (max-width: 103.115em) { .app .panel .panel__body .panel__table { font-size: 13px; } }
-.app .panel .panel__body .panel__table thead th { padding: 15px 20px; font-size: 14px; color: #95a5a6; font-weight: normal; font-family: "EffraBold", Helvetica, Arial, sans-serif; text-align: left; vertical-align: top; }
+.app .panel .panel__body .panel__table thead th { padding: 15px; font-size: 14px; color: #95a5a6; font-weight: normal; font-family: "EffraBold", Helvetica, Arial, sans-serif; text-align: left; vertical-align: top; }
 @media (max-width: 103.115em) { .app .panel .panel__body .panel__table thead th { padding: 5px; } }
 .app .panel .panel__body .panel__table thead th .w-5 { width: 5%; }
 .app .panel .panel__body .panel__table thead th .w-10 { width: 10%; }
 .app .panel .panel__body .panel__table thead th .w-15 { width: 15%; }
 .app .panel .panel__body .panel__table thead th .fa { margin-left: 8px; }
 .app .panel .panel__body .panel__table thead th .fa.fa-angle-down { color: #032e3a; }
+.app .panel .panel__body .panel__table thead th.checkbox-th { padding: 15px 10px; padding-right: 0; }
+.app .panel .panel__body .panel__table thead th.checkbox-th input[type="checkbox"] { margin-top: 5px; }
+.app .panel .panel__body .panel__table thead th.notes-th { padding-left: 10px; padding-right: 10px; }
 .app .panel .panel__body .panel__table thead th a { position: relative; color: #95a5a6; }
-.app .panel .panel__body .panel__table tbody td { vertical-align: top; font-size: 14px; color: #133944; border-top: 1px solid #dee1e2; padding: 20px; }
+.app .panel .panel__body .panel__table tbody td { vertical-align: top; font-size: 14px; color: #133944; border-top: 1px solid #dee1e2; padding: 10px 15px; }
 .app .panel .panel__body .panel__table tbody td.has-new-note { background: #fecd2e; }
 .app .panel .panel__body .panel__table tbody td.has-new-note .fa-pencil { border-right: 1px solid #133944; }
 @media (max-width: 103.115em) { .app .panel .panel__body .panel__table tbody td { padding: 5px; } }
+.app .panel .panel__body .panel__table tbody td.checkbox-td { padding: 10px; padding-right: 0; }
+.app .panel .panel__body .panel__table tbody td.notes-td { padding-left: 10px; padding-right: 10px; text-align: center; vertical-align: middle; }
+.app .panel .panel__body .panel__table tbody td.notes-td .actions { min-width: auto; padding-left: 0; }
 .app .panel .panel__body .panel__table tbody td a { font-size: 14px; color: #0082cd; }
 .app .dateInput { text-align: center; }
 .app .dateInput .dateFormat { display: block; margin: 0 auto; }
@@ -1567,7 +1568,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .notes:before, .app .notes:after { content: ""; display: table; }
 .app .notes:after { clear: both; }
 .app .notes .el-left { float: left; width: 20.4%; text-align: right; padding-right: 10px; }
-.app .notes .el-right { width: 79.6%; float: right; }
+.app .notes .el-right { width: 79.6%; float: right; word-break: break-all; }
 .app .notes textarea { display: block; padding: 5px; width: 100%; border: 1px solid #e1e1e1; resize: none; min-height: 95px; }
 .app .notes textarea:focus { outline: none; }
 .app .notes .note--exist { background: #ebecf0; padding: 20px; border: 1px solid #e1e1e1; font-size: 14px; color: #133944; }
@@ -1666,7 +1667,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__header .header__controls .control__item:focus, .app .app__header .header__controls .control__item:active { background: none; outline: none; }
 .app .app__header .header__controls .control__item:hover { text-decoration: none; }
 .app .app__header .header__controls .control__item:last-child { margin-right: 0; }
-.app .app__main { position: relative; overflow: hidden; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; }
+.app .app__main { position: relative; overflow: hidden; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; min-height: 450px; }
 .app .app__main { *zoom: 1; }
 .app .app__main:before, .app .app__main:after { content: ""; display: table; }
 .app .app__main:after { clear: both; }
@@ -1732,7 +1733,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account .controls__container:before, .app .app__main .main__content .business-trainer-account .controls__container:after { content: ""; display: table; }
 .app .app__main .main__content .business-trainer-account .controls__container:after { clear: both; }
 .app .app__main .main__content .business-trainer-account .table-tabs__container { float: left; }
-.app .app__main .main__content .contact-us { padding: 20px; margin: 0 0 5px 0; }
+.app .app__main .main__content .contact-us { padding: 30px 8px; margin: 0 0 5px 0; }
 .app .app__main .main__content .contact-us .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 15px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
 .app .app__main .main__content .contact-us p { margin: 0 0 10px 0; }
 .app .app__main .main__content .edit-cpt-profile { padding: 30px 10px 20px 10px; }
@@ -1740,6 +1741,8 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .edit-cpt-profile .buttons { text-align: center; }
 .app .app__main .main__content .edit-cpt-profile .buttons .cancel__button { margin-right: 10px; min-width: 125px; }
 .app .app__main .main__content .edit-cpt-profile .buttons .accept__button { min-width: 125px; }
+.app .app__main .main__content .edit-cpt-profile .disclaimer { width: 950px; margin-bottom: 10px; margin-top: 30px; }
+.app .app__main .main__content .edit-cpt-profile .disclaimer .disclaimer--exist { background: #ebecf0; padding: 20px; border: 1px solid #e1e1e1; font-size: 14px; color: #133944; text-align: center; }
 .app .app__main .main__content .training-event-details { padding: 25px 10px 90px 10px; }
 @media (max-width: 64.0525em) { .app .app__main .main__content .training-event-details { padding: 10px 10px 40px 10px; } }
 .app .app__main .main__content .training-event-details .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 5px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
@@ -1879,8 +1882,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .resources .welcome h3 { font-size: 16px; margin: 5px 0; }
 .app .app__main .main__content .resources .welcome p { margin: 10px 0; font-size: 14px; }
 .app .app__main .main__content .resources .welcome .introduction { width: 80%; }
-.app .app__main .main__content .resources .welcome .introduction .accept__button { margin-top: 20px; }
-.app .app__main .main__content .resources .panel { margin-top: 30px; }
+.app .app__main .main__content .resources .welcome .introduction .accept__button { margin: 10px 0; }
 .app .app__main .main__content .resources .panel .tabs { padding: 0; margin-bottom: 10px; }
 .app .app__main .main__content .resources .panel .tabs .tab:first-child .link { padding-left: 0; }
 .app .app__main .main__content .resources .panel .panel__body .panel__table { border-top: 1px solid #dee1e2; }

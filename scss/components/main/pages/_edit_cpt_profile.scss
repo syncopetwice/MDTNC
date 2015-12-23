@@ -13,4 +13,17 @@
 			// padding: 6px;
 		}
 	}
+	.disclaimer {
+		width: 950px;
+		margin-bottom: 10px;
+		margin-top: 30px;
+		.disclaimer--exist {
+			background: #ebecf0;
+			padding: 20px;
+			border: 1px solid #e1e1e1;
+			font-size: 14px;
+			color: #133944;
+			text-align: center;
+		}
+	}
 }

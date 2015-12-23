@@ -110,7 +110,18 @@
 					.fa.fa-angle-down {
 						color: #032e3a;
 					}
-					padding: 15px 20px;
+					&.checkbox-th {
+						padding: 15px 10px;
+						padding-right: 0;
+						input[type="checkbox"] {
+							margin-top: 5px;
+						}
+					}
+					&.notes-th {
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+					padding: 15px;
 					font-size: 14px;
 					color: #95a5a6;
 					font-weight: normal;
@@ -138,7 +149,21 @@
 					font-size: 14px;
 					color: #133944;
 					border-top: 1px solid #dee1e2;
-					padding: 20px;
+					padding: 10px 15px;
+					&.checkbox-td {
+						padding: 10px;
+						padding-right: 0;
+					}
+					&.notes-td {
+						padding-left: 10px;
+						padding-right: 10px;
+						text-align: center;
+						vertical-align: middle;
+						.actions {
+							min-width: auto;
+							padding-left: 0;
+						}
+					}
 					a {
 						font-size: 14px;
 						color: #0082cd;

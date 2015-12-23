@@ -26,11 +26,13 @@
 		}
 		.introduction {
 			width: 80%;
-			.accept__button {margin-top:20px;}
+			.accept__button {
+				margin: 10px 0;
+			}
 		}
 	}
 	.panel {
-		margin-top: 30px;
+		// margin-top: 30px;
 		.tabs {
 			padding: 0;
 			margin-bottom: 10px;

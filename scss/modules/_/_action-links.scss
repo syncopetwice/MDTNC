@@ -1,38 +1,36 @@
-@mixin fa-border() {
-	border-right: 1px solid #dee1e2;
-	padding-right: 8px;
-	margin-right: 8px;
-	@include mq($until: ipad-p) {
-		border: 0;
-	}
-}
 .panel__table {
 	tbody {
-		.fa {
-			font-size: 17px;
-		}
-		.fa-list-alt {
-			@include fa-border;
-		}
-		.fa-pencil-square-o {
-			@include fa-border;
-		}
-		.fa-times-circle {
-			color: #dd2c00;
-		}
-		.fa-check-circle {
-			color: #27ae60;
-			@include fa-border;
-		}
-		.fa-pencil {
-			color: #133944;
-			@include fa-border;
-		}
-		.fa-file-text-o {
-			color: #133944;
-		}
-		.fa-no-border {
-			border: 0;
+		.actions {
+			min-width: 65px;
+			padding-left: 2px;
+			a {
+				.fa {
+					font-size: 17px;
+					border-right: 1px solid #dee1e2;
+					padding-right: 8px;
+					margin-right: 8px;
+				}
+				.fa-list-alt {}
+				.fa-pencil-square-o {}
+				.fa-times-circle {
+					color: #dd2c00;}
+				.fa-check-circle {
+					color: #27ae60;
+				}
+				.fa-pencil {
+					color: #133944;}
+				.fa-file-text-o {
+					color: #133944;
+				}
+				// Last Link
+				&:last-child {
+					.fa {
+						border: 0;
+						padding-right: 0;
+						margin-right: 0;
+					}
+				}
+			}
 		}
 	}
 }

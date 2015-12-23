@@ -62,7 +62,7 @@ var
 
 	gulp.task('copy', function(){
 		return gulp.src(staticResources, { base:'.'})
-			.pipe(gulp.dest('C:\\Maven\\Medtronic CPT Portal\\resource-bundles\\CPT_assets.resource\\'));
+			.pipe(gulp.dest('C:\\Maven\\Medtronic QA CPT Portal\\resource-bundles\\CPT_assets.resource\\'));
 	});
 
 	gulp.task('watch', function() {
