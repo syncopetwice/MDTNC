@@ -18,3 +18,12 @@
 		font-family: $e-bold;
 	}
 }
+
+.select {
+	background: url('../images/UI/select.png') no-repeat;
+	background-position: right 5px center;
+	background-size: 11px 7px;
+	padding-right: 15px;
+	border: 1px solid #e1e1e1;
+	text-transform: uppercase;
+}

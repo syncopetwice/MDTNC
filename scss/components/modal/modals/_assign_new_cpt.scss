@@ -5,14 +5,18 @@
 		@include clearfix;
 		.buttons {
 			float: left;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 			.cancel__button { margin-right: 10px;}
+		}
+		.sorting {
+			margin-right: 0;
+			padding-bottom: 10px;
 		}
 	}
 	.panel {
 		.panel__body {
 			.panel__table {
-				@include dropdown;
+				// @include dropdown;
 				border: 1px solid #dee1e2;
 			}
 		}

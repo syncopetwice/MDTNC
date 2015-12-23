@@ -1479,7 +1479,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .pagination ul li { display: inline-block; text-align: center; margin-right: 3px; }
 @media (max-width: 103.115em) { .app .pagination ul li { margin-right: 20px; } }
 .app .pagination ul li:last-child { margin-right: 0; }
-.app .pagination ul li a { background: transparent; -webkit-border-radius: 4px; border-radius: 4px; display: block; padding: 8px 15px; color: #899da3; border-top: 1px solid #e1e1e1; border-right: 1px solid #e3e4e4; border-bottom: 1px solid #e5e9eb; border-left: 1px solid #eaeaea; }
+.app .pagination ul li a { background: transparent; display: block; padding: 8px 15px; color: #899da3; border-top: 1px solid #e1e1e1; border-right: 1px solid #e3e4e4; border-bottom: 1px solid #e5e9eb; border-left: 1px solid #eaeaea; }
 .app .pagination ul li a.active { background: #ebf5fb; color: #032e3a; }
 .app .panel__table tbody .actions { min-width: 65px; padding-left: 2px; }
 .app .panel__table tbody .actions a .fa { font-size: 17px; border-right: 1px solid #dee1e2; padding-right: 8px; margin-right: 8px; }
@@ -1492,6 +1492,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .content__row--lg { margin-bottom: 20px; }
 .app .sub-heading { text-align: center; text-transform: uppercase; font-size: 13px; color: #032e3a; margin-bottom: 10px; }
 .app .sub-heading span { font-family: "EffraBold", Helvetica, Arial, sans-serif; }
+.app .select { background: url("../images/UI/select.png") no-repeat; background-position: right 5px center; background-size: 11px 7px; padding-right: 15px; border: 1px solid #e1e1e1; text-transform: uppercase; }
 .app .panel.panel--resources .panel__body .panel__table { width: 670px; border-top: 1px solid #dee1e2; }
 .app .panel.panel--sm { max-width: 900px; }
 @media (max-width: 103.115em) { .app .panel.panel--sm { max-width: 100%; } }
@@ -1523,8 +1524,9 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .panel .panel__body .panel__table thead th .w-15 { width: 15%; }
 .app .panel .panel__body .panel__table thead th .fa { margin-left: 8px; }
 .app .panel .panel__body .panel__table thead th .fa.fa-angle-down { color: #032e3a; }
-.app .panel .panel__body .panel__table thead th.checkbox-th { padding: 15px 10px; padding-right: 0; }
+.app .panel .panel__body .panel__table thead th.checkbox-th { padding: 15px 10px; padding-right: 0; width: 26px; }
 .app .panel .panel__body .panel__table thead th.checkbox-th input[type="checkbox"] { margin-top: 5px; }
+.app .panel .panel__body .panel__table thead th.actions-th { width: 65px; padding-right: 0; }
 .app .panel .panel__body .panel__table thead th.notes-th { padding-left: 10px; padding-right: 10px; }
 .app .panel .panel__body .panel__table thead th a { position: relative; color: #95a5a6; }
 .app .panel .panel__body .panel__table tbody td { vertical-align: top; font-size: 14px; color: #133944; border-top: 1px solid #dee1e2; padding: 10px 15px; }
@@ -1532,6 +1534,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .panel .panel__body .panel__table tbody td.has-new-note .fa-pencil { border-right: 1px solid #133944; }
 @media (max-width: 103.115em) { .app .panel .panel__body .panel__table tbody td { padding: 5px; } }
 .app .panel .panel__body .panel__table tbody td.checkbox-td { padding: 10px; padding-right: 0; }
+.app .panel .panel__body .panel__table tbody td.actions-td { padding-right: 0; }
 .app .panel .panel__body .panel__table tbody td.notes-td { padding-left: 10px; padding-right: 10px; text-align: center; vertical-align: middle; }
 .app .panel .panel__body .panel__table tbody td.notes-td .actions { min-width: auto; padding-left: 0; }
 .app .panel .panel__body .panel__table tbody td a { font-size: 14px; color: #0082cd; }
@@ -1580,7 +1583,6 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .sorting .item { float: left; margin-right: 15px; }
 .app .sorting .item .label { margin-right: 5px; font-family: "EffraBold", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 .app .sorting .item .label.label--m-left { margin-left: 10px; }
-.app .sorting .item .select { background: url("../images/UI/select.png") no-repeat; background-position: center right; background-size: 11px 7px; padding-right: 12px; text-transform: uppercase; }
 .app .sorting .search { float: right; }
 .app .sorting .search .search__input { width: 145px; margin-right: 5px; background: #f4f4f4; -webkit-transition: background .3s ease; transition: background .3s ease; }
 .app .sorting .search .search__input:focus { background: #fff; }
@@ -1625,15 +1627,10 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__assign-new-cpt .controls { *zoom: 1; }
 .app .modal__assign-new-cpt .controls:before, .app .modal__assign-new-cpt .controls:after { content: ""; display: table; }
 .app .modal__assign-new-cpt .controls:after { clear: both; }
-.app .modal__assign-new-cpt .controls .buttons { float: left; margin-bottom: 15px; }
+.app .modal__assign-new-cpt .controls .buttons { float: left; margin-bottom: 10px; }
 .app .modal__assign-new-cpt .controls .buttons .cancel__button { margin-right: 10px; }
+.app .modal__assign-new-cpt .controls .sorting { margin-right: 0; padding-bottom: 10px; }
 .app .modal__assign-new-cpt .panel .panel__body .panel__table { border: 1px solid #dee1e2; }
-.app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown { display: block; background: #f6f6f6; position: absolute; top: 120%; left: 0; width: 100%; min-width: 75px; border: 1px solid #e1e3e4; padding: 0px 1px; }
-.app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown.isClosed { display: none; }
-.app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
-.app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:last-child { border-bottom: none; }
-.app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover { background: #eeeeee; }
-.app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover, .app .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .modal__submit-payment { position: absolute; width: 450px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .app .modal__submit-payment .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
 .app .modal__submit-payment .modal__header { *zoom: 1; }
@@ -1710,15 +1707,10 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls { *zoom: 1; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls:before, .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls:after { content: ""; display: table; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls:after { clear: both; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .buttons { float: left; margin-bottom: 15px; }
+.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .buttons { float: left; margin-bottom: 10px; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .buttons .cancel__button { margin-right: 10px; }
+.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .sorting { margin-right: 0; padding-bottom: 10px; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table { border: 1px solid #dee1e2; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown { display: block; background: #f6f6f6; position: absolute; top: 120%; left: 0; width: 100%; min-width: 75px; border: 1px solid #e1e3e4; padding: 0px 1px; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown.isClosed { display: none; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:last-child { border-bottom: none; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover { background: #eeeeee; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:hover, .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table .dropdown .dropdown__item:focus { cursor: pointer; }
 .app .app__main .main__content .business-trainer-account .panel { margin-left: 10px; margin-right: 10px; }
 @media (max-width: 48.0525em) { .app .app__main .main__content .business-trainer-account .panel { margin-left: 5px; margin-right: 5px; } }
 .app .app__main .main__content .business-trainer-account .panel__table--details input[type="checkbox"] { margin-left: 8px; vertical-align: middle; }

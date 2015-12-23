@@ -113,9 +113,14 @@
 					&.checkbox-th {
 						padding: 15px 10px;
 						padding-right: 0;
+						width: 26px;
 						input[type="checkbox"] {
 							margin-top: 5px;
 						}
+					}
+					&.actions-th {
+						width: 65px;
+						padding-right: 0;
 					}
 					&.notes-th {
 						padding-left: 10px;
@@ -152,6 +157,9 @@
 					padding: 10px 15px;
 					&.checkbox-td {
 						padding: 10px;
+						padding-right: 0;
+					}
+					&.actions-td {
 						padding-right: 0;
 					}
 					&.notes-td {
