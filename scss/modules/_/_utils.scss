@@ -26,4 +26,9 @@
 	padding-right: 15px;
 	border: 1px solid #e1e1e1;
 	text-transform: uppercase;
+	margin-right: 2px;
+	@include ie() {
+		padding-right: 17px;
+		height: 29px;
+	}
 }

@@ -22,6 +22,10 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 
+	@include mq($until: lwide) {
+		max-width: 90%;
+	}
+
 	// Modal Header
 	.modal__header {
 		@include clearfix;
@@ -55,3 +59,4 @@
 @import 'modals/_error';
 @import 'modals/_assign_new_cpt';
 @import 'modals/_submit-payment';
+@import 'modals/_login_pop-up';

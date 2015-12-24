@@ -1,0 +1,19 @@
+// Login page pop-up
+.modal__login_pop-up {
+	@include modal--inner(500px);
+	// @include heading(20px);
+	p {
+		margin-top: 0;
+	}
+	.inputs {
+		margin-bottom: 30px;
+		input {
+			width: 280px;
+			margin-left: 5px;
+		}
+	}
+	.buttons {
+		text-align: center;
+		.cancel__button { margin-right: 10px;}
+	}
+}
