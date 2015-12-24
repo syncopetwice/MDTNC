@@ -1492,8 +1492,8 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .content__row--lg { margin-bottom: 20px; }
 .app .sub-heading { text-align: center; text-transform: uppercase; font-size: 13px; color: #032e3a; margin-bottom: 10px; }
 .app .sub-heading span { font-family: "EffraBold", Helvetica, Arial, sans-serif; }
-.app .select { background: url("../images/UI/select.png") no-repeat; background-position: right 5px center; background-size: 11px 7px; padding-right: 15px; border: 1px solid #e1e1e1; text-transform: uppercase; margin-right: 2px; }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .app .select { padding-right: 17px; height: 29px; } }
+.app .select { background: url("../images/UI/select.png") no-repeat; background-position: right 5px top 9px; background-size: 11px 7px; padding-right: 15px; border: 1px solid #e1e1e1; text-transform: uppercase; margin-right: 2px; height: 28px; }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .app .select { padding-right: 17px; } }
 .app .panel.panel--resources .panel__body .panel__table { width: 670px; border-top: 1px solid #dee1e2; }
 .app .panel.panel--sm { max-width: 900px; }
 @media (max-width: 103.115em) { .app .panel.panel--sm { max-width: 100%; } }
@@ -1596,7 +1596,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background: rgba(0, 0, 0, 0.4); }
 .app .app__modal.isClosed { display: none; }
 .app .modal__decline { position: absolute; width: 600px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-@media (max-width: 64.99em) { .app .modal__decline { max-width: 90%; } }
+@media (max-width: 103.115em) { .app .modal__decline { max-width: 90%; } }
 .app .modal__decline .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
 .app .modal__decline .modal__header { *zoom: 1; }
 .app .modal__decline .modal__header:before, .app .modal__decline .modal__header:after { content: ""; display: table; }
@@ -1609,7 +1609,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__decline .modal__body .cancel__button { margin-right: 10px; }
 .app .modal__decline .modal__body ul { list-style-type: square; }
 .app .modal__error { position: absolute; width: 300px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-@media (max-width: 64.99em) { .app .modal__error { max-width: 90%; } }
+@media (max-width: 103.115em) { .app .modal__error { max-width: 90%; } }
 .app .modal__error .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
 .app .modal__error .modal__header { *zoom: 1; }
 .app .modal__error .modal__header:before, .app .modal__error .modal__header:after { content: ""; display: table; }
@@ -1620,7 +1620,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__error .modal__body { padding: 30px; background: #fff; }
 .app .modal__error .cancel__button { margin-top: 10px; }
 .app .modal__assign-new-cpt { position: absolute; width: 1024px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-@media (max-width: 64.99em) { .app .modal__assign-new-cpt { max-width: 90%; } }
+@media (max-width: 103.115em) { .app .modal__assign-new-cpt { max-width: 90%; } }
 .app .modal__assign-new-cpt .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
 .app .modal__assign-new-cpt .modal__header { *zoom: 1; }
 .app .modal__assign-new-cpt .modal__header:before, .app .modal__assign-new-cpt .modal__header:after { content: ""; display: table; }
@@ -1638,7 +1638,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__assign-new-cpt .controls .sorting { margin-right: 0; padding-bottom: 10px; }
 .app .modal__assign-new-cpt .panel .panel__body .panel__table { border: 1px solid #dee1e2; }
 .app .modal__submit-payment { position: absolute; width: 450px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-@media (max-width: 64.99em) { .app .modal__submit-payment { max-width: 90%; } }
+@media (max-width: 103.115em) { .app .modal__submit-payment { max-width: 90%; } }
 .app .modal__submit-payment .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
 .app .modal__submit-payment .modal__header { *zoom: 1; }
 .app .modal__submit-payment .modal__header:before, .app .modal__submit-payment .modal__header:after { content: ""; display: table; }
@@ -1649,7 +1649,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__submit-payment .modal__body { padding: 30px; background: #fff; }
 .app .modal__submit-payment p { margin: 0 0 15px 0; }
 .app .modal__login_pop-up { position: absolute; width: 500px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-@media (max-width: 64.99em) { .app .modal__login_pop-up { max-width: 90%; } }
+@media (max-width: 103.115em) { .app .modal__login_pop-up { max-width: 90%; } }
 .app .modal__login_pop-up .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
 .app .modal__login_pop-up .modal__header { *zoom: 1; }
 .app .modal__login_pop-up .modal__header:before, .app .modal__login_pop-up .modal__header:after { content: ""; display: table; }
@@ -1717,7 +1717,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account { padding: 30px 0; }
 .app .app__main .main__content .business-trainer-account .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 30px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt { position: absolute; width: 1024px; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-@media (max-width: 64.99em) { .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt { max-width: 90%; } }
+@media (max-width: 103.115em) { .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt { max-width: 90%; } }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header { *zoom: 1; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header:before, .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__header:after { content: ""; display: table; }
