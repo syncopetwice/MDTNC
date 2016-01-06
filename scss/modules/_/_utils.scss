@@ -32,4 +32,7 @@
 	@include ie() {
 		padding-right: 17px;
 	}
+	&.select-width-auto {
+		width: auto;
+	}
 }

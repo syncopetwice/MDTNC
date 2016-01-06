@@ -1494,6 +1494,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .sub-heading span { font-family: "EffraBold", Helvetica, Arial, sans-serif; }
 .app .select { background: url("../images/UI/select.png") no-repeat; background-position: right 5px top 9px; background-size: 11px 7px; padding-right: 15px; border: 1px solid #e1e1e1; text-transform: uppercase; margin-right: 2px; height: 28px; }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .app .select { padding-right: 17px; } }
+.app .select.select-width-auto { width: auto; }
 .app .panel.panel--resources .panel__body .panel__table { width: 670px; border-top: 1px solid #dee1e2; }
 .app .panel.panel--sm { max-width: 900px; }
 @media (max-width: 103.115em) { .app .panel.panel--sm { max-width: 100%; } }
