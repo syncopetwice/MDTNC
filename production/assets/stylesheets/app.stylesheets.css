@@ -1534,7 +1534,6 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .panel .panel__body .panel__table thead th a { position: relative; color: #95a5a6; }
 .app .panel .panel__body .panel__table tbody td { vertical-align: top; font-size: 14px; color: #133944; border-top: 1px solid #dee1e2; padding: 10px 15px; }
 .app .panel .panel__body .panel__table tbody td.has-new-note { background: #fecd2e; }
-.app .panel .panel__body .panel__table tbody td.has-new-note .fa-pencil { border-right: 1px solid #133944; }
 @media (max-width: 103.115em) { .app .panel .panel__body .panel__table tbody td { padding: 5px; } }
 .app .panel .panel__body .panel__table tbody td.checkbox-td { padding: 10px; padding-right: 0; }
 @media (max-width: 103.115em) { .app .panel .panel__body .panel__table tbody td.checkbox-td { padding: 5px; } }
