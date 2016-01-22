@@ -66,9 +66,13 @@ $accept-bg-hover: #ffecaf;
 .login__button {
 	@include button;
 	padding: 5px 35px;
+	margin: 0;
+	height: 30px;
+	overflow: hidden;
 	background: #fece2e;
 	border-color: #fece2e;
 	color: #011f45;
+	border-radius: 0;
 	&:focus,
 	&:hover {
 		background: $accept-bg-hover;
