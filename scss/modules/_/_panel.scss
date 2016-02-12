@@ -77,6 +77,16 @@
 						}
 						border: 0;
 						padding: 5px;
+						// Specific case when td contains table
+						// Contains Date Inputs
+						&.td-inner-table {
+							padding: 0;
+							table {
+								td {
+									vertical-align: top;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -122,7 +132,7 @@
 						}
 					}
 					&.actions-th {
-						width: 65px;
+						width: 80px;
 						padding-right: 0;
 					}
 					&.notes-th {

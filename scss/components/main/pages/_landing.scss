@@ -22,7 +22,7 @@ $c-light-blue: #74c5e6;
 		// }
 		padding: 25px 30px;
 		color: #fff;
-		font-size: 14px;
+		font-size: 16px;
 		header {
 			// @include mq($until: ipad-p) {
 			// 	margin-bottom: 5px;
@@ -32,28 +32,37 @@ $c-light-blue: #74c5e6;
 			font-family: $e-bold;
 			color: #fff;
 			font-size: 22px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
+			.subheader {
+				font-size: 16px;
+				text-transform: none;
+				margin-top: 10px;
+				color: #002060;
+			}
 		}
-	}
-}
-// Mixin for ul > li
-@mixin lists($border-color) {
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		li {
-			// @include mq($until: ipad-l) {
-			// 	padding: 5px;
-			// }
-			padding: 15px 5px;
-			border-bottom: 1px dashed $border-color;
-			&:last-child {
-				border-bottom: none;
+		main {
+			p {
+				margin-top: 0;
+				margin-bottom: 10px;
 			}
 		}
 	}
 }
+// Mixin for ul > li
+// @mixin lists($border-color) {
+// 	ul {
+// 		margin: 0;
+// 		padding: 0;
+// 		list-style-type: none;
+// 		li {
+// 			padding: 15px 5px;
+// 			border-bottom: 1px dashed $border-color;
+// 			&:last-child {
+// 				border-bottom: none;
+// 			}
+// 		}
+// 	}
+// }
 
 .landing {
 	// Section Top
@@ -68,7 +77,12 @@ $c-light-blue: #74c5e6;
 			// 	width: 100%;
 			// }
 			background: $c-dark-blue;
-			@include lists(#466482);
+			// @include lists(#466482);
+			header {
+				.fa {
+					margin-right: 10px;
+				}
+			}
 			footer {
 				position: absolute;
 				left: 30px;
@@ -91,26 +105,18 @@ $c-light-blue: #74c5e6;
 			padding-bottom: 70px;
 			section.exceptional__text__container {
 				margin-right: 15px;
-				header {
-					.subheader {
-						font-size: 16px;
-						margin-top: 10px;
-						// @include mq($until: ipad-p) {
-						// 	margin-top: 0;
-						// }
-					}
-				}
+				header {}
 				main {
-					ul {
-						margin: 0;
-						padding: 0;
-						list-style-type: none;
-						li {
-							i {
-								margin-right: 10px;
-							}
-						}
-					}
+					// ul {
+					// 	margin: 0;
+					// 	padding: 0;
+					// 	list-style-type: none;
+					// 	li {
+					// 		i {
+					// 			margin-right: 10px;
+					// 		}
+					// 	}
+					// }
 				}
 			}
 			section.exceptional__avatar__container {
@@ -140,7 +146,7 @@ $c-light-blue: #74c5e6;
 			header {
 				color: #fff;
 			}
-			@include lists(#52a5d4);
+			// @include lists(#52a5d4);
 			footer {
 				position: absolute;
 				left: 30px;

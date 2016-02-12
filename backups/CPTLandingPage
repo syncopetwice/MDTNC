@@ -1,0 +1,170 @@
+<apex:page standardStylesheets="false"
+  showHeader="false"
+  sidebar="false"
+  docType="html-5.0"
+  cache="true"
+  controller="CPTLandingPageCtrl">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+    <title>Landing Page</title>
+    <apex:stylesheet value="{!URLFOR($Resource.CPT_assets, 'production/assets/stylesheets/app.stylesheets.css')}" />
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="{!URLFOR($Resource.CPT_assets, 'production/assets/vendor/html5shiv/dist/html5shiv.js')}"></script>
+      <script type="text/javascript" src="{!URLFOR($Resource.CPT_assets, 'production/assets/vendor/respond/dest/respond.min.js')}"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- App -->
+    <div class="app">
+      <header class="app__header">
+        <c:CPTCredentialsPopUp />
+        <c:CPTHeader />
+      </header>
+      <main class="app__main">
+        <c:CPTSidebarNavigation activeTab="" />
+        <section class="main__content">
+          <!-- Landing Page Section -->
+          <div class="landing">
+            <!-- Section -->
+            <section class="section__top">
+              <article class="announcements">
+                <header>Announcements</header>
+                <main>
+                  <ul>
+                    <apex:repeat value="{!Blocks.Blocks['ANNOUNCEMENTS'].ActiveLinks}" var="link">
+                      <li>
+                        <apex:outputText rendered="{!link.isUrl}">
+                          <a href="{!link.link.Url__c}">{!link.link.Text__c}</a>
+                        </apex:outputText>
+                        <apex:outputText rendered="{!!link.isUrl}">
+                          {!link.link.Text__c}
+                        </apex:outputText>
+                      </li>
+                    </apex:repeat>
+                  </ul>
+                </main>
+              </article>
+              <article class="exceptional">
+                <section class="exceptional__text__container">
+                  <header>
+                    Exceptional CPT
+                    <div class="subheader">
+                      {!Blocks.Blocks['EXCEPTIONAL CPT'].block.Sub_Header__c}
+                    </div>
+                  </header>
+                  <main>
+                    <ul>
+                      <apex:repeat value="{!Blocks.Blocks['EXCEPTIONAL CPT'].ActiveLinks}" var="link">
+                        <li>
+                          <i class="fa fa-angle-double-right"/>
+                          <apex:outputText rendered="{!link.isUrl}">
+                            <a href="{!link.link.Url__c}">{!link.link.Text__c}</a>
+                          </apex:outputText>
+                          <apex:outputText rendered="{!!link.isUrl}">
+                            {!link.link.Text__c}
+                          </apex:outputText>
+                        </li>
+                      </apex:repeat>
+                    </ul>
+                  </main>
+                </section>
+                <section class="exceptional__avatar__container">
+                  <apex:image url="{!Blocks.Blocks['EXCEPTIONAL CPT'].block.Image__c}"/>
+                </section>
+                <footer>
+                  <a href="#">Learn More</a>
+                </footer>
+              </article>
+            </section>
+            <!-- End :: Section -->
+            <!-- Section -->
+            <section class="section__middle">
+              <article class="training-tips">
+                <header>Training Tips</header>
+                <main>
+                  <ul>
+                    <apex:repeat value="{!Blocks.Blocks['TRAINING TIPS'].ActiveLinks}" var="link">
+                      <apex:outputText rendered="{!link.isUrl}">
+                        <li><a href="{!link.link.Url__c}">{!link.link.Text__c}</a></li>
+                      </apex:outputText>
+                      <apex:outputText rendered="{!!link.isUrl}">
+                        <li>{!link.link.Text__c}</li>
+                      </apex:outputText>
+                    </apex:repeat>
+                  </ul>
+                </main>
+                <footer>
+                  <apex:outputLink value="/CPTLandinPDF?print=false">Learn More</apex:outputLink>
+                </footer>
+              </article>
+              <article class="whats-new">
+                <header>What's New</header>
+                <main>
+                  <apex:repeat value="{!Blocks.Blocks['WHATS NEW'].ActiveLinks}" var="link">
+                    <apex:outputText rendered="{!link.isUrl}">
+                      <a href="{!link.link.Url__c}">{!link.link.Text__c}</a>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!!link.isUrl}">
+                      {!link.link.Text__c}
+                    </apex:outputText>
+                    <br />
+                  </apex:repeat>
+                </main>
+                <footer>
+                  <a href="{!Blocks.Blocks['WHATS NEW'].block.Learn_More_Url__c}">Learn More</a>
+                </footer>
+              </article>
+              <article class="startright">
+                <header>Startright</header>
+                <main>
+                  <apex:repeat value="{!Blocks.Blocks['STARTRIGHT'].ActiveLinks}" var="link">
+                    <apex:outputText rendered="{!link.isUrl}">
+                      <a href="{!link.link.Url__c}">{!link.link.Text__c}</a>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!!link.isUrl}">
+                      {!link.link.Text__c}
+                    </apex:outputText>
+                    <br />
+                  </apex:repeat>
+                </main>
+                <footer>
+                  <apex:outputLink value="/CPTLandinPDF?print=false&learnmore=startright">Learn More</apex:outputLink>
+                </footer>
+              </article>
+            </section>
+            <!-- End :: Section -->
+            <!-- Section -->
+            <section class="section__bottom">
+              <article>
+                <header>Did you know</header>
+                <main>
+                  <p>
+                    Did you know there is a Resource Library located on the Medtronic Healthcare Professional website?
+                  </p>
+                  <p>
+                    Here you have access to educational material for both you and your patients.  These materials cover a wide range of topics including insulin pump therapy, CGM, infusion sets, CareLink® Personal, CareLink® Pro, and much more!
+                  </p>
+                </main>
+                <footer>
+                  <apex:outputLink value="http://professional.medtronicdiabetes.com/resources-download-library">Learn More</apex:outputLink>
+                </footer>
+              </article>
+            </section>
+            <!-- End :: Section -->
+          </div>
+          <!-- End :: Landing Page Section -->
+        </section>
+      </main>
+      
+      <footer class="app__footer">
+            <c:CPTFooter />
+        </footer>
+    </div>
+    <!-- End :: App -->
+    <apex:includeScript value="{!URLFOR($Resource.CPT_assets, 'production/assets/vendor/jquery/dist/jquery.min.js')}"/>
+  </body>
+</apex:page>

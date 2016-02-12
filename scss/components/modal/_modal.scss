@@ -1,5 +1,5 @@
 .app__modal {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -12,20 +12,15 @@
 		display: none;
 	}
 }
-
 @mixin modal--inner ($width: 600px) {
 	position: absolute;
 	width: $width;
-	// border-top-left-radius: 6px;
-	// border-top-right-radius: 6px;
-	top: 45%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 	@include mq($until: xwide) {
 		max-width: 90%;
 	}
-
 	// Modal Header
 	.modal__header {
 		@include clearfix;
@@ -34,8 +29,6 @@
 		font-size: 16px;
 		text-transform: uppercase;
 		color: #fff;
-		// border-top-left-radius: 6px;
-		// border-top-right-radius: 6px;
 	}
 	.modal__header__title {
 		float: left;
@@ -52,7 +45,6 @@
 		padding: 30px;
 		background: #fff;
 	}
-
 }
 
 @import 'modals/_decline';

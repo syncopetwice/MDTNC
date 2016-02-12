@@ -2,10 +2,15 @@
 	@include modal--inner;
 	// Modal Body
 	.modal__body {
+		.add-new-note {
+			@include clearfix;
+			margin-bottom: 20px;
+			.label { float: left; width: 20%; }
+			.textarea-container { float: right; width: 80%;}
+		}
 		textarea {
 			display: block;
 			width: 100%;
-			margin-bottom: 10px;
 			padding: 5px;
 		}
 		.cancel__button {
