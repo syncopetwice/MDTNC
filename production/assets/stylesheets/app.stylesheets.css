@@ -1648,6 +1648,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__assign-new-cpt .controls .sorting { margin-right: 0; padding-bottom: 10px; }
 .app .modal__assign-new-cpt .modal__body { height: 600px; overflow: auto; }
 .app .modal__assign-new-cpt .panel .panel__body .panel__table { border: 1px solid #dee1e2; }
+.app .modal__assign-new-cpt .pagination__container { text-align: center; margin-top: 10px; }
 .app .modal__submit-payment { position: absolute; width: 450px; top: 35%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 @media (max-width: 103.115em) { .app .modal__submit-payment { max-width: 90%; } }
 .app .modal__submit-payment .modal__header { background: #084c85; padding: 15px 25px; font-size: 16px; text-transform: uppercase; color: #fff; }
@@ -1746,15 +1747,21 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .sorting { margin-right: 0; padding-bottom: 10px; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__body { height: 600px; overflow: auto; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table { border: 1px solid #dee1e2; }
+.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .pagination__container { text-align: center; margin-top: 10px; }
 .app .app__main .main__content .business-trainer-account .panel { margin-left: 10px; margin-right: 10px; }
 @media (max-width: 48.0525em) { .app .app__main .main__content .business-trainer-account .panel { margin-left: 5px; margin-right: 5px; } }
 .app .app__main .main__content .business-trainer-account .panel__table--details input[type="checkbox"] { margin-left: 8px; vertical-align: middle; }
+.app .app__main .main__content .business-trainer-account .details-buttons { text-align: center; margin-top: 10px; }
+.app .app__main .main__content .business-trainer-account .details-buttons a { margin-right: 10px; }
+.app .app__main .main__content .business-trainer-account .details-buttons a:last-child { margin-right: 0; }
 .app .app__main .main__content .business-trainer-account .dropdown { display: block; background: #f6f6f6; position: absolute; top: 120%; left: 0; width: 100%; min-width: 75px; border: 1px solid #e1e3e4; padding: 0px 1px; }
 .app .app__main .main__content .business-trainer-account .dropdown.isClosed { display: none; }
 .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item { font-size: 14px; color: #95a5a6; padding: 5px; border-bottom: 1px solid #e3e5e6; }
 .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:last-child { border-bottom: none; }
 .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:hover { background: #eeeeee; }
 .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:hover, .app .app__main .main__content .business-trainer-account .dropdown .dropdown__item:focus { cursor: pointer; }
+.app .app__main .main__content .business-trainer-account .panel .panel__header .header__controls a { margin-right: 15px; }
+.app .app__main .main__content .business-trainer-account .panel .panel__header .header__controls a:last-child { margin-right: 0; }
 .app .app__main .main__content .business-trainer-account .controls__container { border-bottom: 1px solid #eaeaea; margin-bottom: 10px; }
 .app .app__main .main__content .business-trainer-account .controls__container { *zoom: 1; }
 .app .app__main .main__content .business-trainer-account .controls__container:before, .app .app__main .main__content .business-trainer-account .controls__container:after { content: ""; display: table; }

@@ -17,7 +17,26 @@
 			vertical-align: middle;
 		}
 	}
+	// Edit :: Save :: Cancel buttons
+	.details-buttons {
+		text-align: center;
+		margin-top: 10px;
+		a {
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 	@include dropdown;
+	
+	.panel .panel__header .header__controls a {
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
 	// Controls Container
 	.controls__container {
 		@include clearfix;
