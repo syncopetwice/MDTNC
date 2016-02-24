@@ -1920,8 +1920,9 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .resources .welcome .introduction .accept__button { margin: 10px 0; }
 .app .app__main .main__content .resources .panel .tabs { padding: 0; margin-bottom: 10px; }
 .app .app__main .main__content .resources .panel .tabs .tab:first-child .link { padding-left: 0; }
-.app .app__main .main__content .resources .panel .panel__body .panel__table { border-top: 1px solid #dee1e2; }
+.app .app__main .main__content .resources .panel .panel__body .panel__table { border-top: 1px solid #dee1e2; width: 100%; }
 .app .app__main .main__content .resources .buttons .accept__button { margin-right: 10px; }
+.app .app__main .main__content .resources .pagination__container { text-align: center; margin: 20px 0; }
 .app .app__main .main__content .submit-payment { padding: 30px 10px; }
 .app .app__main .main__content .submit-payment .heading { text-align: center; text-transform: uppercase; font-size: 18px; margin-bottom: 5px; font-family: "EffraBold", Helvetica, Arial, sans-serif; color: #032e3a; }
 .app .app__main .main__content .submit-payment .navigation__controls { margin-bottom: 20px; }

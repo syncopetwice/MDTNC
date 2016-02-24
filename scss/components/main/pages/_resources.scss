@@ -47,10 +47,16 @@
 		.panel__body {
 			.panel__table {
 				border-top: 1px solid #dee1e2;
+				width: 100%;
 			}
 		}
 	}
 	.buttons {
 		.accept__button {margin-right: 10px;}
+	}
+	// Pagination
+	.pagination__container {
+		text-align: center;
+		margin: 20px 0;
 	}
 }
