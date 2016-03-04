@@ -1444,9 +1444,9 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .print__button { display: inline-block; padding: 8px 20px; text-align: center; font-size: 16px; font-family: "EffraBold", Helvetica, Arial, sans-serif; border-width: 1px; border-style: solid; text-transform: uppercase; border-color: transparent; min-width: 105px; background: #1aaade; color: #fff; }
 .app .print__button:focus { outline: none; }
 .app .print__button:focus, .app .print__button:hover { background: #2bb5e6; }
-.app .group__button { display: inline-block; padding: 8px 20px; text-align: center; font-size: 16px; font-family: "EffraBold", Helvetica, Arial, sans-serif; border-width: 1px; border-style: solid; text-transform: uppercase; border-color: transparent; min-width: 105px; background: #75c5e6; color: #fff; }
+.app .group__button { display: inline-block; padding: 8px 20px; text-align: center; font-size: 16px; font-family: "EffraBold", Helvetica, Arial, sans-serif; border-width: 1px; border-style: solid; text-transform: uppercase; border-color: transparent; min-width: 105px; background: #084C85; color: #fff; }
 .app .group__button:focus { outline: none; }
-.app .group__button:focus, .app .group__button:hover { background: #8bceea; }
+.app .group__button:focus, .app .group__button:hover { background: #095a9d; }
 .app .tabs { list-style-type: none; padding: 0px 8px; -webkit-border-radius: 4px; border-radius: 4px; display: inline-block; margin: 0 auto; }
 .app .tabs .tab { display: inline-block; position: relative; }
 .app .tabs .tab:after { content: ''; position: absolute; top: 14px; right: 0; display: block; width: 1px; height: 12px; background: #0082cd; }
@@ -1646,7 +1646,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .modal__assign-new-cpt .controls .buttons { float: left; margin-bottom: 10px; }
 .app .modal__assign-new-cpt .controls .buttons .cancel__button { margin-right: 10px; }
 .app .modal__assign-new-cpt .controls .sorting { margin-right: 0; padding-bottom: 10px; }
-.app .modal__assign-new-cpt .modal__body { height: 600px; overflow: auto; }
+.app .modal__assign-new-cpt .modal__body { height: 720px; overflow: auto; }
 .app .modal__assign-new-cpt .panel .panel__body .panel__table { border: 1px solid #dee1e2; }
 .app .modal__assign-new-cpt .pagination__container { text-align: center; margin-top: 10px; }
 .app .modal__submit-payment { position: absolute; width: 450px; top: 35%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
@@ -1745,7 +1745,7 @@ src: url("../fonts/Effra/EOT/Effra_W_Bd.eot?#iefix") format("embedded-opentype")
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .buttons { float: left; margin-bottom: 10px; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .buttons .cancel__button { margin-right: 10px; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .controls .sorting { margin-right: 0; padding-bottom: 10px; }
-.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__body { height: 600px; overflow: auto; }
+.app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .modal__body { height: 720px; overflow: auto; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .panel .panel__body .panel__table { border: 1px solid #dee1e2; }
 .app .app__main .main__content .business-trainer-account .modal__assign-new-cpt .pagination__container { text-align: center; margin-top: 10px; }
 .app .app__main .main__content .business-trainer-account .panel { margin-left: 10px; margin-right: 10px; }

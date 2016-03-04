@@ -93,10 +93,10 @@ $accept-bg-hover: #ffecaf;
 
 .group__button {
 	@include button;
-	background: #75c5e6;
+	background: #084C85;
 	color: #fff;
 	&:focus,
 	&:hover {
-		background: lighten(#75c5e6, 5%);
+		background: lighten(#084C85, 5%);
 	}
 }
