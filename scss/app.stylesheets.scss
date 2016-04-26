@@ -27,6 +27,7 @@ $e-bold: "EffraBold", Helvetica, Arial, sans-serif;
 // Namespace for application styles
 .app {
 	@import 'modules/_modules';
+	@import 'helpers/_helpers';
 	font-family: $e-regular;
 	min-width: 1200px;
 	position: relative;

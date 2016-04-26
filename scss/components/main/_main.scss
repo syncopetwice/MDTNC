@@ -9,7 +9,7 @@
 	// Sidebar
 	@import 'sidebar/_sidebar';
 	.main__content {
-		@include mq($from: xwide) {
+		@include mq($from: widescreen) {
 			margin-left: 230px;
 		}
 		// Pages

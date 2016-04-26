@@ -3,11 +3,11 @@
 $cancel-bg: #fff;
 $cancel-bg-hover: #084c85;
 
-$decline-bg: #e2541d;
-$decline-bg-hover: #ed8057;
+$decline-bg: #dd2c00;
+$decline-bg-hover: lighten(#dd2c00, 2%);
 
-$accept-bg: #fecd2e;
-$accept-bg-hover: #ffecaf;
+$accept-bg: #27ae60;
+$accept-bg-hover: lighten(#27ae60, 2%);
 
 @mixin button () {
 	display: inline-block;
@@ -15,7 +15,6 @@ $accept-bg-hover: #ffecaf;
 	text-align: center;
 	font-size: 16px;
 	font-family: $e-bold;
-	// border-radius: 2px;
 	border-width: 1px;
 	border-style: solid;
 	text-transform: uppercase;
@@ -23,6 +22,20 @@ $accept-bg-hover: #ffecaf;
 	min-width: 105px;
 	&:focus {
 		outline: none;
+	}
+}
+
+.default__button {
+	@include button();
+	@include button();
+	background: #fece2e;
+	color: #00204c;
+	border-color: #fece2e;
+	&:focus,
+	&:hover {
+		background: #ffecaf;
+		color: #041a4c;
+		border-color: #ffecaf;
 	}
 }
 
@@ -55,8 +68,7 @@ $accept-bg-hover: #ffecaf;
 	@include button();
 	background: $accept-bg;
 	border-color: $accept-bg;
-	color: $dark-blue;
-
+	color: #fff;
 	&:focus,
 	&:hover {
 		background: $accept-bg-hover;
@@ -76,8 +88,9 @@ $accept-bg-hover: #ffecaf;
 	border-radius: 0;
 	&:focus,
 	&:hover {
-		background: $accept-bg-hover;
-		border-color: $accept-bg-hover;
+		background: #ffecaf;
+		border-color: #ffecaf;
+		color: #041a4c;
 	}
 }
 

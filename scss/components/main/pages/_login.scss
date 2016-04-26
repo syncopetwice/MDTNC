@@ -1,17 +1,21 @@
 .login {
 	background:#011f45;
 	.banner {
-		height: 500px;
+		// height: 500px;
 		background:transparent url('../images/UI/login_page/login_bg.jpg') left top no-repeat;
 		background-size: 100% auto;
+		height: 0;
+		padding-bottom: 46%;
 	}
 	.login-form {
 		// @include mq($until: ipad-l) {
 		// 	padding: 30px 0;
 		// }
-		min-height: 270px;
+		// min-height: 270px;
 		background:#011f45;
-		padding: 70px 0;
+		// padding: 70px 0;
+		min-height: 174px;
+		padding: 16px 0;
 		.login-form__inner {
 			width: 805px;
 			margin: 0 auto;

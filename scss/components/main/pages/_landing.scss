@@ -34,7 +34,7 @@ $c-light-blue: #74c5e6;
 			font-size: 22px;
 			margin-bottom: 10px;
 			.subheader {
-				font-size: 16px;
+				font-size: 17px;
 				text-transform: none;
 				margin-top: 10px;
 				color: #002060;
@@ -65,6 +65,10 @@ $c-light-blue: #74c5e6;
 // }
 
 .landing {
+	ol, ul {
+	  list-style-type: none;
+	  padding-left: 0;
+	}
 	// Section Top
 	.section__top {
 		@include section;
@@ -121,7 +125,10 @@ $c-light-blue: #74c5e6;
 			}
 			section.exceptional__avatar__container {
 				img {
-					@include img-responsive;
+					// @include img-responsive;
+						display: inline-block;
+						max-height: 190px;
+						max-width: 100%;
 				}
 			}
 			footer {
@@ -189,6 +196,12 @@ $c-light-blue: #74c5e6;
 			color: #424242;
 			header {
 				color: $c-medium-blue;
+			}
+			footer {
+				a {
+					text-transform: uppercase;
+					font-size: 14px;
+				}
 			}
 		}
 	}
